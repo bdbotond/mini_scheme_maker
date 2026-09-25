@@ -1,0 +1,7302 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "schema": "miniature-paints/v4",
+  "displayName": "Warhammer Colour",
+  "company": "Games Workshop Limited",
+  "address": {
+    "street": "Willow Road, Lenton",
+    "city": "Nottingham",
+    "postcode": "NG7 2WS",
+    "country": "United Kingdom"
+  },
+  "contactEmail": "uk.custserv@gwplc.com",
+  "contactForm": "",
+  "website": "https://www.warhammer.com",
+  "phone": "+44 115 91 40000",
+  "updatedCatalogueRequested": "24/06/2026",
+  "paintCount": 331,
+  "paints": [
+    {
+      "id": "warhammer-colour-abaddon-black",
+      "name": "Abaddon Black",
+      "code": null,
+      "set": "Air",
+      "hex": "#000000",
+      "rgb": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-abaddon-black-2",
+      "name": "Abaddon Black",
+      "code": null,
+      "set": "Base",
+      "hex": "#000000",
+      "rgb": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-administratum-grey",
+      "name": "Administratum Grey",
+      "code": null,
+      "set": "Air",
+      "hex": "#9DA49D",
+      "rgb": {
+        "r": 157,
+        "g": 164,
+        "b": 157
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-administratum-grey-2",
+      "name": "Administratum Grey",
+      "code": null,
+      "set": "Layer",
+      "hex": "#999C95",
+      "rgb": {
+        "r": 153,
+        "g": 156,
+        "b": 149
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-aeldari-emerald",
+      "name": "Aeldari Emerald",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#328275",
+      "rgb": {
+        "r": 50,
+        "g": 130,
+        "b": 117
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-aethermatic-blue",
+      "name": "Aethermatic Blue",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#118590",
+      "rgb": {
+        "r": 17,
+        "g": 133,
+        "b": 144
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-aggaros-dunes",
+      "name": "Aggaros Dunes",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#D3BD79",
+      "rgb": {
+        "r": 211,
+        "g": 189,
+        "b": 121
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-agrax-earthshade",
+      "name": "Agrax Earthshade",
+      "code": null,
+      "set": "Shade",
+      "hex": "#9A998E",
+      "rgb": {
+        "r": 154,
+        "g": 153,
+        "b": 142
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-agrellan-badland",
+      "name": "Agrellan Badland",
+      "code": null,
+      "set": "Technical",
+      "hex": "#86775E",
+      "rgb": {
+        "r": 134,
+        "g": 119,
+        "b": 94
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-agrellan-earth",
+      "name": "Agrellan Earth",
+      "code": null,
+      "set": "Technical",
+      "hex": "#AA997D",
+      "rgb": {
+        "r": 170,
+        "g": 153,
+        "b": 125
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ahriman-blue",
+      "name": "Ahriman Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#297189",
+      "rgb": {
+        "r": 41,
+        "g": 113,
+        "b": 137
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-air-caste-thinner",
+      "name": "Air Caste Thinner",
+      "code": null,
+      "set": "Air",
+      "hex": "#FFFFFF",
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-akhelian-green",
+      "name": "Akhelian Green",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#0F8FA8",
+      "rgb": {
+        "r": 15,
+        "g": 143,
+        "b": 168
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-alaitoc-blue",
+      "name": "Alaitoc Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#384F83",
+      "rgb": {
+        "r": 56,
+        "g": 79,
+        "b": 131
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-altdorf-guard-blue",
+      "name": "Altdorf Guard Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#354694",
+      "rgb": {
+        "r": 53,
+        "g": 70,
+        "b": 148
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-angron-red-clear",
+      "name": "Angron Red Clear",
+      "code": null,
+      "set": "Air",
+      "hex": "#F67E88",
+      "rgb": {
+        "r": 246,
+        "g": 126,
+        "b": 136
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-apothecary-white",
+      "name": "Apothecary White",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#F1F9FE",
+      "rgb": {
+        "r": 241,
+        "g": 249,
+        "b": 254
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ardcoat",
+      "name": "Ardcoat",
+      "code": null,
+      "set": "Technical",
+      "hex": "#F2F2F2",
+      "rgb": {
+        "r": 242,
+        "g": 242,
+        "b": 242
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-armageddon-dust",
+      "name": "Armageddon Dust",
+      "code": null,
+      "set": "Technical",
+      "hex": "#D1C26B",
+      "rgb": {
+        "r": 209,
+        "g": 194,
+        "b": 107
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-astorath-red",
+      "name": "Astorath Red",
+      "code": null,
+      "set": "Dry",
+      "hex": "#AA311E",
+      "rgb": {
+        "r": 170,
+        "g": 49,
+        "b": 30
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-astrogranite",
+      "name": "Astrogranite",
+      "code": null,
+      "set": "Technical",
+      "hex": "#919191",
+      "rgb": {
+        "r": 145,
+        "g": 145,
+        "b": 145
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-asurmen-blue",
+      "name": "Asurmen Blue",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#277EAB",
+      "rgb": {
+        "r": 39,
+        "g": 126,
+        "b": 171
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-athonian-camoshade",
+      "name": "Athonian Camoshade",
+      "code": null,
+      "set": "Shade",
+      "hex": "#9DAC8F",
+      "rgb": {
+        "r": 157,
+        "g": 172,
+        "b": 143
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-auric-armour-gold",
+      "name": "Auric Armour Gold",
+      "code": null,
+      "set": "Layer",
+      "hex": "#DC994C",
+      "rgb": {
+        "r": 220,
+        "g": 153,
+        "b": 76
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-averland-sunset",
+      "name": "Averland Sunset",
+      "code": null,
+      "set": "Air",
+      "hex": "#F3B733",
+      "rgb": {
+        "r": 243,
+        "g": 183,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-averland-sunset-2",
+      "name": "Averland Sunset",
+      "code": null,
+      "set": "Base",
+      "hex": "#F3B733",
+      "rgb": {
+        "r": 243,
+        "g": 183,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-baal-red",
+      "name": "Baal Red",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#B23A45",
+      "rgb": {
+        "r": 178,
+        "g": 58,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-bad-moon-yellow",
+      "name": "Bad Moon Yellow",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#C7B829",
+      "rgb": {
+        "r": 199,
+        "g": 184,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-baharroth-blue",
+      "name": "Baharroth Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#6ABEC9",
+      "rgb": {
+        "r": 106,
+        "g": 190,
+        "b": 201
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-balor-brown",
+      "name": "Balor Brown",
+      "code": null,
+      "set": "Layer",
+      "hex": "#835313",
+      "rgb": {
+        "r": 131,
+        "g": 83,
+        "b": 19
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-balthasar-gold",
+      "name": "Balthasar Gold",
+      "code": null,
+      "set": "Air",
+      "hex": "#7F6A4A",
+      "rgb": {
+        "r": 127,
+        "g": 106,
+        "b": 74
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-balthasar-gold-2",
+      "name": "Balthasar Gold",
+      "code": null,
+      "set": "Base",
+      "hex": "#AD8045",
+      "rgb": {
+        "r": 173,
+        "g": 128,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-baneblade-brown",
+      "name": "Baneblade Brown",
+      "code": null,
+      "set": "Air",
+      "hex": "#917E6D",
+      "rgb": {
+        "r": 145,
+        "g": 126,
+        "b": 109
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-baneblade-brown-2",
+      "name": "Baneblade Brown",
+      "code": null,
+      "set": "Layer",
+      "hex": "#8D7C6A",
+      "rgb": {
+        "r": 141,
+        "g": 124,
+        "b": 106
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-barak-nar-burgundy",
+      "name": "Barak-Nar Burgundy",
+      "code": null,
+      "set": "Base",
+      "hex": "#430F25",
+      "rgb": {
+        "r": 67,
+        "g": 15,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-basilicanum-grey",
+      "name": "Basilicanum Grey",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#989C9F",
+      "rgb": {
+        "r": 152,
+        "g": 156,
+        "b": 159
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-berserker-bloodshade",
+      "name": "Berserker Bloodshade",
+      "code": null,
+      "set": "Shade",
+      "hex": "#C4889A",
+      "rgb": {
+        "r": 196,
+        "g": 136,
+        "b": 154
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-bestigor-flesh",
+      "name": "Bestigor Flesh",
+      "code": null,
+      "set": "Layer",
+      "hex": "#C78855",
+      "rgb": {
+        "r": 199,
+        "g": 136,
+        "b": 85
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-biel-tan-green",
+      "name": "Biel-Tan Green",
+      "code": null,
+      "set": "Shade",
+      "hex": "#84B59F",
+      "rgb": {
+        "r": 132,
+        "g": 181,
+        "b": 159
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-black-legion",
+      "name": "Black Legion",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#3B393A",
+      "rgb": {
+        "r": 59,
+        "g": 57,
+        "b": 58
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-black-templar",
+      "name": "Black Templar",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#989C9F",
+      "rgb": {
+        "r": 152,
+        "g": 156,
+        "b": 159
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-blood-angels-red",
+      "name": "Blood Angels Red",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#A31011",
+      "rgb": {
+        "r": 163,
+        "g": 16,
+        "b": 17
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-blood-for-the-blood-god",
+      "name": "Blood for the Blood God",
+      "code": null,
+      "set": "Technical",
+      "hex": "#63050B",
+      "rgb": {
+        "r": 99,
+        "g": 5,
+        "b": 11
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-bloodreaver-flesh",
+      "name": "Bloodreaver Flesh",
+      "code": null,
+      "set": "Layer",
+      "hex": "#674748",
+      "rgb": {
+        "r": 103,
+        "g": 71,
+        "b": 72
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-blue-horror",
+      "name": "Blue Horror",
+      "code": null,
+      "set": "Layer",
+      "hex": "#A3B5CD",
+      "rgb": {
+        "r": 163,
+        "g": 181,
+        "b": 205
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-brass-scorpion",
+      "name": "Brass Scorpion",
+      "code": null,
+      "set": "Layer",
+      "hex": "#7A412D",
+      "rgb": {
+        "r": 122,
+        "g": 65,
+        "b": 45
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-briar-queen-chill",
+      "name": "Briar Queen Chill",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#79A0AB",
+      "rgb": {
+        "r": 121,
+        "g": 160,
+        "b": 171
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-bugman-s-glow",
+      "name": "Bugman's Glow",
+      "code": null,
+      "set": "Base",
+      "hex": "#7C4B44",
+      "rgb": {
+        "r": 124,
+        "g": 75,
+        "b": 68
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-cadian-fleshtone",
+      "name": "Cadian Fleshtone",
+      "code": null,
+      "set": "Layer",
+      "hex": "#BC7555",
+      "rgb": {
+        "r": 188,
+        "g": 117,
+        "b": 85
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-caledor-sky",
+      "name": "Caledor Sky",
+      "code": null,
+      "set": "Base",
+      "hex": "#426698",
+      "rgb": {
+        "r": 66,
+        "g": 102,
+        "b": 152
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-calgar-blue",
+      "name": "Calgar Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#32497D",
+      "rgb": {
+        "r": 50,
+        "g": 73,
+        "b": 125
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-caliban-green",
+      "name": "Caliban Green",
+      "code": null,
+      "set": "Air",
+      "hex": "#00401E",
+      "rgb": {
+        "r": 0,
+        "g": 64,
+        "b": 30
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-caliban-green-2",
+      "name": "Caliban Green",
+      "code": null,
+      "set": "Base",
+      "hex": "#103C18",
+      "rgb": {
+        "r": 16,
+        "g": 60,
+        "b": 24
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-calth-blue-clear",
+      "name": "Calth Blue Clear",
+      "code": null,
+      "set": "Air",
+      "hex": "#0097DC",
+      "rgb": {
+        "r": 0,
+        "g": 151,
+        "b": 220
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-canoptek-alloy",
+      "name": "Canoptek Alloy",
+      "code": null,
+      "set": "Layer",
+      "hex": "#938886",
+      "rgb": {
+        "r": 147,
+        "g": 136,
+        "b": 134
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-carroburg-crimson",
+      "name": "Carroburg Crimson",
+      "code": null,
+      "set": "Shade",
+      "hex": "#BD87A8",
+      "rgb": {
+        "r": 189,
+        "g": 135,
+        "b": 168
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-casandora-yellow",
+      "name": "Casandora Yellow",
+      "code": null,
+      "set": "Shade",
+      "hex": "#D6C28D",
+      "rgb": {
+        "r": 214,
+        "g": 194,
+        "b": 141
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-castellan-green",
+      "name": "Castellan Green",
+      "code": null,
+      "set": "Air",
+      "hex": "#2B4717",
+      "rgb": {
+        "r": 43,
+        "g": 71,
+        "b": 23
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-castellan-green-2",
+      "name": "Castellan Green",
+      "code": null,
+      "set": "Base",
+      "hex": "#2B4717",
+      "rgb": {
+        "r": 43,
+        "g": 71,
+        "b": 23
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-castellax-bronze",
+      "name": "Castellax Bronze",
+      "code": null,
+      "set": "Layer",
+      "hex": "#A58367",
+      "rgb": {
+        "r": 165,
+        "g": 131,
+        "b": 103
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-catachan-flesh",
+      "name": "Catachan Flesh",
+      "code": null,
+      "set": "Base",
+      "hex": "#442825",
+      "rgb": {
+        "r": 68,
+        "g": 40,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-celestium-blue",
+      "name": "Celestium Blue",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#3B658E",
+      "rgb": {
+        "r": 59,
+        "g": 101,
+        "b": 142
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-celestra-grey",
+      "name": "Celestra Grey",
+      "code": null,
+      "set": "Base",
+      "hex": "#8FA3A4",
+      "rgb": {
+        "r": 143,
+        "g": 163,
+        "b": 164
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-chaos-black",
+      "name": "Chaos Black",
+      "code": null,
+      "set": "Spray",
+      "hex": "#000000",
+      "rgb": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-coelia-greenshade",
+      "name": "Coelia Greenshade",
+      "code": null,
+      "set": "Shade",
+      "hex": "#83ABA7",
+      "rgb": {
+        "r": 131,
+        "g": 171,
+        "b": 167
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-contrast-medium",
+      "name": "Contrast Medium",
+      "code": null,
+      "set": "Technical",
+      "hex": "#F2F2F2",
+      "rgb": {
+        "r": 242,
+        "g": 242,
+        "b": 242
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-corax-white",
+      "name": "Corax White",
+      "code": null,
+      "set": "Base",
+      "hex": "#FFFFFF",
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-corvus-black",
+      "name": "Corvus Black",
+      "code": null,
+      "set": "Air",
+      "hex": "#171314",
+      "rgb": {
+        "r": 23,
+        "g": 19,
+        "b": 20
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-corvus-black-2",
+      "name": "Corvus Black",
+      "code": null,
+      "set": "Base",
+      "hex": "#171314",
+      "rgb": {
+        "r": 23,
+        "g": 19,
+        "b": 20
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-creed-camo",
+      "name": "Creed Camo",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#108B6E",
+      "rgb": {
+        "r": 16,
+        "g": 139,
+        "b": 110
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-cygor-brown",
+      "name": "Cygor Brown",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#775554",
+      "rgb": {
+        "r": 119,
+        "g": 85,
+        "b": 84
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-daemonette-hide",
+      "name": "Daemonette Hide",
+      "code": null,
+      "set": "Base",
+      "hex": "#655F81",
+      "rgb": {
+        "r": 101,
+        "g": 95,
+        "b": 129
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dark-angels-green",
+      "name": "Dark Angels Green",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#116355",
+      "rgb": {
+        "r": 17,
+        "g": 99,
+        "b": 85
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dark-reaper",
+      "name": "Dark Reaper",
+      "code": null,
+      "set": "Layer",
+      "hex": "#394D4C",
+      "rgb": {
+        "r": 57,
+        "g": 77,
+        "b": 76
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-darkoath-flesh",
+      "name": "Darkoath Flesh",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#DB9A8C",
+      "rgb": {
+        "r": 219,
+        "g": 154,
+        "b": 140
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dawnstone",
+      "name": "Dawnstone",
+      "code": null,
+      "set": "Air",
+      "hex": "#6A6F68",
+      "rgb": {
+        "r": 106,
+        "g": 111,
+        "b": 104
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dawnstone-2",
+      "name": "Dawnstone",
+      "code": null,
+      "set": "Dry",
+      "hex": "#697068",
+      "rgb": {
+        "r": 105,
+        "g": 112,
+        "b": 104
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dawnstone-3",
+      "name": "Dawnstone",
+      "code": null,
+      "set": "Layer",
+      "hex": "#6A6F68",
+      "rgb": {
+        "r": 106,
+        "g": 111,
+        "b": 104
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-death-guard-green",
+      "name": "Death Guard Green",
+      "code": null,
+      "set": "Base",
+      "hex": "#6F7750",
+      "rgb": {
+        "r": 111,
+        "g": 119,
+        "b": 80
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-death-guard-green-2",
+      "name": "Death Guard Green",
+      "code": null,
+      "set": "Spray",
+      "hex": "#55622A",
+      "rgb": {
+        "r": 85,
+        "g": 98,
+        "b": 42
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-death-korps-drab",
+      "name": "Death Korps Drab",
+      "code": null,
+      "set": "Base",
+      "hex": "#3F4539",
+      "rgb": {
+        "r": 63,
+        "g": 69,
+        "b": 57
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-deathclaw-brown",
+      "name": "Deathclaw Brown",
+      "code": null,
+      "set": "Layer",
+      "hex": "#A76252",
+      "rgb": {
+        "r": 167,
+        "g": 98,
+        "b": 82
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-deathworld-forest",
+      "name": "Deathworld Forest",
+      "code": null,
+      "set": "Air",
+      "hex": "#55622D",
+      "rgb": {
+        "r": 85,
+        "g": 98,
+        "b": 45
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-deathworld-forest-2",
+      "name": "Deathworld Forest",
+      "code": null,
+      "set": "Base",
+      "hex": "#55622D",
+      "rgb": {
+        "r": 85,
+        "g": 98,
+        "b": 45
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dechala-lilac",
+      "name": "Dechala Lilac",
+      "code": null,
+      "set": "Layer",
+      "hex": "#B498C9",
+      "rgb": {
+        "r": 180,
+        "g": 152,
+        "b": 201
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-deepkin-flesh",
+      "name": "Deepkin Flesh",
+      "code": null,
+      "set": "Layer",
+      "hex": "#AAB8A1",
+      "rgb": {
+        "r": 170,
+        "g": 184,
+        "b": 161
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-doombull-brown",
+      "name": "Doombull Brown",
+      "code": null,
+      "set": "Layer",
+      "hex": "#520006",
+      "rgb": {
+        "r": 82,
+        "g": 0,
+        "b": 6
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-doomfire-magenta",
+      "name": "Doomfire Magenta",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#BC2781",
+      "rgb": {
+        "r": 188,
+        "g": 39,
+        "b": 129
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dorn-yellow",
+      "name": "Dorn Yellow",
+      "code": null,
+      "set": "Layer",
+      "hex": "#FCF566",
+      "rgb": {
+        "r": 252,
+        "g": 245,
+        "b": 102
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-drakenhof-nightshade",
+      "name": "Drakenhof Nightshade",
+      "code": null,
+      "set": "Shade",
+      "hex": "#85A0B8",
+      "rgb": {
+        "r": 133,
+        "g": 160,
+        "b": 184
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dreadful-visage",
+      "name": "Dreadful Visage",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#B6A8B5",
+      "rgb": {
+        "r": 182,
+        "g": 168,
+        "b": 181
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-druchii-violet",
+      "name": "Druchii Violet",
+      "code": null,
+      "set": "Shade",
+      "hex": "#AA90B0",
+      "rgb": {
+        "r": 170,
+        "g": 144,
+        "b": 176
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-dryad-bark",
+      "name": "Dryad Bark",
+      "code": null,
+      "set": "Base",
+      "hex": "#2B2A25",
+      "rgb": {
+        "r": 43,
+        "g": 42,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-eidolon-purple-clear",
+      "name": "Eidolon Purple Clear",
+      "code": null,
+      "set": "Air",
+      "hex": "#775BA6",
+      "rgb": {
+        "r": 119,
+        "g": 91,
+        "b": 166
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-eldar-flesh",
+      "name": "Eldar Flesh",
+      "code": null,
+      "set": "Dry",
+      "hex": "#E8C180",
+      "rgb": {
+        "r": 232,
+        "g": 193,
+        "b": 128
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-elysian-green",
+      "name": "Elysian Green",
+      "code": null,
+      "set": "Air",
+      "hex": "#6D8C3E",
+      "rgb": {
+        "r": 109,
+        "g": 140,
+        "b": 62
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-elysian-green-2",
+      "name": "Elysian Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#6D8C3E",
+      "rgb": {
+        "r": 109,
+        "g": 140,
+        "b": 62
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-emperor-s-children",
+      "name": "Emperor's Children",
+      "code": null,
+      "set": "Layer",
+      "hex": "#AE3D71",
+      "rgb": {
+        "r": 174,
+        "g": 61,
+        "b": 113
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-eshin-grey",
+      "name": "Eshin Grey",
+      "code": null,
+      "set": "Layer",
+      "hex": "#484C4F",
+      "rgb": {
+        "r": 72,
+        "g": 76,
+        "b": 79
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-etherium-blue",
+      "name": "Etherium Blue",
+      "code": null,
+      "set": "Dry",
+      "hex": "#9DB5CD",
+      "rgb": {
+        "r": 157,
+        "g": 181,
+        "b": 205
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-evil-sunz-scarlet",
+      "name": "Evil Sunz Scarlet",
+      "code": null,
+      "set": "Air",
+      "hex": "#B50519",
+      "rgb": {
+        "r": 181,
+        "g": 5,
+        "b": 25
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-evil-sunz-scarlet-2",
+      "name": "Evil Sunz Scarlet",
+      "code": null,
+      "set": "Layer",
+      "hex": "#B50519",
+      "rgb": {
+        "r": 181,
+        "g": 5,
+        "b": 25
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-fenrisian-grey",
+      "name": "Fenrisian Grey",
+      "code": null,
+      "set": "Air",
+      "hex": "#7594B1",
+      "rgb": {
+        "r": 117,
+        "g": 148,
+        "b": 177
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-fenrisian-grey-2",
+      "name": "Fenrisian Grey",
+      "code": null,
+      "set": "Layer",
+      "hex": "#7594B1",
+      "rgb": {
+        "r": 117,
+        "g": 148,
+        "b": 177
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-fire-dragon-bright",
+      "name": "Fire Dragon Bright",
+      "code": null,
+      "set": "Layer",
+      "hex": "#EB8554",
+      "rgb": {
+        "r": 235,
+        "g": 133,
+        "b": 84
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-flash-gitz-yellow",
+      "name": "Flash Gitz Yellow",
+      "code": null,
+      "set": "Air",
+      "hex": "#FFF301",
+      "rgb": {
+        "r": 255,
+        "g": 243,
+        "b": 1
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-flash-gitz-yellow-2",
+      "name": "Flash Gitz Yellow",
+      "code": null,
+      "set": "Layer",
+      "hex": "#FCF334",
+      "rgb": {
+        "r": 252,
+        "g": 243,
+        "b": 52
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-flayed-one-flesh",
+      "name": "Flayed One Flesh",
+      "code": null,
+      "set": "Layer",
+      "hex": "#EAC388",
+      "rgb": {
+        "r": 234,
+        "g": 195,
+        "b": 136
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-flesh-tearers-red",
+      "name": "Flesh Tearers Red",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#9F2726",
+      "rgb": {
+        "r": 159,
+        "g": 39,
+        "b": 38
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-frostheart",
+      "name": "Frostheart",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#325666",
+      "rgb": {
+        "r": 50,
+        "g": 86,
+        "b": 102
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-fuegan-orange",
+      "name": "Fuegan Orange",
+      "code": null,
+      "set": "Shade",
+      "hex": "#C1A38E",
+      "rgb": {
+        "r": 193,
+        "g": 163,
+        "b": 142
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-fulgrim-pink",
+      "name": "Fulgrim Pink",
+      "code": null,
+      "set": "Layer",
+      "hex": "#ECA9C8",
+      "rgb": {
+        "r": 236,
+        "g": 169,
+        "b": 200
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-fulgurite-copper",
+      "name": "Fulgurite Copper",
+      "code": null,
+      "set": "Layer",
+      "hex": "#A76945",
+      "rgb": {
+        "r": 167,
+        "g": 105,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-fyreslayer-flesh",
+      "name": "Fyreslayer Flesh",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#8F7054",
+      "rgb": {
+        "r": 143,
+        "g": 112,
+        "b": 84
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-gal-vorbak-red",
+      "name": "Gal Vorbak Red",
+      "code": null,
+      "set": "Base",
+      "hex": "#612E3D",
+      "rgb": {
+        "r": 97,
+        "g": 46,
+        "b": 61
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-garaghak-s-sewer",
+      "name": "Garaghak's Sewer",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#876938",
+      "rgb": {
+        "r": 135,
+        "g": 105,
+        "b": 56
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-gauss-blaster-green",
+      "name": "Gauss Blaster Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#89C1A6",
+      "rgb": {
+        "r": 137,
+        "g": 193,
+        "b": 166
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-gehenna-s-gold",
+      "name": "Gehenna's Gold",
+      "code": null,
+      "set": "Layer",
+      "hex": "#A3592D",
+      "rgb": {
+        "r": 163,
+        "g": 89,
+        "b": 45
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-genestealer-purple",
+      "name": "Genestealer Purple",
+      "code": null,
+      "set": "Layer",
+      "hex": "#7458A3",
+      "rgb": {
+        "r": 116,
+        "g": 88,
+        "b": 163
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-golden-griffon",
+      "name": "Golden Griffon",
+      "code": null,
+      "set": "Dry",
+      "hex": "#E3BE87",
+      "rgb": {
+        "r": 227,
+        "g": 190,
+        "b": 135
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-golgfag-brown",
+      "name": "Golgfag Brown",
+      "code": null,
+      "set": "Dry",
+      "hex": "#90502A",
+      "rgb": {
+        "r": 144,
+        "g": 80,
+        "b": 42
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-gore-grunta-fur",
+      "name": "Gore-Grunta Fur",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#994616",
+      "rgb": {
+        "r": 153,
+        "g": 70,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-gorthor-brown",
+      "name": "Gorthor Brown",
+      "code": null,
+      "set": "Layer",
+      "hex": "#5D4640",
+      "rgb": {
+        "r": 93,
+        "g": 70,
+        "b": 64
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-grey-knights-steel",
+      "name": "Grey Knights Steel",
+      "code": null,
+      "set": "Air",
+      "hex": "#768089",
+      "rgb": {
+        "r": 118,
+        "g": 128,
+        "b": 137
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-grey-knights-steel-2",
+      "name": "Grey Knights Steel",
+      "code": null,
+      "set": "Base",
+      "hex": "#9A9FA3",
+      "rgb": {
+        "r": 154,
+        "g": 159,
+        "b": 163
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-grey-seer",
+      "name": "Grey Seer",
+      "code": null,
+      "set": "Base",
+      "hex": "#A1A5A8",
+      "rgb": {
+        "r": 161,
+        "g": 165,
+        "b": 168
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-grey-seer-2",
+      "name": "Grey Seer",
+      "code": null,
+      "set": "Spray",
+      "hex": "#A1A5A8",
+      "rgb": {
+        "r": 161,
+        "g": 165,
+        "b": 168
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-gryph-charger-grey",
+      "name": "Gryph-Charger Grey",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#A3C9DC",
+      "rgb": {
+        "r": 163,
+        "g": 201,
+        "b": 220
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-gryph-hound-orange",
+      "name": "Gryph-Hound Orange",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#F3764E",
+      "rgb": {
+        "r": 243,
+        "g": 118,
+        "b": 78
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-guilliman-flesh",
+      "name": "Guilliman Flesh",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#D2A294",
+      "rgb": {
+        "r": 210,
+        "g": 162,
+        "b": 148
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-gutrippa-flesh",
+      "name": "Gutrippa Flesh",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#819C7B",
+      "rgb": {
+        "r": 129,
+        "g": 156,
+        "b": 123
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-hashut-copper",
+      "name": "Hashut Copper",
+      "code": null,
+      "set": "Layer",
+      "hex": "#8B634A",
+      "rgb": {
+        "r": 139,
+        "g": 99,
+        "b": 74
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-hexos-palesun",
+      "name": "Hexos Palesun",
+      "code": null,
+      "set": "Dry",
+      "hex": "#FFF45A",
+      "rgb": {
+        "r": 255,
+        "g": 244,
+        "b": 90
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-hexwraith-flame",
+      "name": "Hexwraith Flame",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#359B59",
+      "rgb": {
+        "r": 53,
+        "g": 155,
+        "b": 89
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-hobgrot-hide",
+      "name": "Hobgrot Hide",
+      "code": null,
+      "set": "Base",
+      "hex": "#9C8132",
+      "rgb": {
+        "r": 156,
+        "g": 129,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-hoeth-blue",
+      "name": "Hoeth Blue",
+      "code": null,
+      "set": "Dry",
+      "hex": "#4D78AF",
+      "rgb": {
+        "r": 77,
+        "g": 120,
+        "b": 175
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-hoeth-blue-2",
+      "name": "Hoeth Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#5579AD",
+      "rgb": {
+        "r": 85,
+        "g": 121,
+        "b": 173
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-imperial-fist",
+      "name": "Imperial Fist",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#C59C33",
+      "rgb": {
+        "r": 197,
+        "g": 156,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-imrik-blue",
+      "name": "Imrik Blue",
+      "code": null,
+      "set": "Dry",
+      "hex": "#208ABE",
+      "rgb": {
+        "r": 32,
+        "g": 138,
+        "b": 190
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-incubi-darkness",
+      "name": "Incubi Darkness",
+      "code": null,
+      "set": "Base",
+      "hex": "#112E32",
+      "rgb": {
+        "r": 17,
+        "g": 46,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ionrach-skin",
+      "name": "Ionrach Skin",
+      "code": null,
+      "set": "Base",
+      "hex": "#98A385",
+      "rgb": {
+        "r": 152,
+        "g": 163,
+        "b": 133
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-iron-hands-steel",
+      "name": "Iron Hands Steel",
+      "code": null,
+      "set": "Base",
+      "hex": "#9CA1A5",
+      "rgb": {
+        "r": 156,
+        "g": 161,
+        "b": 165
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-iron-warriors",
+      "name": "Iron Warriors",
+      "code": null,
+      "set": "Base",
+      "hex": "#545557",
+      "rgb": {
+        "r": 84,
+        "g": 85,
+        "b": 87
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ironbreaker",
+      "name": "Ironbreaker",
+      "code": null,
+      "set": "Layer",
+      "hex": "#717576",
+      "rgb": {
+        "r": 113,
+        "g": 117,
+        "b": 118
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ironjawz-yellow",
+      "name": "Ironjawz Yellow",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#C5A85A",
+      "rgb": {
+        "r": 197,
+        "g": 168,
+        "b": 90
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-iyanden-yellow",
+      "name": "Iyanden Yellow",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#FFCB4B",
+      "rgb": {
+        "r": 255,
+        "g": 203,
+        "b": 75
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-jokaero-orange",
+      "name": "Jokaero Orange",
+      "code": null,
+      "set": "Base",
+      "hex": "#E1321F",
+      "rgb": {
+        "r": 225,
+        "g": 50,
+        "b": 31
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-kabalite-green",
+      "name": "Kabalite Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#2F8963",
+      "rgb": {
+        "r": 47,
+        "g": 137,
+        "b": 99
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-kakophoni-purple",
+      "name": "Kakophoni Purple",
+      "code": null,
+      "set": "Layer",
+      "hex": "#8669AC",
+      "rgb": {
+        "r": 134,
+        "g": 105,
+        "b": 172
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-kantor-blue",
+      "name": "Kantor Blue",
+      "code": null,
+      "set": "Air",
+      "hex": "#09134E",
+      "rgb": {
+        "r": 9,
+        "g": 19,
+        "b": 78
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-kantor-blue-2",
+      "name": "Kantor Blue",
+      "code": null,
+      "set": "Base",
+      "hex": "#09134E",
+      "rgb": {
+        "r": 9,
+        "g": 19,
+        "b": 78
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-karak-stone",
+      "name": "Karak Stone",
+      "code": null,
+      "set": "Layer",
+      "hex": "#B2945E",
+      "rgb": {
+        "r": 178,
+        "g": 148,
+        "b": 94
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-karandras-green",
+      "name": "Karandras Green",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#26975F",
+      "rgb": {
+        "r": 38,
+        "g": 151,
+        "b": 95
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-khorne-red",
+      "name": "Khorne Red",
+      "code": null,
+      "set": "Air",
+      "hex": "#5F0004",
+      "rgb": {
+        "r": 95,
+        "g": 0,
+        "b": 4
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-khorne-red-2",
+      "name": "Khorne Red",
+      "code": null,
+      "set": "Base",
+      "hex": "#5F0004",
+      "rgb": {
+        "r": 95,
+        "g": 0,
+        "b": 4
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-kislev-flesh",
+      "name": "Kislev Flesh",
+      "code": null,
+      "set": "Air",
+      "hex": "#CCA473",
+      "rgb": {
+        "r": 204,
+        "g": 164,
+        "b": 115
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-kislev-flesh-2",
+      "name": "Kislev Flesh",
+      "code": null,
+      "set": "Layer",
+      "hex": "#CCA473",
+      "rgb": {
+        "r": 204,
+        "g": 164,
+        "b": 115
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-knight-questor-flesh",
+      "name": "Knight-Questor Flesh",
+      "code": null,
+      "set": "Layer",
+      "hex": "#946464",
+      "rgb": {
+        "r": 148,
+        "g": 100,
+        "b": 100
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-krieg-khaki",
+      "name": "Krieg Khaki",
+      "code": null,
+      "set": "Layer",
+      "hex": "#BBBA81",
+      "rgb": {
+        "r": 187,
+        "g": 186,
+        "b": 129
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-kroak-green",
+      "name": "Kroak Green",
+      "code": null,
+      "set": "Shade",
+      "hex": "#ACC4B4",
+      "rgb": {
+        "r": 172,
+        "g": 196,
+        "b": 180
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-kroxigor-scales",
+      "name": "Kroxigor Scales",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#258A96",
+      "rgb": {
+        "r": 37,
+        "g": 138,
+        "b": 150
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-lahmian-medium",
+      "name": "Lahmian Medium",
+      "code": null,
+      "set": "Technical",
+      "hex": "#F2F2F2",
+      "rgb": {
+        "r": 242,
+        "g": 242,
+        "b": 242
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-leadbelcher",
+      "name": "Leadbelcher",
+      "code": null,
+      "set": "Air",
+      "hex": "#616669",
+      "rgb": {
+        "r": 97,
+        "g": 102,
+        "b": 105
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-leadbelcher-2",
+      "name": "Leadbelcher",
+      "code": null,
+      "set": "Base",
+      "hex": "#939393",
+      "rgb": {
+        "r": 147,
+        "g": 147,
+        "b": 147
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-leadbelcher-3",
+      "name": "Leadbelcher",
+      "code": null,
+      "set": "Spray",
+      "hex": "#8C8C8C",
+      "rgb": {
+        "r": 140,
+        "g": 140,
+        "b": 140
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-leviadon-blue",
+      "name": "Leviadon Blue",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#10406E",
+      "rgb": {
+        "r": 16,
+        "g": 64,
+        "b": 110
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-leviathan-purple",
+      "name": "Leviathan Purple",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#2E2D66",
+      "rgb": {
+        "r": 46,
+        "g": 45,
+        "b": 102
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-liberator-gold",
+      "name": "Liberator Gold",
+      "code": null,
+      "set": "Layer",
+      "hex": "#B9965E",
+      "rgb": {
+        "r": 185,
+        "g": 150,
+        "b": 94
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-longbeard-grey",
+      "name": "Longbeard Grey",
+      "code": null,
+      "set": "Dry",
+      "hex": "#DADCC6",
+      "rgb": {
+        "r": 218,
+        "g": 220,
+        "b": 198
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-loren-forest",
+      "name": "Loren Forest",
+      "code": null,
+      "set": "Layer",
+      "hex": "#4C6C29",
+      "rgb": {
+        "r": 76,
+        "g": 108,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-lothern-blue",
+      "name": "Lothern Blue",
+      "code": null,
+      "set": "Air",
+      "hex": "#4A9CCB",
+      "rgb": {
+        "r": 74,
+        "g": 156,
+        "b": 203
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-lothern-blue-2",
+      "name": "Lothern Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#4A9CCB",
+      "rgb": {
+        "r": 74,
+        "g": 156,
+        "b": 203
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-lucius-lilac",
+      "name": "Lucius Lilac",
+      "code": null,
+      "set": "Dry",
+      "hex": "#B597C9",
+      "rgb": {
+        "r": 181,
+        "g": 151,
+        "b": 201
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-lugganath-orange",
+      "name": "Lugganath Orange",
+      "code": null,
+      "set": "Layer",
+      "hex": "#EC9A84",
+      "rgb": {
+        "r": 236,
+        "g": 154,
+        "b": 132
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-lupercal-green",
+      "name": "Lupercal Green",
+      "code": null,
+      "set": "Base",
+      "hex": "#0A2C2B",
+      "rgb": {
+        "r": 10,
+        "g": 44,
+        "b": 43
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-luxion-purple",
+      "name": "Luxion Purple",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#57387B",
+      "rgb": {
+        "r": 87,
+        "g": 56,
+        "b": 123
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-macragge-blue",
+      "name": "Macragge Blue",
+      "code": null,
+      "set": "Air",
+      "hex": "#0E407D",
+      "rgb": {
+        "r": 14,
+        "g": 64,
+        "b": 125
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-macragge-blue-2",
+      "name": "Macragge Blue",
+      "code": null,
+      "set": "Base",
+      "hex": "#1F3D7B",
+      "rgb": {
+        "r": 31,
+        "g": 61,
+        "b": 123
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-macragge-blue-3",
+      "name": "Macragge Blue",
+      "code": null,
+      "set": "Spray",
+      "hex": "#0F3D7B",
+      "rgb": {
+        "r": 15,
+        "g": 61,
+        "b": 123
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-magmadroth-flame",
+      "name": "Magmadroth Flame",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#BD6738",
+      "rgb": {
+        "r": 189,
+        "g": 103,
+        "b": 56
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-magos-purple",
+      "name": "Magos Purple",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#BBA2BF",
+      "rgb": {
+        "r": 187,
+        "g": 162,
+        "b": 191
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mantis-warriors-green",
+      "name": "Mantis Warriors Green",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#7E9753",
+      "rgb": {
+        "r": 126,
+        "g": 151,
+        "b": 83
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-martian-ironcrust",
+      "name": "Martian Ironcrust",
+      "code": null,
+      "set": "Technical",
+      "hex": "#B76657",
+      "rgb": {
+        "r": 183,
+        "g": 102,
+        "b": 87
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-martian-ironearth",
+      "name": "Martian Ironearth",
+      "code": null,
+      "set": "Technical",
+      "hex": "#BE6C5C",
+      "rgb": {
+        "r": 190,
+        "g": 108,
+        "b": 92
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mechanicus-standard-grey",
+      "name": "Mechanicus Standard Grey",
+      "code": null,
+      "set": "Air",
+      "hex": "#3A4849",
+      "rgb": {
+        "r": 58,
+        "g": 72,
+        "b": 73
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mechanicus-standard-grey-2",
+      "name": "Mechanicus Standard Grey",
+      "code": null,
+      "set": "Base",
+      "hex": "#3A4849",
+      "rgb": {
+        "r": 58,
+        "g": 72,
+        "b": 73
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mechanicus-standard-grey-3",
+      "name": "Mechanicus Standard Grey",
+      "code": null,
+      "set": "Spray",
+      "hex": "#39484B",
+      "rgb": {
+        "r": 57,
+        "g": 72,
+        "b": 75
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mephiston-red",
+      "name": "Mephiston Red",
+      "code": null,
+      "set": "Air",
+      "hex": "#8E020F",
+      "rgb": {
+        "r": 142,
+        "g": 2,
+        "b": 15
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mephiston-red-2",
+      "name": "Mephiston Red",
+      "code": null,
+      "set": "Base",
+      "hex": "#8E020F",
+      "rgb": {
+        "r": 142,
+        "g": 2,
+        "b": 15
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mephiston-red-3",
+      "name": "Mephiston Red",
+      "code": null,
+      "set": "Spray",
+      "hex": "#960C09",
+      "rgb": {
+        "r": 150,
+        "g": 12,
+        "b": 9
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-militarum-green",
+      "name": "Militarum Green",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#989F5B",
+      "rgb": {
+        "r": 152,
+        "g": 159,
+        "b": 91
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-moot-green",
+      "name": "Moot Green",
+      "code": null,
+      "set": "Air",
+      "hex": "#54B04B",
+      "rgb": {
+        "r": 84,
+        "g": 176,
+        "b": 75
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-moot-green-2",
+      "name": "Moot Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#54B04B",
+      "rgb": {
+        "r": 84,
+        "g": 176,
+        "b": 75
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mordant-earth",
+      "name": "Mordant Earth",
+      "code": null,
+      "set": "Technical",
+      "hex": "#484647",
+      "rgb": {
+        "r": 72,
+        "g": 70,
+        "b": 71
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-morghast-bone",
+      "name": "Morghast Bone",
+      "code": null,
+      "set": "Base",
+      "hex": "#BDA976",
+      "rgb": {
+        "r": 189,
+        "g": 169,
+        "b": 118
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mortarion-green-clear",
+      "name": "Mortarion Green Clear",
+      "code": null,
+      "set": "Air",
+      "hex": "#40A970",
+      "rgb": {
+        "r": 64,
+        "g": 169,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mortarion-grime",
+      "name": "Mortarion Grime",
+      "code": null,
+      "set": "Shade",
+      "hex": "#BCBA82",
+      "rgb": {
+        "r": 188,
+        "g": 186,
+        "b": 130
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mournfang-brown",
+      "name": "Mournfang Brown",
+      "code": null,
+      "set": "Air",
+      "hex": "#440D08",
+      "rgb": {
+        "r": 68,
+        "g": 13,
+        "b": 8
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-mournfang-brown-2",
+      "name": "Mournfang Brown",
+      "code": null,
+      "set": "Base",
+      "hex": "#440D08",
+      "rgb": {
+        "r": 68,
+        "g": 13,
+        "b": 8
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-munitorum-varnish",
+      "name": "Munitorum Varnish",
+      "code": null,
+      "set": "Spray",
+      "hex": "#F8F8F8",
+      "rgb": {
+        "r": 248,
+        "g": 248,
+        "b": 248
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-naggaroth-night",
+      "name": "Naggaroth Night",
+      "code": null,
+      "set": "Base",
+      "hex": "#3B2B50",
+      "rgb": {
+        "r": 59,
+        "g": 43,
+        "b": 80
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-nazdreg-yellow",
+      "name": "Nazdreg Yellow",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#DC9D22",
+      "rgb": {
+        "r": 220,
+        "g": 157,
+        "b": 34
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-necron-compound",
+      "name": "Necron Compound",
+      "code": null,
+      "set": "Dry",
+      "hex": "#D7DBDE",
+      "rgb": {
+        "r": 215,
+        "g": 219,
+        "b": 222
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-niblet-green",
+      "name": "Niblet Green",
+      "code": null,
+      "set": "Dry",
+      "hex": "#388C36",
+      "rgb": {
+        "r": 56,
+        "g": 140,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-night-lords-blue",
+      "name": "Night Lords Blue",
+      "code": null,
+      "set": "Air",
+      "hex": "#003463",
+      "rgb": {
+        "r": 0,
+        "g": 52,
+        "b": 99
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-night-lords-blue-2",
+      "name": "Night Lords Blue",
+      "code": null,
+      "set": "Base",
+      "hex": "#0F2B5B",
+      "rgb": {
+        "r": 15,
+        "g": 43,
+        "b": 91
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-nighthaunt-gloom",
+      "name": "Nighthaunt Gloom",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#517E84",
+      "rgb": {
+        "r": 81,
+        "g": 126,
+        "b": 132
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-nihilakh-oxide",
+      "name": "Nihilakh Oxide",
+      "code": null,
+      "set": "Technical",
+      "hex": "#72B39B",
+      "rgb": {
+        "r": 114,
+        "g": 179,
+        "b": 155
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-nocturne-green",
+      "name": "Nocturne Green",
+      "code": null,
+      "set": "Base",
+      "hex": "#1A2A29",
+      "rgb": {
+        "r": 26,
+        "g": 42,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-nuln-oil",
+      "name": "Nuln Oil",
+      "code": null,
+      "set": "Shade",
+      "hex": "#9A99A0",
+      "rgb": {
+        "r": 154,
+        "g": 153,
+        "b": 160
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-nurgle-s-rot",
+      "name": "Nurgle's Rot",
+      "code": null,
+      "set": "Technical",
+      "hex": "#9A8B26",
+      "rgb": {
+        "r": 154,
+        "g": 139,
+        "b": 38
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-nurgling-green",
+      "name": "Nurgling Green",
+      "code": null,
+      "set": "Dry",
+      "hex": "#7E975E",
+      "rgb": {
+        "r": 126,
+        "g": 151,
+        "b": 94
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-nurgling-green-2",
+      "name": "Nurgling Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#809761",
+      "rgb": {
+        "r": 128,
+        "g": 151,
+        "b": 97
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ogryn-camo",
+      "name": "Ogryn Camo",
+      "code": null,
+      "set": "Air",
+      "hex": "#98A64F",
+      "rgb": {
+        "r": 152,
+        "g": 166,
+        "b": 79
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ogryn-camo-2",
+      "name": "Ogryn Camo",
+      "code": null,
+      "set": "Layer",
+      "hex": "#98A64F",
+      "rgb": {
+        "r": 152,
+        "g": 166,
+        "b": 79
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ork-flesh",
+      "name": "Ork Flesh",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#C3CEA6",
+      "rgb": {
+        "r": 195,
+        "g": 206,
+        "b": 166
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-orruk-flesh",
+      "name": "Orruk Flesh",
+      "code": null,
+      "set": "Base",
+      "hex": "#93C27A",
+      "rgb": {
+        "r": 147,
+        "g": 194,
+        "b": 122
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-pallid-wych-flesh",
+      "name": "Pallid Wych Flesh",
+      "code": null,
+      "set": "Layer",
+      "hex": "#CACDBC",
+      "rgb": {
+        "r": 202,
+        "g": 205,
+        "b": 188
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-phalanx-yellow",
+      "name": "Phalanx Yellow",
+      "code": null,
+      "set": "Air",
+      "hex": "#F9E232",
+      "rgb": {
+        "r": 249,
+        "g": 226,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-phalanx-yellow-2",
+      "name": "Phalanx Yellow",
+      "code": null,
+      "set": "Layer",
+      "hex": "#F9E232",
+      "rgb": {
+        "r": 249,
+        "g": 226,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-phoenician-purple",
+      "name": "Phoenician Purple",
+      "code": null,
+      "set": "Air",
+      "hex": "#420258",
+      "rgb": {
+        "r": 66,
+        "g": 2,
+        "b": 88
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-phoenician-purple-2",
+      "name": "Phoenician Purple",
+      "code": null,
+      "set": "Base",
+      "hex": "#410052",
+      "rgb": {
+        "r": 65,
+        "g": 0,
+        "b": 82
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-pink-horror",
+      "name": "Pink Horror",
+      "code": null,
+      "set": "Layer",
+      "hex": "#8E2657",
+      "rgb": {
+        "r": 142,
+        "g": 38,
+        "b": 87
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-plaguebearer-flesh",
+      "name": "Plaguebearer Flesh",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#CDD4AC",
+      "rgb": {
+        "r": 205,
+        "g": 212,
+        "b": 172
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-poxwalker",
+      "name": "Poxwalker",
+      "code": null,
+      "set": "Shade",
+      "hex": "#9CB6B7",
+      "rgb": {
+        "r": 156,
+        "g": 182,
+        "b": 183
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-praxeti-white",
+      "name": "Praxeti White",
+      "code": null,
+      "set": "Dry",
+      "hex": "#FFFFFF",
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-pylar-glacier",
+      "name": "Pylar Glacier",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#629DBC",
+      "rgb": {
+        "r": 98,
+        "g": 157,
+        "b": 188
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-rakarth-flesh",
+      "name": "Rakarth Flesh",
+      "code": null,
+      "set": "Base",
+      "hex": "#9B998D",
+      "rgb": {
+        "r": 155,
+        "g": 153,
+        "b": 141
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ratling-grime",
+      "name": "Ratling Grime",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#857B79",
+      "rgb": {
+        "r": 133,
+        "g": 123,
+        "b": 121
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ratskin-flesh",
+      "name": "Ratskin Flesh",
+      "code": null,
+      "set": "Base",
+      "hex": "#A16549",
+      "rgb": {
+        "r": 161,
+        "g": 101,
+        "b": 73
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-reikland-fleshshade",
+      "name": "Reikland Fleshshade",
+      "code": null,
+      "set": "Shade",
+      "hex": "#C2928C",
+      "rgb": {
+        "r": 194,
+        "g": 146,
+        "b": 140
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-retributor-armour",
+      "name": "Retributor Armour",
+      "code": null,
+      "set": "Base",
+      "hex": "#A48E55",
+      "rgb": {
+        "r": 164,
+        "g": 142,
+        "b": 85
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-retributor-armour-2",
+      "name": "Retributor Armour",
+      "code": null,
+      "set": "Spray",
+      "hex": "#EBB959",
+      "rgb": {
+        "r": 235,
+        "g": 185,
+        "b": 89
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-rhinox-hide",
+      "name": "Rhinox Hide",
+      "code": null,
+      "set": "Base",
+      "hex": "#432F30",
+      "rgb": {
+        "r": 67,
+        "g": 47,
+        "b": 48
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-runefang-steel",
+      "name": "Runefang Steel",
+      "code": null,
+      "set": "Air",
+      "hex": "#919A9F",
+      "rgb": {
+        "r": 145,
+        "g": 154,
+        "b": 159
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-runefang-steel-2",
+      "name": "Runefang Steel",
+      "code": null,
+      "set": "Layer",
+      "hex": "#A9AEB2",
+      "rgb": {
+        "r": 169,
+        "g": 174,
+        "b": 178
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-runelord-brass",
+      "name": "Runelord Brass",
+      "code": null,
+      "set": "Base",
+      "hex": "#887E74",
+      "rgb": {
+        "r": 136,
+        "g": 126,
+        "b": 116
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-russ-grey",
+      "name": "Russ Grey",
+      "code": null,
+      "set": "Air",
+      "hex": "#557085",
+      "rgb": {
+        "r": 85,
+        "g": 112,
+        "b": 133
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-russ-grey-2",
+      "name": "Russ Grey",
+      "code": null,
+      "set": "Layer",
+      "hex": "#557085",
+      "rgb": {
+        "r": 85,
+        "g": 112,
+        "b": 133
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ryza-rust",
+      "name": "Ryza Rust",
+      "code": null,
+      "set": "Dry",
+      "hex": "#F06C22",
+      "rgb": {
+        "r": 240,
+        "g": 108,
+        "b": 34
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-screamer-pink",
+      "name": "Screamer Pink",
+      "code": null,
+      "set": "Base",
+      "hex": "#720944",
+      "rgb": {
+        "r": 114,
+        "g": 9,
+        "b": 68
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-screaming-bell",
+      "name": "Screaming Bell",
+      "code": null,
+      "set": "Base",
+      "hex": "#9D6246",
+      "rgb": {
+        "r": 157,
+        "g": 98,
+        "b": 70
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-screaming-skull",
+      "name": "Screaming Skull",
+      "code": null,
+      "set": "Layer",
+      "hex": "#BAC09C",
+      "rgb": {
+        "r": 186,
+        "g": 192,
+        "b": 156
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-seraphim-sepia",
+      "name": "Seraphim Sepia",
+      "code": null,
+      "set": "Shade",
+      "hex": "#CAA792",
+      "rgb": {
+        "r": 202,
+        "g": 167,
+        "b": 146
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-shyish-purple",
+      "name": "Shyish Purple",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#5A4679",
+      "rgb": {
+        "r": 90,
+        "g": 70,
+        "b": 121
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-sigvald-burgundy",
+      "name": "Sigvald Burgundy",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#7E2762",
+      "rgb": {
+        "r": 126,
+        "g": 39,
+        "b": 98
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-skarsnik-green",
+      "name": "Skarsnik Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#608F6B",
+      "rgb": {
+        "r": 96,
+        "g": 143,
+        "b": 107
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-skavenblight-dinge",
+      "name": "Skavenblight Dinge",
+      "code": null,
+      "set": "Layer",
+      "hex": "#44413C",
+      "rgb": {
+        "r": 68,
+        "g": 65,
+        "b": 60
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-skeleton-horde",
+      "name": "Skeleton Horde",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#ECDFBD",
+      "rgb": {
+        "r": 236,
+        "g": 223,
+        "b": 189
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-skink-blue",
+      "name": "Skink Blue",
+      "code": null,
+      "set": "Dry",
+      "hex": "#53BDCA",
+      "rgb": {
+        "r": 83,
+        "g": 189,
+        "b": 202
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-skrag-brown",
+      "name": "Skrag Brown",
+      "code": null,
+      "set": "Layer",
+      "hex": "#844711",
+      "rgb": {
+        "r": 132,
+        "g": 71,
+        "b": 17
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-skullcrusher-brass",
+      "name": "Skullcrusher Brass",
+      "code": null,
+      "set": "Layer",
+      "hex": "#DEAF6B",
+      "rgb": {
+        "r": 222,
+        "g": 175,
+        "b": 107
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-slaanesh-grey",
+      "name": "Slaanesh Grey",
+      "code": null,
+      "set": "Layer",
+      "hex": "#8B8893",
+      "rgb": {
+        "r": 139,
+        "g": 136,
+        "b": 147
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-snakebite-leather",
+      "name": "Snakebite Leather",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#B6712C",
+      "rgb": {
+        "r": 182,
+        "g": 113,
+        "b": 44
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-sons-of-horus-green",
+      "name": "Sons of Horus Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#1B545D",
+      "rgb": {
+        "r": 27,
+        "g": 84,
+        "b": 93
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-sotek-green",
+      "name": "Sotek Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#276270",
+      "rgb": {
+        "r": 39,
+        "g": 98,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-soulblight-grey",
+      "name": "Soulblight Grey",
+      "code": null,
+      "set": "Shade",
+      "hex": "#BFB5BD",
+      "rgb": {
+        "r": 191,
+        "g": 181,
+        "b": 189
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-soulstone-blue",
+      "name": "Soulstone Blue",
+      "code": null,
+      "set": "Technical",
+      "hex": "#061A4F",
+      "rgb": {
+        "r": 6,
+        "g": 26,
+        "b": 79
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-space-wolves-grey",
+      "name": "Space Wolves Grey",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#7A9DB6",
+      "rgb": {
+        "r": 122,
+        "g": 157,
+        "b": 182
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-spiritstone-red",
+      "name": "Spiritstone Red",
+      "code": null,
+      "set": "Technical",
+      "hex": "#7E1606",
+      "rgb": {
+        "r": 126,
+        "g": 22,
+        "b": 6
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-squig-orange",
+      "name": "Squig Orange",
+      "code": null,
+      "set": "Layer",
+      "hex": "#9F4A43",
+      "rgb": {
+        "r": 159,
+        "g": 74,
+        "b": 67
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-steel-legion-drab",
+      "name": "Steel Legion Drab",
+      "code": null,
+      "set": "Base",
+      "hex": "#574E2F",
+      "rgb": {
+        "r": 87,
+        "g": 78,
+        "b": 47
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-stegadon-scale-green",
+      "name": "Stegadon Scale Green",
+      "code": null,
+      "set": "Base",
+      "hex": "#19465D",
+      "rgb": {
+        "r": 25,
+        "g": 70,
+        "b": 93
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-stirland-mud",
+      "name": "Stirland Mud",
+      "code": null,
+      "set": "Technical",
+      "hex": "#634213",
+      "rgb": {
+        "r": 99,
+        "g": 66,
+        "b": 19
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-stormfang",
+      "name": "Stormfang",
+      "code": null,
+      "set": "Dry",
+      "hex": "#5B7FA3",
+      "rgb": {
+        "r": 91,
+        "g": 127,
+        "b": 163
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-stormfiend",
+      "name": "Stormfiend",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#256884",
+      "rgb": {
+        "r": 37,
+        "g": 104,
+        "b": 132
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-stormhost-silver",
+      "name": "Stormhost Silver",
+      "code": null,
+      "set": "Layer",
+      "hex": "#C0C5C8",
+      "rgb": {
+        "r": 192,
+        "g": 197,
+        "b": 200
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-stormshield",
+      "name": "Stormshield",
+      "code": null,
+      "set": "Technical",
+      "hex": "#F2F2F2",
+      "rgb": {
+        "r": 242,
+        "g": 242,
+        "b": 242
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-stormvermin-fur",
+      "name": "Stormvermin Fur",
+      "code": null,
+      "set": "Layer",
+      "hex": "#6C655F",
+      "rgb": {
+        "r": 108,
+        "g": 101,
+        "b": 95
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-straken-green",
+      "name": "Straken Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#9BD144",
+      "rgb": {
+        "r": 155,
+        "g": 209,
+        "b": 68
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-striking-scorpion-green",
+      "name": "Striking Scorpion Green",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#2B9B61",
+      "rgb": {
+        "r": 43,
+        "g": 155,
+        "b": 97
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-sybarite-green",
+      "name": "Sybarite Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#9BD244",
+      "rgb": {
+        "r": 155,
+        "g": 210,
+        "b": 68
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-sycorax-bronze",
+      "name": "Sycorax Bronze",
+      "code": null,
+      "set": "Layer",
+      "hex": "#997A6B",
+      "rgb": {
+        "r": 153,
+        "g": 122,
+        "b": 107
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-sylvaneth-bark",
+      "name": "Sylvaneth Bark",
+      "code": null,
+      "set": "Dry",
+      "hex": "#4E483A",
+      "rgb": {
+        "r": 78,
+        "g": 72,
+        "b": 58
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-talassar-blue",
+      "name": "Talassar Blue",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#0D8ACD",
+      "rgb": {
+        "r": 13,
+        "g": 138,
+        "b": 205
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-tallarn-sand",
+      "name": "Tallarn Sand",
+      "code": null,
+      "set": "Layer",
+      "hex": "#9B731B",
+      "rgb": {
+        "r": 155,
+        "g": 115,
+        "b": 27
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-targor-rageshade",
+      "name": "Targor Rageshade",
+      "code": null,
+      "set": "Shade",
+      "hex": "#A89DAB",
+      "rgb": {
+        "r": 168,
+        "g": 157,
+        "b": 171
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-tau-light-ochre",
+      "name": "Tau Light Ochre",
+      "code": null,
+      "set": "Layer",
+      "hex": "#B46A1F",
+      "rgb": {
+        "r": 180,
+        "g": 106,
+        "b": 31
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-teclis-blue",
+      "name": "Teclis Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#4879BE",
+      "rgb": {
+        "r": 72,
+        "g": 121,
+        "b": 190
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-temple-guard-blue",
+      "name": "Temple Guard Blue",
+      "code": null,
+      "set": "Air",
+      "hex": "#419588",
+      "rgb": {
+        "r": 65,
+        "g": 149,
+        "b": 136
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-temple-guard-blue-2",
+      "name": "Temple Guard Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#419588",
+      "rgb": {
+        "r": 65,
+        "g": 149,
+        "b": 136
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-terminatus-stone",
+      "name": "Terminatus Stone",
+      "code": null,
+      "set": "Dry",
+      "hex": "#C8B79D",
+      "rgb": {
+        "r": 200,
+        "g": 183,
+        "b": 157
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-terradon-turquoise",
+      "name": "Terradon Turquoise",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#0D99AF",
+      "rgb": {
+        "r": 13,
+        "g": 153,
+        "b": 175
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-tesseract-glow",
+      "name": "Tesseract Glow",
+      "code": null,
+      "set": "Technical",
+      "hex": "#5AAE3C",
+      "rgb": {
+        "r": 90,
+        "g": 174,
+        "b": 60
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-thallax-gold",
+      "name": "Thallax Gold",
+      "code": null,
+      "set": "Air",
+      "hex": "#875E4C",
+      "rgb": {
+        "r": 135,
+        "g": 94,
+        "b": 76
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-the-fang",
+      "name": "The Fang",
+      "code": null,
+      "set": "Air",
+      "hex": "#455B70",
+      "rgb": {
+        "r": 69,
+        "g": 91,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-the-fang-2",
+      "name": "The Fang",
+      "code": null,
+      "set": "Base",
+      "hex": "#455B70",
+      "rgb": {
+        "r": 69,
+        "g": 91,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-thondia-brown",
+      "name": "Thondia Brown",
+      "code": null,
+      "set": "Base",
+      "hex": "#502F2A",
+      "rgb": {
+        "r": 80,
+        "g": 47,
+        "b": 42
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-thousand-sons-blue",
+      "name": "Thousand Sons Blue",
+      "code": null,
+      "set": "Base",
+      "hex": "#1D506F",
+      "rgb": {
+        "r": 29,
+        "g": 80,
+        "b": 111
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-thunderhawk-blue",
+      "name": "Thunderhawk Blue",
+      "code": null,
+      "set": "Layer",
+      "hex": "#436A71",
+      "rgb": {
+        "r": 67,
+        "g": 106,
+        "b": 113
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-troll-slayer-orange",
+      "name": "Troll Slayer Orange",
+      "code": null,
+      "set": "Air",
+      "hex": "#E5692D",
+      "rgb": {
+        "r": 229,
+        "g": 105,
+        "b": 45
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-troll-slayer-orange-2",
+      "name": "Troll Slayer Orange",
+      "code": null,
+      "set": "Layer",
+      "hex": "#E5692D",
+      "rgb": {
+        "r": 229,
+        "g": 105,
+        "b": 45
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-tuskgor-fur",
+      "name": "Tuskgor Fur",
+      "code": null,
+      "set": "Layer",
+      "hex": "#7F3033",
+      "rgb": {
+        "r": 127,
+        "g": 48,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-typhon-ash",
+      "name": "Typhon Ash",
+      "code": null,
+      "set": "Air",
+      "hex": "#E7D8C3",
+      "rgb": {
+        "r": 231,
+        "g": 216,
+        "b": 195
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-typhus-corrosion",
+      "name": "Typhus Corrosion",
+      "code": null,
+      "set": "Technical",
+      "hex": "#373B24",
+      "rgb": {
+        "r": 55,
+        "g": 59,
+        "b": 36
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-tyran-blue",
+      "name": "Tyran Blue",
+      "code": null,
+      "set": "Shade",
+      "hex": "#84B0C7",
+      "rgb": {
+        "r": 132,
+        "g": 176,
+        "b": 199
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-tyrant-skull",
+      "name": "Tyrant Skull",
+      "code": null,
+      "set": "Dry",
+      "hex": "#C8C484",
+      "rgb": {
+        "r": 200,
+        "g": 196,
+        "b": 132
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ulthuan-grey",
+      "name": "Ulthuan Grey",
+      "code": null,
+      "set": "Air",
+      "hex": "#C8DDD6",
+      "rgb": {
+        "r": 200,
+        "g": 221,
+        "b": 214
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ulthuan-grey-2",
+      "name": "Ulthuan Grey",
+      "code": null,
+      "set": "Layer",
+      "hex": "#C8DDD6",
+      "rgb": {
+        "r": 200,
+        "g": 221,
+        "b": 214
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ultramarines-blue",
+      "name": "Ultramarines Blue",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#315C8E",
+      "rgb": {
+        "r": 49,
+        "g": 92,
+        "b": 142
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-underhive-ash",
+      "name": "Underhive Ash",
+      "code": null,
+      "set": "Dry",
+      "hex": "#BBBB7D",
+      "rgb": {
+        "r": 187,
+        "g": 187,
+        "b": 125
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ungor-flesh",
+      "name": "Ungor Flesh",
+      "code": null,
+      "set": "Layer",
+      "hex": "#CBA463",
+      "rgb": {
+        "r": 203,
+        "g": 164,
+        "b": 99
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ushabti-bone",
+      "name": "Ushabti Bone",
+      "code": null,
+      "set": "Air",
+      "hex": "#A9A075",
+      "rgb": {
+        "r": 169,
+        "g": 160,
+        "b": 117
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-ushabti-bone-2",
+      "name": "Ushabti Bone",
+      "code": null,
+      "set": "Layer",
+      "hex": "#A9A075",
+      "rgb": {
+        "r": 169,
+        "g": 160,
+        "b": 117
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-valhallan-blizzard",
+      "name": "Valhallan Blizzard",
+      "code": null,
+      "set": "Technical",
+      "hex": "#EAEAEA",
+      "rgb": {
+        "r": 234,
+        "g": 234,
+        "b": 234
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-volupus-pink",
+      "name": "Volupus Pink",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#96064B",
+      "rgb": {
+        "r": 150,
+        "g": 6,
+        "b": 75
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-vulkan-green",
+      "name": "Vulkan Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#2D3F33",
+      "rgb": {
+        "r": 45,
+        "g": 63,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-waaagh-flesh",
+      "name": "Waaagh! Flesh",
+      "code": null,
+      "set": "Base",
+      "hex": "#163A36",
+      "rgb": {
+        "r": 22,
+        "g": 58,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-warboss-green",
+      "name": "Warboss Green",
+      "code": null,
+      "set": "Layer",
+      "hex": "#407E59",
+      "rgb": {
+        "r": 64,
+        "g": 126,
+        "b": 89
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-warp-lightning",
+      "name": "Warp Lightning",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#01A25E",
+      "rgb": {
+        "r": 1,
+        "g": 162,
+        "b": 94
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-warpfiend-grey",
+      "name": "Warpfiend Grey",
+      "code": null,
+      "set": "Layer",
+      "hex": "#66656D",
+      "rgb": {
+        "r": 102,
+        "g": 101,
+        "b": 109
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-warplock-bronze",
+      "name": "Warplock Bronze",
+      "code": null,
+      "set": "Base",
+      "hex": "#857261",
+      "rgb": {
+        "r": 133,
+        "g": 114,
+        "b": 97
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-warpstone-glow",
+      "name": "Warpstone Glow",
+      "code": null,
+      "set": "Layer",
+      "hex": "#28702E",
+      "rgb": {
+        "r": 40,
+        "g": 112,
+        "b": 46
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-waystone-green",
+      "name": "Waystone Green",
+      "code": null,
+      "set": "Technical",
+      "hex": "#063C24",
+      "rgb": {
+        "r": 6,
+        "g": 60,
+        "b": 36
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-wazdakka-red",
+      "name": "Wazdakka Red",
+      "code": null,
+      "set": "Layer",
+      "hex": "#7F0009",
+      "rgb": {
+        "r": 127,
+        "g": 0,
+        "b": 9
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-white-scar",
+      "name": "White Scar",
+      "code": null,
+      "set": "Air",
+      "hex": "#FFFFFF",
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-white-scar-2",
+      "name": "White Scar",
+      "code": null,
+      "set": "Layer",
+      "hex": "#FFFFFF",
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-white-scar-3",
+      "name": "White Scar",
+      "code": null,
+      "set": "Spray",
+      "hex": "#FFFFFF",
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-wild-rider-red",
+      "name": "Wild Rider Red",
+      "code": null,
+      "set": "Layer",
+      "hex": "#DC2623",
+      "rgb": {
+        "r": 220,
+        "g": 38,
+        "b": 35
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-word-bearers-red",
+      "name": "Word Bearers Red",
+      "code": null,
+      "set": "Layer",
+      "hex": "#5B0007",
+      "rgb": {
+        "r": 91,
+        "g": 0,
+        "b": 7
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-wrack-white",
+      "name": "Wrack White",
+      "code": null,
+      "set": "Dry",
+      "hex": "#D4D0CF",
+      "rgb": {
+        "r": 212,
+        "g": 208,
+        "b": 207
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-wraithbone",
+      "name": "Wraithbone",
+      "code": null,
+      "set": "Base",
+      "hex": "#DAD1B4",
+      "rgb": {
+        "r": 218,
+        "g": 209,
+        "b": 180
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-wraithbone-2",
+      "name": "Wraithbone",
+      "code": null,
+      "set": "Spray",
+      "hex": "#DBD0B2",
+      "rgb": {
+        "r": 219,
+        "g": 208,
+        "b": 178
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-wyldwood",
+      "name": "Wyldwood",
+      "code": null,
+      "set": "Contrast",
+      "hex": "#6D5958",
+      "rgb": {
+        "r": 109,
+        "g": 89,
+        "b": 88
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "18ml",
+          "value": 18,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-xereus-purple",
+      "name": "Xereus Purple",
+      "code": null,
+      "set": "Layer",
+      "hex": "#451159",
+      "rgb": {
+        "r": 69,
+        "g": 17,
+        "b": 89
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-xv-88",
+      "name": "XV-88",
+      "code": null,
+      "set": "Base",
+      "hex": "#674716",
+      "rgb": {
+        "r": 103,
+        "g": 71,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-yriel-yellow",
+      "name": "Yriel Yellow",
+      "code": null,
+      "set": "Layer",
+      "hex": "#F9D930",
+      "rgb": {
+        "r": 249,
+        "g": 217,
+        "b": 48
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-zamesi-desert",
+      "name": "Zamesi Desert",
+      "code": null,
+      "set": "Layer",
+      "hex": "#C19630",
+      "rgb": {
+        "r": 193,
+        "g": 150,
+        "b": 48
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-zandri-dust",
+      "name": "Zandri Dust",
+      "code": null,
+      "set": "Air",
+      "hex": "#958E58",
+      "rgb": {
+        "r": 149,
+        "g": 142,
+        "b": 88
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "24ml",
+          "value": 24,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-zandri-dust-2",
+      "name": "Zandri Dust",
+      "code": null,
+      "set": "Base",
+      "hex": "#958E58",
+      "rgb": {
+        "r": 149,
+        "g": 142,
+        "b": 88
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "12ml",
+          "value": 12,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "warhammer-colour-zandri-dust-3",
+      "name": "Zandri Dust",
+      "code": null,
+      "set": "Spray",
+      "hex": "#998E56",
+      "rgb": {
+        "r": 153,
+        "g": 142,
+        "b": 86
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "400ml",
+          "value": 400,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    }
+  ]
+}

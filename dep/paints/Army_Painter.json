@@ -1,0 +1,8084 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "schema": "miniature-paints/v4",
+  "displayName": "Army Painter",
+  "company": "The Army Painter ApS",
+  "address": {
+    "street": "Niels Bohrs Vej 34",
+    "city": "Skanderborg",
+    "postcode": "8660",
+    "country": "Denmark"
+  },
+  "contactEmail": "contact@thearmypainter.com",
+  "contactForm": "",
+  "website": "https://thearmypainter.com",
+  "phone": "",
+  "updatedCatalogueRequested": "",
+  "paintCount": 501,
+  "paints": [
+    {
+      "id": "army-painter-wp2007p",
+      "name": "Absolution Green",
+      "code": "WP2007P",
+      "set": "Speedpaint",
+      "hex": "#1D3F21",
+      "rgb": {
+        "r": 29,
+        "g": 63,
+        "b": 33
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1000p",
+      "name": "Absolution Green",
+      "code": "SM1000P",
+      "set": "Speedpaint Marker",
+      "hex": "#1D3F21",
+      "rgb": {
+        "r": 29,
+        "g": 63,
+        "b": 33
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3032p",
+      "name": "Abyssal Blue",
+      "code": "WP3032P",
+      "set": "Warpaints Fanatic",
+      "hex": "#094455",
+      "rgb": {
+        "r": 9,
+        "g": 68,
+        "b": 85
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3036p",
+      "name": "Aegis Aqua",
+      "code": "WP3036P",
+      "set": "Warpaints Fanatic",
+      "hex": "#2895A5",
+      "rgb": {
+        "r": 40,
+        "g": 149,
+        "b": 165
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw2004p",
+      "name": "Aegis Suit Satin Varnish",
+      "code": "AW2004P",
+      "set": "Warpaints Air",
+      "hex": "#303229",
+      "rgb": {
+        "r": 48,
+        "g": 50,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "100ml",
+          "value": 100,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3060p",
+      "name": "Afterglow",
+      "code": "WP3060P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C0C471",
+      "rgb": {
+        "r": 192,
+        "g": 196,
+        "b": 113
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3146p",
+      "name": "Agate Skin",
+      "code": "WP3146P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B67263",
+      "rgb": {
+        "r": 182,
+        "g": 114,
+        "b": 99
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2036p",
+      "name": "Aged Hide",
+      "code": "WP2036P",
+      "set": "Speedpaint",
+      "hex": "#BF5D45",
+      "rgb": {
+        "r": 191,
+        "g": 93,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw2001p",
+      "name": "Airbrush Medium",
+      "code": "AW2001P",
+      "set": "Warpaints Air",
+      "hex": "#303129",
+      "rgb": {
+        "r": 48,
+        "g": 49,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2045p",
+      "name": "Algae Green",
+      "code": "WP2045P",
+      "set": "Speedpaint",
+      "hex": "#747A43",
+      "rgb": {
+        "r": 116,
+        "g": 122,
+        "b": 67
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1128p",
+      "name": "Alien Purple",
+      "code": "AW1128P",
+      "set": "Warpaints Air",
+      "hex": "#64358B",
+      "rgb": {
+        "r": 100,
+        "g": 53,
+        "b": 139
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3128p",
+      "name": "Alien Purple",
+      "code": "WP3128P",
+      "set": "Warpaints Fanatic",
+      "hex": "#544882",
+      "rgb": {
+        "r": 84,
+        "g": 72,
+        "b": 130
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3022p",
+      "name": "Alpha Blue",
+      "code": "WP3022P",
+      "set": "Warpaints Fanatic",
+      "hex": "#566994",
+      "rgb": {
+        "r": 86,
+        "g": 105,
+        "b": 148
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3160p",
+      "name": "Amber Skin",
+      "code": "WP3160P",
+      "set": "Warpaints Fanatic",
+      "hex": "#A48467",
+      "rgb": {
+        "r": 164,
+        "g": 132,
+        "b": 103
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3048p",
+      "name": "Amulet Aqua",
+      "code": "WP3048P",
+      "set": "Warpaints Fanatic",
+      "hex": "#57A38B",
+      "rgb": {
+        "r": 87,
+        "g": 163,
+        "b": 139
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2060p",
+      "name": "Ancient Honey",
+      "code": "WP2060P",
+      "set": "Speedpaint",
+      "hex": "#FBD13C",
+      "rgb": {
+        "r": 251,
+        "g": 209,
+        "b": 60
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3088p",
+      "name": "Ancient Stone",
+      "code": "WP3088P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B0A482",
+      "rgb": {
+        "r": 176,
+        "g": 164,
+        "b": 130
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1112p",
+      "name": "Angel Green",
+      "code": "AW1112P",
+      "set": "Warpaints Air",
+      "hex": "#124E1D",
+      "rgb": {
+        "r": 18,
+        "g": 78,
+        "b": 29
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3049p",
+      "name": "Angel Green",
+      "code": "WP3049P",
+      "set": "Warpaints Fanatic",
+      "hex": "#1B3627",
+      "rgb": {
+        "r": 27,
+        "g": 54,
+        "b": 39
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3104p",
+      "name": "Angelic Red",
+      "code": "WP3104P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B3262E",
+      "rgb": {
+        "r": 179,
+        "g": 38,
+        "b": 46
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw2003p",
+      "name": "Anti-shine Varnish",
+      "code": "AW2003P",
+      "set": "Warpaints Air",
+      "hex": "#303129",
+      "rgb": {
+        "r": 48,
+        "g": 49,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "100ml",
+          "value": 100,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3047p",
+      "name": "Aqua Alchemy",
+      "code": "WP3047P",
+      "set": "Warpaints Fanatic",
+      "hex": "#1F977B",
+      "rgb": {
+        "r": 31,
+        "g": 151,
+        "b": 123
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3040p",
+      "name": "Aquamarine",
+      "code": "WP3040P",
+      "set": "Warpaints Fanatic",
+      "hex": "#47A29C",
+      "rgb": {
+        "r": 71,
+        "g": 162,
+        "b": 156
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4104p",
+      "name": "Archangel Red",
+      "code": "AW4104P",
+      "set": "Warpaints Air",
+      "hex": "#F83B14",
+      "rgb": {
+        "r": 248,
+        "g": 59,
+        "b": 20
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3029p",
+      "name": "Arctic Gem",
+      "code": "WP3029P",
+      "set": "Warpaints Fanatic",
+      "hex": "#177BA3",
+      "rgb": {
+        "r": 23,
+        "g": 123,
+        "b": 163
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1110p",
+      "name": "Army Green",
+      "code": "AW1110P",
+      "set": "Warpaints Air",
+      "hex": "#738E49",
+      "rgb": {
+        "r": 115,
+        "g": 142,
+        "b": 73
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3068p",
+      "name": "Army Green",
+      "code": "WP3068P",
+      "set": "Warpaints Fanatic",
+      "hex": "#516443",
+      "rgb": {
+        "r": 81,
+        "g": 100,
+        "b": 67
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3004p",
+      "name": "Ash Grey",
+      "code": "WP3004P",
+      "set": "Warpaints Fanatic",
+      "hex": "#737370",
+      "rgb": {
+        "r": 115,
+        "g": 115,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2025p",
+      "name": "Ashen Stone",
+      "code": "WP2025P",
+      "set": "Speedpaint",
+      "hex": "#848884",
+      "rgb": {
+        "r": 132,
+        "g": 136,
+        "b": 132
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4106p",
+      "name": "Ashroot",
+      "code": "WP4106P",
+      "set": "John Blanche",
+      "hex": "#3C251D",
+      "rgb": {
+        "r": 60,
+        "g": 37,
+        "b": 29
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3024p",
+      "name": "Augur Blue",
+      "code": "WP3024P",
+      "set": "Warpaints Fanatic",
+      "hex": "#93A0B2",
+      "rgb": {
+        "r": 147,
+        "g": 160,
+        "b": 178
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3064p",
+      "name": "Autumn Sage",
+      "code": "WP3064P",
+      "set": "Warpaints Fanatic",
+      "hex": "#638F77",
+      "rgb": {
+        "r": 99,
+        "g": 143,
+        "b": 119
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2075p",
+      "name": "Aztec Gold",
+      "code": "WP2075P",
+      "set": "Speedpaint",
+      "hex": "#55622E",
+      "rgb": {
+        "r": 85,
+        "g": 98,
+        "b": 46
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1486p",
+      "name": "Azure Magic",
+      "code": "AW1486P",
+      "set": "Warpaints Air",
+      "hex": "#026576",
+      "rgb": {
+        "r": 2,
+        "g": 101,
+        "b": 118
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4005p",
+      "name": "Banshee Brown",
+      "code": "WP4005P",
+      "set": "John Blanche",
+      "hex": "#23180B",
+      "rgb": {
+        "r": 35,
+        "g": 24,
+        "b": 11
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1126p",
+      "name": "Barbarian Flesh",
+      "code": "AW1126P",
+      "set": "Warpaints Air",
+      "hex": "#F8AC6F",
+      "rgb": {
+        "r": 248,
+        "g": 172,
+        "b": 111
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3147p",
+      "name": "Barbarian Flesh",
+      "code": "WP3147P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D18166",
+      "rgb": {
+        "r": 209,
+        "g": 129,
+        "b": 102
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3023p",
+      "name": "Baron Blue",
+      "code": "WP3023P",
+      "set": "Warpaints Fanatic",
+      "hex": "#697C9F",
+      "rgb": {
+        "r": 105,
+        "g": 124,
+        "b": 159
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3084p",
+      "name": "Barren Dune",
+      "code": "WP3084P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B49858",
+      "rgb": {
+        "r": 180,
+        "g": 152,
+        "b": 88
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3121p",
+      "name": "Barren Yellow",
+      "code": "AW3121P",
+      "set": "Warpaints Air",
+      "hex": "#B48524",
+      "rgb": {
+        "r": 180,
+        "g": 133,
+        "b": 36
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3115p",
+      "name": "Basilisk Red",
+      "code": "WP3115P",
+      "set": "Warpaints Fanatic",
+      "hex": "#612431",
+      "rgb": {
+        "r": 97,
+        "g": 36,
+        "b": 49
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2024p",
+      "name": "Battleship Grey",
+      "code": "WP2024P",
+      "set": "Speedpaint",
+      "hex": "#B3BFC2",
+      "rgb": {
+        "r": 179,
+        "g": 191,
+        "b": 194
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2049p",
+      "name": "Beowulf Blue",
+      "code": "WP2049P",
+      "set": "Speedpaint",
+      "hex": "#06366D",
+      "rgb": {
+        "r": 6,
+        "g": 54,
+        "b": 109
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4014p",
+      "name": "Blanched Berry",
+      "code": "WP4014P",
+      "set": "John Blanche",
+      "hex": "#2B0B19",
+      "rgb": {
+        "r": 43,
+        "g": 11,
+        "b": 25
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4125p",
+      "name": "Bleached Bone",
+      "code": "AW4125P",
+      "set": "Warpaints Air",
+      "hex": "#FAECCE",
+      "rgb": {
+        "r": 250,
+        "g": 236,
+        "b": 206
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4004p",
+      "name": "Blighted Green",
+      "code": "WP4004P",
+      "set": "John Blanche",
+      "hex": "#142321",
+      "rgb": {
+        "r": 20,
+        "g": 35,
+        "b": 33
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2076p",
+      "name": "Blinding Light",
+      "code": "WP2076P",
+      "set": "Speedpaint",
+      "hex": "#F3F1EE",
+      "rgb": {
+        "r": 243,
+        "g": 241,
+        "b": 238
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3119p",
+      "name": "Blood Chalice",
+      "code": "WP3119P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B33D3E",
+      "rgb": {
+        "r": 179,
+        "g": 61,
+        "b": 62
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2010p",
+      "name": "Blood Red",
+      "code": "WP2010P",
+      "set": "Speedpaint",
+      "hex": "#F34E3F",
+      "rgb": {
+        "r": 243,
+        "g": 78,
+        "b": 63
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1034p",
+      "name": "Blood Red",
+      "code": "SM1034P",
+      "set": "Speedpaint Marker",
+      "hex": "#F34E3F",
+      "rgb": {
+        "r": 243,
+        "g": 78,
+        "b": 63
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4117p",
+      "name": "Blood Thorn",
+      "code": "WP4117P",
+      "set": "John Blanche",
+      "hex": "#940336",
+      "rgb": {
+        "r": 148,
+        "g": 3,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4006p",
+      "name": "Bloodmoon Red",
+      "code": "WP4006P",
+      "set": "John Blanche",
+      "hex": "#A54B25",
+      "rgb": {
+        "r": 165,
+        "g": 75,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1502p",
+      "name": "Blue Flux",
+      "code": "AW1502P",
+      "set": "Warpaints Air",
+      "hex": "#01ACDA",
+      "rgb": {
+        "r": 1,
+        "g": 172,
+        "b": 218
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3210p",
+      "name": "Blue Tone",
+      "code": "WP3210P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#243D53",
+      "rgb": {
+        "r": 36,
+        "g": 61,
+        "b": 83
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4109p",
+      "name": "Bogey Green",
+      "code": "AW4109P",
+      "set": "Warpaints Air",
+      "hex": "#B8D47F",
+      "rgb": {
+        "r": 184,
+        "g": 212,
+        "b": 127
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3089p",
+      "name": "Boney Spikes",
+      "code": "WP3089P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C9B294",
+      "rgb": {
+        "r": 201,
+        "g": 178,
+        "b": 148
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2039p",
+      "name": "Bony Matter",
+      "code": "WP2039P",
+      "set": "Speedpaint",
+      "hex": "#9E8363",
+      "rgb": {
+        "r": 158,
+        "g": 131,
+        "b": 99
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3074p",
+      "name": "Bootstrap Brown",
+      "code": "WP3074P",
+      "set": "Warpaints Fanatic",
+      "hex": "#524441",
+      "rgb": {
+        "r": 82,
+        "g": 68,
+        "b": 65
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3011p",
+      "name": "Brainmatter Beige",
+      "code": "WP3011P",
+      "set": "Warpaints Fanatic",
+      "hex": "#BAB5A3",
+      "rgb": {
+        "r": 186,
+        "g": 181,
+        "b": 163
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4108p",
+      "name": "Bramble Grove",
+      "code": "WP4108P",
+      "set": "John Blanche",
+      "hex": "#48625B",
+      "rgb": {
+        "r": 72,
+        "g": 98,
+        "b": 91
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2073p",
+      "name": "Brazen Copper",
+      "code": "WP2073P",
+      "set": "Speedpaint",
+      "hex": "#6F4540",
+      "rgb": {
+        "r": 111,
+        "g": 69,
+        "b": 64
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3421p",
+      "name": "Brethil Blush",
+      "code": "AW3421P",
+      "set": "Warpaints Air",
+      "hex": "#EFB072",
+      "rgb": {
+        "r": 239,
+        "g": 176,
+        "b": 114
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3006p",
+      "name": "Brigade Grey",
+      "code": "WP3006P",
+      "set": "Warpaints Fanatic",
+      "hex": "#ADA9A3",
+      "rgb": {
+        "r": 173,
+        "g": 169,
+        "b": 163
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3073p",
+      "name": "Brigandine Brown",
+      "code": "WP3073P",
+      "set": "Warpaints Fanatic",
+      "hex": "#231717",
+      "rgb": {
+        "r": 35,
+        "g": 23,
+        "b": 23
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1144p",
+      "name": "Bright Gold",
+      "code": "AW1144P",
+      "set": "Warpaints Air",
+      "hex": "#9A7503",
+      "rgb": {
+        "r": 154,
+        "g": 117,
+        "b": 3
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3189p",
+      "name": "Bright Gold",
+      "code": "WP3189P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#D6C124",
+      "rgb": {
+        "r": 214,
+        "g": 193,
+        "b": 36
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2058p",
+      "name": "Bright Red",
+      "code": "WP2058P",
+      "set": "Speedpaint",
+      "hex": "#CD5237",
+      "rgb": {
+        "r": 205,
+        "g": 82,
+        "b": 55
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3030p",
+      "name": "Bright Sapphire",
+      "code": "WP3030P",
+      "set": "Warpaints Fanatic",
+      "hex": "#71A7BA",
+      "rgb": {
+        "r": 113,
+        "g": 167,
+        "b": 186
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2030p",
+      "name": "Broadsword Silver",
+      "code": "WP2030P",
+      "set": "Speedpaint",
+      "hex": "#545350",
+      "rgb": {
+        "r": 84,
+        "g": 83,
+        "b": 80
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3128p",
+      "name": "Broodmother Purple",
+      "code": "AW3128P",
+      "set": "Warpaints Air",
+      "hex": "#423461",
+      "rgb": {
+        "r": 66,
+        "g": 52,
+        "b": 97
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2067p",
+      "name": "Brownish Decay",
+      "code": "WP2067P",
+      "set": "Speedpaint",
+      "hex": "#706333",
+      "rgb": {
+        "r": 112,
+        "g": 99,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw2002p",
+      "name": "Brush Cleaner",
+      "code": "AW2002P",
+      "set": "Warpaints Air",
+      "hex": "#303129",
+      "rgb": {
+        "r": 48,
+        "g": 49,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "100ml",
+          "value": 100,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3175p",
+      "name": "Brush-On Primer",
+      "code": "WP3175P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#474642",
+      "rgb": {
+        "r": 71,
+        "g": 70,
+        "b": 66
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3114p",
+      "name": "Buffed Hide",
+      "code": "WP3114P",
+      "set": "Warpaints Fanatic",
+      "hex": "#956253",
+      "rgb": {
+        "r": 149,
+        "g": 98,
+        "b": 83
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4123p",
+      "name": "Bullwhack Brown",
+      "code": "AW4123P",
+      "set": "Warpaints Air",
+      "hex": "#BD8C63",
+      "rgb": {
+        "r": 189,
+        "g": 140,
+        "b": 99
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3098p",
+      "name": "Burning Ore",
+      "code": "WP3098P",
+      "set": "Warpaints Fanatic",
+      "hex": "#CA5531",
+      "rgb": {
+        "r": 202,
+        "g": 85,
+        "b": 49
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2083p",
+      "name": "Burnished Red",
+      "code": "WP2083P",
+      "set": "Speedpaint",
+      "hex": "#552F28",
+      "rgb": {
+        "r": 85,
+        "g": 47,
+        "b": 40
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2026p",
+      "name": "Burnt Moss",
+      "code": "WP2026P",
+      "set": "Speedpaint",
+      "hex": "#424D44",
+      "rgb": {
+        "r": 66,
+        "g": 77,
+        "b": 68
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3083p",
+      "name": "Burnt Turf",
+      "code": "WP3083P",
+      "set": "Warpaints Fanatic",
+      "hex": "#A18047",
+      "rgb": {
+        "r": 161,
+        "g": 128,
+        "b": 71
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4118p",
+      "name": "Cadre Grey",
+      "code": "AW4118P",
+      "set": "Warpaints Air",
+      "hex": "#AFB7B7",
+      "rgb": {
+        "r": 175,
+        "g": 183,
+        "b": 183
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2008p",
+      "name": "Camo Cloak",
+      "code": "WP2008P",
+      "set": "Speedpaint",
+      "hex": "#516235",
+      "rgb": {
+        "r": 81,
+        "g": 98,
+        "b": 53
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3069p",
+      "name": "Camouflage Green",
+      "code": "WP3069P",
+      "set": "Warpaints Fanatic",
+      "hex": "#5C6B45",
+      "rgb": {
+        "r": 92,
+        "g": 107,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4433p",
+      "name": "Canopy Green",
+      "code": "AW4433P",
+      "set": "Warpaints Air",
+      "hex": "#C2D660",
+      "rgb": {
+        "r": 194,
+        "g": 214,
+        "b": 96
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2046p",
+      "name": "Caribbean Ocean",
+      "code": "WP2046P",
+      "set": "Speedpaint",
+      "hex": "#099FAE",
+      "rgb": {
+        "r": 9,
+        "g": 159,
+        "b": 174
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1040p",
+      "name": "Caribbean Ocean",
+      "code": "SM1040P",
+      "set": "Speedpaint Marker",
+      "hex": "#099FAE",
+      "rgb": {
+        "r": 9,
+        "g": 159,
+        "b": 174
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2055p",
+      "name": "Carmine Dragon",
+      "code": "WP2055P",
+      "set": "Speedpaint",
+      "hex": "#CE2B4E",
+      "rgb": {
+        "r": 206,
+        "g": 43,
+        "b": 78
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3151p",
+      "name": "Carnelian Skin",
+      "code": "WP3151P",
+      "set": "Warpaints Fanatic",
+      "hex": "#523739",
+      "rgb": {
+        "r": 82,
+        "g": 55,
+        "b": 57
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1142p",
+      "name": "Chaotic Red",
+      "code": "AW1142P",
+      "set": "Warpaints Air",
+      "hex": "#892802",
+      "rgb": {
+        "r": 137,
+        "g": 40,
+        "b": 2
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2048p",
+      "name": "Charming Chartreuse",
+      "code": "WP2048P",
+      "set": "Speedpaint",
+      "hex": "#BEC444",
+      "rgb": {
+        "r": 190,
+        "g": 196,
+        "b": 68
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3125p",
+      "name": "Charred Bone",
+      "code": "AW3125P",
+      "set": "Warpaints Air",
+      "hex": "#AF9570",
+      "rgb": {
+        "r": 175,
+        "g": 149,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3105p",
+      "name": "Chimera Red",
+      "code": "AW3105P",
+      "set": "Warpaints Air",
+      "hex": "#9D142E",
+      "rgb": {
+        "r": 157,
+        "g": 20,
+        "b": 46
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2022p",
+      "name": "Cloudburst Blue",
+      "code": "WP2022P",
+      "set": "Speedpaint",
+      "hex": "#303645",
+      "rgb": {
+        "r": 48,
+        "g": 54,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3194p",
+      "name": "Cobalt Metal",
+      "code": "WP3194P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#2C4240",
+      "rgb": {
+        "r": 44,
+        "g": 66,
+        "b": 64
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3077p",
+      "name": "Command Khaki",
+      "code": "WP3077P",
+      "set": "Warpaints Fanatic",
+      "hex": "#95796A",
+      "rgb": {
+        "r": 149,
+        "g": 121,
+        "b": 106
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3005p",
+      "name": "Company Grey",
+      "code": "WP3005P",
+      "set": "Warpaints Fanatic",
+      "hex": "#9A9A95",
+      "rgb": {
+        "r": 154,
+        "g": 154,
+        "b": 149
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4115p",
+      "name": "Consul Blue",
+      "code": "AW4115P",
+      "set": "Warpaints Air",
+      "hex": "#7393BD",
+      "rgb": {
+        "r": 115,
+        "g": 147,
+        "b": 189
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4438p",
+      "name": "Cosmic Dust",
+      "code": "AW4438P",
+      "set": "Warpaints Air",
+      "hex": "#FCF193",
+      "rgb": {
+        "r": 252,
+        "g": 241,
+        "b": 147
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4128p",
+      "name": "Coven Purple",
+      "code": "AW4128P",
+      "set": "Warpaints Air",
+      "hex": "#AD85AE",
+      "rgb": {
+        "r": 173,
+        "g": 133,
+        "b": 174
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4101p",
+      "name": "Crow Hue",
+      "code": "AW4101P",
+      "set": "Warpaints Air",
+      "hex": "#67736E",
+      "rgb": {
+        "r": 103,
+        "g": 115,
+        "b": 110
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2004p",
+      "name": "Crusader Skin",
+      "code": "WP2004P",
+      "set": "Speedpaint",
+      "hex": "#DD9156",
+      "rgb": {
+        "r": 221,
+        "g": 145,
+        "b": 86
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1037p",
+      "name": "Crusader Skin",
+      "code": "SM1037P",
+      "set": "Speedpaint Marker",
+      "hex": "#DD9156",
+      "rgb": {
+        "r": 221,
+        "g": 145,
+        "b": 86
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1114p",
+      "name": "Crystal Blue",
+      "code": "AW1114P",
+      "set": "Warpaints Air",
+      "hex": "#0191C1",
+      "rgb": {
+        "r": 1,
+        "g": 145,
+        "b": 193
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3028p",
+      "name": "Crystal Blue",
+      "code": "WP3028P",
+      "set": "Warpaints Fanatic",
+      "hex": "#096293",
+      "rgb": {
+        "r": 9,
+        "g": 98,
+        "b": 147
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3129p",
+      "name": "Cultist Purple",
+      "code": "WP3129P",
+      "set": "Warpaints Fanatic",
+      "hex": "#5D5487",
+      "rgb": {
+        "r": 93,
+        "g": 84,
+        "b": 135
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4124p",
+      "name": "Cypress Brown",
+      "code": "AW4124P",
+      "set": "Warpaints Air",
+      "hex": "#816655",
+      "rgb": {
+        "r": 129,
+        "g": 102,
+        "b": 85
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1107p",
+      "name": "Daemonic Yellow",
+      "code": "AW1107P",
+      "set": "Warpaints Air",
+      "hex": "#FADE02",
+      "rgb": {
+        "r": 250,
+        "g": 222,
+        "b": 2
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3093p",
+      "name": "Daemonic Yellow",
+      "code": "WP3093P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D5A822",
+      "rgb": {
+        "r": 213,
+        "g": 168,
+        "b": 34
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3211p",
+      "name": "Dark Blue Tone",
+      "code": "WP3211P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#1F2732",
+      "rgb": {
+        "r": 31,
+        "g": 39,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3196p",
+      "name": "Dark Emerald",
+      "code": "WP3196P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#374315",
+      "rgb": {
+        "r": 55,
+        "g": 67,
+        "b": 21
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3205p",
+      "name": "Dark Red Tone",
+      "code": "WP3205P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#281517",
+      "rgb": {
+        "r": 40,
+        "g": 21,
+        "b": 23
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3166p",
+      "name": "Dark Rust",
+      "code": "WP3166P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#180B09",
+      "rgb": {
+        "r": 24,
+        "g": 11,
+        "b": 9
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3215p",
+      "name": "Dark Skin Shade",
+      "code": "WP3215P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#322625",
+      "rgb": {
+        "r": 50,
+        "g": 38,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1415p",
+      "name": "Dark Sky",
+      "code": "AW1415P",
+      "set": "Warpaints Air",
+      "hex": "#426272",
+      "rgb": {
+        "r": 66,
+        "g": 98,
+        "b": 114
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3199p",
+      "name": "Dark Tone",
+      "code": "WP3199P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#242321",
+      "rgb": {
+        "r": 36,
+        "g": 35,
+        "b": 33
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2005p",
+      "name": "Dark Wood",
+      "code": "WP2005P",
+      "set": "Speedpaint",
+      "hex": "#3F2716",
+      "rgb": {
+        "r": 63,
+        "g": 39,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1038p",
+      "name": "Dark Wood",
+      "code": "SM1038P",
+      "set": "Speedpaint Marker",
+      "hex": "#3F2716",
+      "rgb": {
+        "r": 63,
+        "g": 39,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3177p",
+      "name": "Data System Glow",
+      "code": "WP3177P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#5F8446",
+      "rgb": {
+        "r": 95,
+        "g": 132,
+        "b": 70
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3195p",
+      "name": "Death Metal",
+      "code": "WP3195P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#484230",
+      "rgb": {
+        "r": 72,
+        "g": 66,
+        "b": 48
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3037p",
+      "name": "Deep Azure",
+      "code": "WP3037P",
+      "set": "Warpaints Fanatic",
+      "hex": "#07585E",
+      "rgb": {
+        "r": 7,
+        "g": 88,
+        "b": 94
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3002p",
+      "name": "Deep Grey",
+      "code": "WP3002P",
+      "set": "Warpaints Fanatic",
+      "hex": "#434751",
+      "rgb": {
+        "r": 67,
+        "g": 71,
+        "b": 81
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3031p",
+      "name": "Deep Ocean Blue",
+      "code": "WP3031P",
+      "set": "Warpaints Fanatic",
+      "hex": "#1B2A36",
+      "rgb": {
+        "r": 27,
+        "g": 42,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3091p",
+      "name": "Demigod Flames",
+      "code": "WP3091P",
+      "set": "Warpaints Fanatic",
+      "hex": "#AA6434",
+      "rgb": {
+        "r": 170,
+        "g": 100,
+        "b": 52
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1121p",
+      "name": "Desert Yellow",
+      "code": "AW1121P",
+      "set": "Warpaints Air",
+      "hex": "#DFB102",
+      "rgb": {
+        "r": 223,
+        "g": 177,
+        "b": 2
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3081p",
+      "name": "Desert Yellow",
+      "code": "WP3081P",
+      "set": "Warpaints Fanatic",
+      "hex": "#6C5C37",
+      "rgb": {
+        "r": 108,
+        "g": 92,
+        "b": 55
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2040p",
+      "name": "Desolate Brown",
+      "code": "WP2040P",
+      "set": "Speedpaint",
+      "hex": "#776F3D",
+      "rgb": {
+        "r": 119,
+        "g": 111,
+        "b": 61
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4109p",
+      "name": "Dewpath",
+      "code": "WP4109P",
+      "set": "John Blanche",
+      "hex": "#437779",
+      "rgb": {
+        "r": 67,
+        "g": 119,
+        "b": 121
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3133p",
+      "name": "Diabolic Plum",
+      "code": "WP3133P",
+      "set": "Warpaints Fanatic",
+      "hex": "#4A2859",
+      "rgb": {
+        "r": 74,
+        "g": 40,
+        "b": 89
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3163p",
+      "name": "Disgusting Slime",
+      "code": "WP3163P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#6F8425",
+      "rgb": {
+        "r": 111,
+        "g": 132,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3138p",
+      "name": "Diviner Light",
+      "code": "WP3138P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B0839B",
+      "rgb": {
+        "r": 176,
+        "g": 131,
+        "b": 155
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3126p",
+      "name": "Doomfire Drab",
+      "code": "WP3126P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D2B4B5",
+      "rgb": {
+        "r": 210,
+        "g": 180,
+        "b": 181
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3161p",
+      "name": "Dorado Skin",
+      "code": "WP3161P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C5A47A",
+      "rgb": {
+        "r": 197,
+        "g": 164,
+        "b": 122
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4110p",
+      "name": "Drab Green",
+      "code": "AW4110P",
+      "set": "Warpaints Air",
+      "hex": "#4E6403",
+      "rgb": {
+        "r": 78,
+        "g": 100,
+        "b": 3
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1105p",
+      "name": "Dragon Red",
+      "code": "AW1105P",
+      "set": "Warpaints Air",
+      "hex": "#AD140D",
+      "rgb": {
+        "r": 173,
+        "g": 20,
+        "b": 13
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3117p",
+      "name": "Dragon Red",
+      "code": "WP3117P",
+      "set": "Warpaints Fanatic",
+      "hex": "#A2262F",
+      "rgb": {
+        "r": 162,
+        "g": 38,
+        "b": 47
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3164p",
+      "name": "Dry Blood",
+      "code": "WP3164P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#1A0609",
+      "rgb": {
+        "r": 26,
+        "g": 6,
+        "b": 9
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3111p",
+      "name": "Dryad Brown",
+      "code": "WP3111P",
+      "set": "Warpaints Fanatic",
+      "hex": "#553129",
+      "rgb": {
+        "r": 85,
+        "g": 49,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2054p",
+      "name": "Dusk Red",
+      "code": "WP2054P",
+      "set": "Speedpaint",
+      "hex": "#523331",
+      "rgb": {
+        "r": 82,
+        "g": 51,
+        "b": 49
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3085p",
+      "name": "Dusty Skull",
+      "code": "WP3085P",
+      "set": "Warpaints Fanatic",
+      "hex": "#756753",
+      "rgb": {
+        "r": 117,
+        "g": 103,
+        "b": 83
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3141p",
+      "name": "Elder Flower",
+      "code": "WP3141P",
+      "set": "Warpaints Fanatic",
+      "hex": "#8D4A61",
+      "rgb": {
+        "r": 141,
+        "g": 74,
+        "b": 97
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3058p",
+      "name": "Electric Lime",
+      "code": "WP3058P",
+      "set": "Warpaints Fanatic",
+      "hex": "#9BAB26",
+      "rgb": {
+        "r": 155,
+        "g": 171,
+        "b": 38
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1419p",
+      "name": "Elemental Bolt",
+      "code": "AW1419P",
+      "set": "Warpaints Air",
+      "hex": "#02A08D",
+      "rgb": {
+        "r": 2,
+        "g": 160,
+        "b": 141
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1483p",
+      "name": "Elven Armor",
+      "code": "AW1483P",
+      "set": "Warpaints Air",
+      "hex": "#0F5087",
+      "rgb": {
+        "r": 15,
+        "g": 80,
+        "b": 135
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1421p",
+      "name": "Elven Flesh",
+      "code": "AW1421P",
+      "set": "Warpaints Air",
+      "hex": "#FCC5A1",
+      "rgb": {
+        "r": 252,
+        "g": 197,
+        "b": 161
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4113p",
+      "name": "Emberveil",
+      "code": "WP4113P",
+      "set": "John Blanche",
+      "hex": "#BC310F",
+      "rgb": {
+        "r": 188,
+        "g": 49,
+        "b": 15
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3055p",
+      "name": "Emerald Forest",
+      "code": "WP3055P",
+      "set": "Warpaints Fanatic",
+      "hex": "#4A953A",
+      "rgb": {
+        "r": 74,
+        "g": 149,
+        "b": 58
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4009p",
+      "name": "Emperor Gold",
+      "code": "WP4009P",
+      "set": "John Blanche",
+      "hex": "#71511B",
+      "rgb": {
+        "r": 113,
+        "g": 81,
+        "b": 27
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3104p",
+      "name": "Encarmine Red",
+      "code": "AW3104P",
+      "set": "Warpaints Air",
+      "hex": "#A7012B",
+      "rgb": {
+        "r": 167,
+        "g": 1,
+        "b": 43
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3137p",
+      "name": "Enchanted Pink",
+      "code": "WP3137P",
+      "set": "Warpaints Fanatic",
+      "hex": "#965A82",
+      "rgb": {
+        "r": 150,
+        "g": 90,
+        "b": 130
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2072p",
+      "name": "Enchanted Steel",
+      "code": "WP2072P",
+      "set": "Speedpaint",
+      "hex": "#555D5E",
+      "rgb": {
+        "r": 85,
+        "g": 93,
+        "b": 94
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3052p",
+      "name": "Eternal Hunt",
+      "code": "WP3052P",
+      "set": "Warpaints Fanatic",
+      "hex": "#24793A",
+      "rgb": {
+        "r": 36,
+        "g": 121,
+        "b": 58
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3061p",
+      "name": "Evergreen Fog",
+      "code": "WP3061P",
+      "set": "Warpaints Fanatic",
+      "hex": "#34544B",
+      "rgb": {
+        "r": 52,
+        "g": 84,
+        "b": 75
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1491p",
+      "name": "Evil Chrome",
+      "code": "AW1491P",
+      "set": "Warpaints Air",
+      "hex": "#8F6146",
+      "rgb": {
+        "r": 143,
+        "g": 97,
+        "b": 70
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3185p",
+      "name": "Evil Chrome",
+      "code": "WP3185P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#B15633",
+      "rgb": {
+        "r": 177,
+        "g": 86,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4112p",
+      "name": "Exile Green",
+      "code": "AW4112P",
+      "set": "Warpaints Air",
+      "hex": "#699184",
+      "rgb": {
+        "r": 105,
+        "g": 145,
+        "b": 132
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1489p",
+      "name": "Fairy Dust",
+      "code": "AW1489P",
+      "set": "Warpaints Air",
+      "hex": "#A3A09D",
+      "rgb": {
+        "r": 163,
+        "g": 160,
+        "b": 157
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3447p",
+      "name": "Fairy Pink",
+      "code": "AW3447P",
+      "set": "Warpaints Air",
+      "hex": "#B15585",
+      "rgb": {
+        "r": 177,
+        "g": 85,
+        "b": 133
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2033p",
+      "name": "Familiar Pink",
+      "code": "WP2033P",
+      "set": "Speedpaint",
+      "hex": "#BF2970",
+      "rgb": {
+        "r": 191,
+        "g": 41,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1008p",
+      "name": "Familiar Pink",
+      "code": "SM1008P",
+      "set": "Speedpaint Marker",
+      "hex": "#BF2970",
+      "rgb": {
+        "r": 191,
+        "g": 41,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4111p",
+      "name": "Feral Green",
+      "code": "AW4111P",
+      "set": "Warpaints Air",
+      "hex": "#719F72",
+      "rgb": {
+        "r": 113,
+        "g": 159,
+        "b": 114
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3054p",
+      "name": "Ferocious Green",
+      "code": "WP3054P",
+      "set": "Warpaints Fanatic",
+      "hex": "#65A25F",
+      "rgb": {
+        "r": 101,
+        "g": 162,
+        "b": 95
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4447p",
+      "name": "Fey Pink",
+      "code": "AW4447P",
+      "set": "Warpaints Air",
+      "hex": "#F0A6C4",
+      "rgb": {
+        "r": 240,
+        "g": 166,
+        "b": 196
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4421p",
+      "name": "Feywild Glow",
+      "code": "AW4421P",
+      "set": "Warpaints Air",
+      "hex": "#FCDFB3",
+      "rgb": {
+        "r": 252,
+        "g": 223,
+        "b": 179
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3092p",
+      "name": "Fiendish Yellow",
+      "code": "WP3092P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C27D38",
+      "rgb": {
+        "r": 194,
+        "g": 125,
+        "b": 56
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4010p",
+      "name": "Fiery Vermilion",
+      "code": "WP4010P",
+      "set": "John Blanche",
+      "hex": "#9E0309",
+      "rgb": {
+        "r": 158,
+        "g": 3,
+        "b": 9
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3143p",
+      "name": "Figgy Pink",
+      "code": "WP3143P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C1919B",
+      "rgb": {
+        "r": 193,
+        "g": 145,
+        "b": 155
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2062p",
+      "name": "Fire Drake",
+      "code": "WP2062P",
+      "set": "Speedpaint",
+      "hex": "#E5A27E",
+      "rgb": {
+        "r": 229,
+        "g": 162,
+        "b": 126
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2017p",
+      "name": "Fire Giant Orange",
+      "code": "WP2017P",
+      "set": "Speedpaint",
+      "hex": "#DD7422",
+      "rgb": {
+        "r": 221,
+        "g": 116,
+        "b": 34
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1003p",
+      "name": "Fire Giant Orange",
+      "code": "SM1003P",
+      "set": "Speedpaint Marker",
+      "hex": "#DD7422",
+      "rgb": {
+        "r": 221,
+        "g": 116,
+        "b": 34
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3100p",
+      "name": "Flickering Flame",
+      "code": "WP3100P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D07532",
+      "rgb": {
+        "r": 208,
+        "g": 117,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3142p",
+      "name": "Forbidden Fruit",
+      "code": "WP3142P",
+      "set": "Warpaints Fanatic",
+      "hex": "#AC7281",
+      "rgb": {
+        "r": 172,
+        "g": 114,
+        "b": 129
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3065p",
+      "name": "Forest Faun",
+      "code": "WP3065P",
+      "set": "Warpaints Fanatic",
+      "hex": "#86A587",
+      "rgb": {
+        "r": 134,
+        "g": 165,
+        "b": 135
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2044p",
+      "name": "Forest Sprite",
+      "code": "WP2044P",
+      "set": "Speedpaint",
+      "hex": "#6E9B45",
+      "rgb": {
+        "r": 110,
+        "g": 155,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3167p",
+      "name": "Fresh Rust",
+      "code": "WP3167P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#7D351A",
+      "rgb": {
+        "r": 125,
+        "g": 53,
+        "b": 26
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3018p",
+      "name": "Frost Blue",
+      "code": "WP3018P",
+      "set": "Warpaints Fanatic",
+      "hex": "#819CAA",
+      "rgb": {
+        "r": 129,
+        "g": 156,
+        "b": 170
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4103p",
+      "name": "Frostveil",
+      "code": "WP4103P",
+      "set": "John Blanche",
+      "hex": "#2B4C89",
+      "rgb": {
+        "r": 43,
+        "g": 76,
+        "b": 137
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1122p",
+      "name": "Fur Brown",
+      "code": "AW1122P",
+      "set": "Warpaints Air",
+      "hex": "#BB500A",
+      "rgb": {
+        "r": 187,
+        "g": 80,
+        "b": 10
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3112p",
+      "name": "Fur Brown",
+      "code": "WP3112P",
+      "set": "Warpaints Fanatic",
+      "hex": "#663B37",
+      "rgb": {
+        "r": 102,
+        "g": 59,
+        "b": 55
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3008p",
+      "name": "Gargoyle Grey",
+      "code": "WP3008P",
+      "set": "Warpaints Fanatic",
+      "hex": "#8C8573",
+      "rgb": {
+        "r": 140,
+        "g": 133,
+        "b": 115
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1503p",
+      "name": "Gauss Green",
+      "code": "AW1503P",
+      "set": "Warpaints Air",
+      "hex": "#72C444",
+      "rgb": {
+        "r": 114,
+        "g": 196,
+        "b": 68
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1487p",
+      "name": "Gemstone",
+      "code": "AW1487P",
+      "set": "Warpaints Air",
+      "hex": "#962423",
+      "rgb": {
+        "r": 150,
+        "g": 36,
+        "b": 35
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3198p",
+      "name": "Gemstone Red",
+      "code": "WP3198P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#491516",
+      "rgb": {
+        "r": 73,
+        "g": 21,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2042p",
+      "name": "Ghillie Dew",
+      "code": "WP2042P",
+      "set": "Speedpaint",
+      "hex": "#A3BF40",
+      "rgb": {
+        "r": 163,
+        "g": 191,
+        "b": 64
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2047p",
+      "name": "Ghoul Green",
+      "code": "WP2047P",
+      "set": "Speedpaint",
+      "hex": "#449F5F",
+      "rgb": {
+        "r": 68,
+        "g": 159,
+        "b": 95
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4120p",
+      "name": "Gladeshard",
+      "code": "WP4120P",
+      "set": "John Blanche",
+      "hex": "#87A828",
+      "rgb": {
+        "r": 135,
+        "g": 168,
+        "b": 40
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1484p",
+      "name": "Glitter Green",
+      "code": "AW1484P",
+      "set": "Warpaints Air",
+      "hex": "#028345",
+      "rgb": {
+        "r": 2,
+        "g": 131,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3197p",
+      "name": "Glittering Green",
+      "code": "WP3197P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#0C521D",
+      "rgb": {
+        "r": 12,
+        "g": 82,
+        "b": 29
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2070p",
+      "name": "Glittering Loot",
+      "code": "WP2070P",
+      "set": "Speedpaint",
+      "hex": "#9A925D",
+      "rgb": {
+        "r": 154,
+        "g": 146,
+        "b": 93
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw2005p",
+      "name": "Gloss Varnish",
+      "code": "AW2005P",
+      "set": "Warpaints Air",
+      "hex": "#262721",
+      "rgb": {
+        "r": 38,
+        "g": 39,
+        "b": 33
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "100ml",
+          "value": 100,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3173p",
+      "name": "Gloss Varnish",
+      "code": "WP3173P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#A6A39B",
+      "rgb": {
+        "r": 166,
+        "g": 163,
+        "b": 155
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3101p",
+      "name": "Glowing Inferno",
+      "code": "WP3101P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D18236",
+      "rgb": {
+        "r": 209,
+        "g": 130,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3434p",
+      "name": "Gnome Cheeks",
+      "code": "AW3434P",
+      "set": "Warpaints Air",
+      "hex": "#BFA89A",
+      "rgb": {
+        "r": 191,
+        "g": 168,
+        "b": 154
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1109p",
+      "name": "Goblin Green",
+      "code": "AW1109P",
+      "set": "Warpaints Air",
+      "hex": "#549F33",
+      "rgb": {
+        "r": 84,
+        "g": 159,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2038p",
+      "name": "Goddess Glow",
+      "code": "WP2038P",
+      "set": "Speedpaint",
+      "hex": "#7F4442",
+      "rgb": {
+        "r": 127,
+        "g": 68,
+        "b": 66
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2069p",
+      "name": "Golden Armour",
+      "code": "WP2069P",
+      "set": "Speedpaint",
+      "hex": "#65430C",
+      "rgb": {
+        "r": 101,
+        "g": 67,
+        "b": 12
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3020p",
+      "name": "Gothic Blue",
+      "code": "WP3020P",
+      "set": "Warpaints Fanatic",
+      "hex": "#28365D",
+      "rgb": {
+        "r": 40,
+        "g": 54,
+        "b": 93
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2002p",
+      "name": "Gravelord Grey",
+      "code": "WP2002P",
+      "set": "Speedpaint",
+      "hex": "#3F4145",
+      "rgb": {
+        "r": 63,
+        "g": 65,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1035p",
+      "name": "Gravelord Grey",
+      "code": "SM1035P",
+      "set": "Speedpaint Marker",
+      "hex": "#3F4145",
+      "rgb": {
+        "r": 63,
+        "g": 65,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3009p",
+      "name": "Great Hall Grey",
+      "code": "WP3009P",
+      "set": "Warpaints Fanatic",
+      "hex": "#9C9682",
+      "rgb": {
+        "r": 156,
+        "g": 150,
+        "b": 130
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1132p",
+      "name": "Greedy Gold",
+      "code": "AW1132P",
+      "set": "Warpaints Air",
+      "hex": "#976203",
+      "rgb": {
+        "r": 151,
+        "g": 98,
+        "b": 3
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3188p",
+      "name": "Greedy Gold",
+      "code": "WP3188P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#D8A225",
+      "rgb": {
+        "r": 216,
+        "g": 162,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3208p",
+      "name": "Green Tone",
+      "code": "WP3208P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#233724",
+      "rgb": {
+        "r": 35,
+        "g": 55,
+        "b": 36
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1111p",
+      "name": "Greenskin",
+      "code": "AW1111P",
+      "set": "Warpaints Air",
+      "hex": "#017F3D",
+      "rgb": {
+        "r": 1,
+        "g": 127,
+        "b": 61
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3051p",
+      "name": "Greenskin",
+      "code": "WP3051P",
+      "set": "Warpaints Fanatic",
+      "hex": "#1D6437",
+      "rgb": {
+        "r": 29,
+        "g": 100,
+        "b": 55
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3109p",
+      "name": "Gremlin Green",
+      "code": "AW3109P",
+      "set": "Warpaints Air",
+      "hex": "#71863D",
+      "rgb": {
+        "r": 113,
+        "g": 134,
+        "b": 61
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3007p",
+      "name": "Grey Castle",
+      "code": "WP3007P",
+      "set": "Warpaints Fanatic",
+      "hex": "#787568",
+      "rgb": {
+        "r": 120,
+        "g": 117,
+        "b": 104
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw2010p",
+      "name": "Grey Primer",
+      "code": "AW2010P",
+      "set": "Warpaints Air",
+      "hex": "#313229",
+      "rgb": {
+        "r": 49,
+        "g": 50,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "100ml",
+          "value": 100,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2001p",
+      "name": "Grim Black",
+      "code": "WP2001P",
+      "set": "Speedpaint",
+      "hex": "#13120E",
+      "rgb": {
+        "r": 19,
+        "g": 18,
+        "b": 14
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1020p",
+      "name": "Grim Black",
+      "code": "SM1020P",
+      "set": "Speedpaint Marker",
+      "hex": "#13120E",
+      "rgb": {
+        "r": 19,
+        "g": 18,
+        "b": 14
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4018p",
+      "name": "Grim Rust",
+      "code": "WP4018P",
+      "set": "John Blanche",
+      "hex": "#361E08",
+      "rgb": {
+        "r": 54,
+        "g": 30,
+        "b": 8
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4008p",
+      "name": "Grimdark Shadow",
+      "code": "WP4008P",
+      "set": "John Blanche",
+      "hex": "#30301E",
+      "rgb": {
+        "r": 48,
+        "g": 48,
+        "b": 30
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3072p",
+      "name": "Grotesque Green",
+      "code": "WP3072P",
+      "set": "Warpaints Fanatic",
+      "hex": "#94A07A",
+      "rgb": {
+        "r": 148,
+        "g": 160,
+        "b": 122
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4121p",
+      "name": "Grove Hollow Shade",
+      "code": "WP4121P",
+      "set": "John Blanche",
+      "hex": "#233012",
+      "rgb": {
+        "r": 35,
+        "g": 48,
+        "b": 18
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3050p",
+      "name": "Guardian Green",
+      "code": "WP3050P",
+      "set": "Warpaints Fanatic",
+      "hex": "#21543C",
+      "rgb": {
+        "r": 33,
+        "g": 84,
+        "b": 60
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1131p",
+      "name": "Gun Metal",
+      "code": "AW1131P",
+      "set": "Warpaints Air",
+      "hex": "#6A6663",
+      "rgb": {
+        "r": 106,
+        "g": 102,
+        "b": 99
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3193p",
+      "name": "Gun Metal",
+      "code": "WP3193P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#7F8080",
+      "rgb": {
+        "r": 127,
+        "g": 128,
+        "b": 128
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2043p",
+      "name": "Gunner Camo",
+      "code": "WP2043P",
+      "set": "Speedpaint",
+      "hex": "#344D3F",
+      "rgb": {
+        "r": 52,
+        "g": 77,
+        "b": 63
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2023p",
+      "name": "Hardened Leather",
+      "code": "WP2023P",
+      "set": "Speedpaint",
+      "hex": "#734217",
+      "rgb": {
+        "r": 115,
+        "g": 66,
+        "b": 23
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1005p",
+      "name": "Hardened Leather",
+      "code": "SM1005P",
+      "set": "Speedpaint Marker",
+      "hex": "#734217",
+      "rgb": {
+        "r": 115,
+        "g": 66,
+        "b": 23
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3437p",
+      "name": "Hazardous Smog",
+      "code": "AW3437P",
+      "set": "Warpaints Air",
+      "hex": "#64C6B4",
+      "rgb": {
+        "r": 100,
+        "g": 198,
+        "b": 180
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4114p",
+      "name": "Hearthborn",
+      "code": "WP4114P",
+      "set": "John Blanche",
+      "hex": "#D1A474",
+      "rgb": {
+        "r": 209,
+        "g": 164,
+        "b": 116
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4019p",
+      "name": "Heavy Metal",
+      "code": "WP4019P",
+      "set": "John Blanche",
+      "hex": "#474841",
+      "rgb": {
+        "r": 71,
+        "g": 72,
+        "b": 65
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3130p",
+      "name": "Hexed Violet",
+      "code": "WP3130P",
+      "set": "Warpaints Fanatic",
+      "hex": "#5C5272",
+      "rgb": {
+        "r": 92,
+        "g": 82,
+        "b": 114
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2015p",
+      "name": "Highlord Blue",
+      "code": "WP2015P",
+      "set": "Speedpaint",
+      "hex": "#154467",
+      "rgb": {
+        "r": 21,
+        "g": 68,
+        "b": 103
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2018p",
+      "name": "Hive Dweller Purple",
+      "code": "WP2018P",
+      "set": "Speedpaint",
+      "hex": "#422953",
+      "rgb": {
+        "r": 66,
+        "g": 41,
+        "b": 83
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2074p",
+      "name": "Hoard Bronze",
+      "code": "WP2074P",
+      "set": "Speedpaint",
+      "hex": "#938250",
+      "rgb": {
+        "r": 147,
+        "g": 130,
+        "b": 80
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4434p",
+      "name": "Hobgoblin Hue",
+      "code": "AW4434P",
+      "set": "Warpaints Air",
+      "hex": "#FCEDD5",
+      "rgb": {
+        "r": 252,
+        "g": 237,
+        "b": 213
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2003p",
+      "name": "Holy White",
+      "code": "WP2003P",
+      "set": "Speedpaint",
+      "hex": "#F2F0ED",
+      "rgb": {
+        "r": 242,
+        "g": 240,
+        "b": 237
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1036p",
+      "name": "Holy White",
+      "code": "SM1036P",
+      "set": "Speedpaint Marker",
+      "hex": "#F2F0ED",
+      "rgb": {
+        "r": 242,
+        "g": 240,
+        "b": 237
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2028p",
+      "name": "Hoplite Gold",
+      "code": "WP2028P",
+      "set": "Speedpaint",
+      "hex": "#756230",
+      "rgb": {
+        "r": 117,
+        "g": 98,
+        "b": 48
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1026p",
+      "name": "Hoplite Gold",
+      "code": "SM1026P",
+      "set": "Speedpaint Marker",
+      "hex": "#756230",
+      "rgb": {
+        "r": 117,
+        "g": 98,
+        "b": 48
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1506p",
+      "name": "Hot Pink",
+      "code": "AW1506P",
+      "set": "Warpaints Air",
+      "hex": "#F95CA4",
+      "rgb": {
+        "r": 249,
+        "g": 92,
+        "b": 164
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2077p",
+      "name": "Howling Sand",
+      "code": "WP2077P",
+      "set": "Speedpaint",
+      "hex": "#E1E1C4",
+      "rgb": {
+        "r": 225,
+        "g": 225,
+        "b": 196
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3122p",
+      "name": "Husk Brown",
+      "code": "AW3122P",
+      "set": "Warpaints Air",
+      "hex": "#814227",
+      "rgb": {
+        "r": 129,
+        "g": 66,
+        "b": 39
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1141p",
+      "name": "Hydra Turquoise",
+      "code": "AW1141P",
+      "set": "Warpaints Air",
+      "hex": "#0297A0",
+      "rgb": {
+        "r": 2,
+        "g": 151,
+        "b": 160
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3038p",
+      "name": "Hydra Turquoise",
+      "code": "WP3038P",
+      "set": "Warpaints Fanatic",
+      "hex": "#167B77",
+      "rgb": {
+        "r": 22,
+        "g": 123,
+        "b": 119
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3096p",
+      "name": "Ice Yellow",
+      "code": "WP3096P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D5C588",
+      "rgb": {
+        "r": 213,
+        "g": 197,
+        "b": 136
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4104p",
+      "name": "Iceborn",
+      "code": "WP4104P",
+      "set": "John Blanche",
+      "hex": "#D3C6D1",
+      "rgb": {
+        "r": 211,
+        "g": 198,
+        "b": 209
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4107p",
+      "name": "Imp Yellow",
+      "code": "AW4107P",
+      "set": "Warpaints Air",
+      "hex": "#FAD385",
+      "rgb": {
+        "r": 250,
+        "g": 211,
+        "b": 133
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3025p",
+      "name": "Imperial Navy",
+      "code": "WP3025P",
+      "set": "Warpaints Fanatic",
+      "hex": "#0B2C4C",
+      "rgb": {
+        "r": 11,
+        "g": 44,
+        "b": 76
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3122p",
+      "name": "Impish Rouge",
+      "code": "WP3122P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B4487A",
+      "rgb": {
+        "r": 180,
+        "g": 72,
+        "b": 122
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3107p",
+      "name": "Incursion Orange",
+      "code": "AW3107P",
+      "set": "Warpaints Air",
+      "hex": "#F49502",
+      "rgb": {
+        "r": 244,
+        "g": 149,
+        "b": 2
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3102p",
+      "name": "Inner Light",
+      "code": "WP3102P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D3A54B",
+      "rgb": {
+        "r": 211,
+        "g": 165,
+        "b": 75
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4114p",
+      "name": "Ionic Blue",
+      "code": "AW4114P",
+      "set": "Warpaints Air",
+      "hex": "#01B3EC",
+      "rgb": {
+        "r": 1,
+        "g": 179,
+        "b": 236
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3119p",
+      "name": "Iron Wolf",
+      "code": "AW3119P",
+      "set": "Warpaints Air",
+      "hex": "#4E7484",
+      "rgb": {
+        "r": 78,
+        "g": 116,
+        "b": 132
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4002p",
+      "name": "Ironclad Grey",
+      "code": "WP4002P",
+      "set": "John Blanche",
+      "hex": "#151718",
+      "rgb": {
+        "r": 21,
+        "g": 23,
+        "b": 24
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4001p",
+      "name": "Ivory White",
+      "code": "WP4001P",
+      "set": "John Blanche",
+      "hex": "#C4B897",
+      "rgb": {
+        "r": 196,
+        "g": 184,
+        "b": 151
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3154p",
+      "name": "Jasper Skin",
+      "code": "WP3154P",
+      "set": "Warpaints Fanatic",
+      "hex": "#9A605A",
+      "rgb": {
+        "r": 154,
+        "g": 96,
+        "b": 90
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1433p",
+      "name": "Jungle Green",
+      "code": "AW1433P",
+      "set": "Warpaints Air",
+      "hex": "#A0C302",
+      "rgb": {
+        "r": 160,
+        "g": 195,
+        "b": 2
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1434p",
+      "name": "Kobold Skin",
+      "code": "AW1434P",
+      "set": "Warpaints Air",
+      "hex": "#EDB998",
+      "rgb": {
+        "r": 237,
+        "g": 185,
+        "b": 152
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3132p",
+      "name": "Kraken Lavender",
+      "code": "WP3132P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B3A7B1",
+      "rgb": {
+        "r": 179,
+        "g": 167,
+        "b": 177
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1106p",
+      "name": "Lava Orange",
+      "code": "AW1106P",
+      "set": "Warpaints Air",
+      "hex": "#F35E02",
+      "rgb": {
+        "r": 243,
+        "g": 94,
+        "b": 2
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3099p",
+      "name": "Lava Orange",
+      "code": "WP3099P",
+      "set": "Warpaints Fanatic",
+      "hex": "#CB6422",
+      "rgb": {
+        "r": 203,
+        "g": 100,
+        "b": 34
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3056p",
+      "name": "Leafy Green",
+      "code": "WP3056P",
+      "set": "Warpaints Fanatic",
+      "hex": "#639C35",
+      "rgb": {
+        "r": 99,
+        "g": 156,
+        "b": 53
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1123p",
+      "name": "Leather Brown",
+      "code": "AW1123P",
+      "set": "Warpaints Air",
+      "hex": "#9C6C11",
+      "rgb": {
+        "r": 156,
+        "g": 108,
+        "b": 17
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3075p",
+      "name": "Leather Brown",
+      "code": "WP3075P",
+      "set": "Warpaints Fanatic",
+      "hex": "#684D42",
+      "rgb": {
+        "r": 104,
+        "g": 77,
+        "b": 66
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3105p",
+      "name": "Legendary Red",
+      "code": "WP3105P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C83F32",
+      "rgb": {
+        "r": 200,
+        "g": 63,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3178p",
+      "name": "Lens Flare Glow",
+      "code": "WP3178P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#A8A142",
+      "rgb": {
+        "r": 168,
+        "g": 161,
+        "b": 66
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3156p",
+      "name": "Leopard Stone Skin",
+      "code": "WP3156P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C09589",
+      "rgb": {
+        "r": 192,
+        "g": 149,
+        "b": 137
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4437p",
+      "name": "Leviathan Light",
+      "code": "AW4437P",
+      "set": "Warpaints Air",
+      "hex": "#D0E7D4",
+      "rgb": {
+        "r": 208,
+        "g": 231,
+        "b": 212
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3202p",
+      "name": "Light Tone",
+      "code": "WP3202P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#815416",
+      "rgb": {
+        "r": 129,
+        "g": 84,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2082p",
+      "name": "Lizardfolk Cyan",
+      "code": "WP2082P",
+      "set": "Speedpaint",
+      "hex": "#358E92",
+      "rgb": {
+        "r": 53,
+        "g": 142,
+        "b": 146
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3134p",
+      "name": "Magecast Magenta",
+      "code": "WP3134P",
+      "set": "Warpaints Fanatic",
+      "hex": "#5F3677",
+      "rgb": {
+        "r": 95,
+        "g": 54,
+        "b": 119
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3213p",
+      "name": "Magenta Tone",
+      "code": "WP3213P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#760941",
+      "rgb": {
+        "r": 118,
+        "g": 9,
+        "b": 65
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2079p",
+      "name": "Maggot Skin",
+      "code": "WP2079P",
+      "set": "Speedpaint",
+      "hex": "#DFDD72",
+      "rgb": {
+        "r": 223,
+        "g": 221,
+        "b": 114
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2014p",
+      "name": "Magic Blue",
+      "code": "WP2014P",
+      "set": "Speedpaint",
+      "hex": "#0970A0",
+      "rgb": {
+        "r": 9,
+        "g": 112,
+        "b": 160
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1002p",
+      "name": "Magic Blue",
+      "code": "SM1002P",
+      "set": "Speedpaint Marker",
+      "hex": "#0970A0",
+      "rgb": {
+        "r": 9,
+        "g": 112,
+        "b": 160
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3124p",
+      "name": "Magnolia Brown",
+      "code": "AW3124P",
+      "set": "Warpaints Air",
+      "hex": "#454138",
+      "rgb": {
+        "r": 69,
+        "g": 65,
+        "b": 56
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2059p",
+      "name": "Maize Yellow",
+      "code": "WP2059P",
+      "set": "Speedpaint",
+      "hex": "#F2D120",
+      "rgb": {
+        "r": 242,
+        "g": 209,
+        "b": 32
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3419p",
+      "name": "Majestic Fortress",
+      "code": "AW3419P",
+      "set": "Warpaints Air",
+      "hex": "#028F7D",
+      "rgb": {
+        "r": 2,
+        "g": 143,
+        "b": 125
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2011p",
+      "name": "Malignant Green",
+      "code": "WP2011P",
+      "set": "Speedpaint",
+      "hex": "#D2E052",
+      "rgb": {
+        "r": 210,
+        "g": 224,
+        "b": 82
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3042p",
+      "name": "Marine Mist",
+      "code": "WP3042P",
+      "set": "Warpaints Fanatic",
+      "hex": "#7CABA1",
+      "rgb": {
+        "r": 124,
+        "g": 171,
+        "b": 161
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1101p",
+      "name": "Matt Black",
+      "code": "AW1101P",
+      "set": "Warpaints Air",
+      "hex": "#010114",
+      "rgb": {
+        "r": 1,
+        "g": 1,
+        "b": 20
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3001p",
+      "name": "Matt Black",
+      "code": "WP3001P",
+      "set": "Warpaints Fanatic",
+      "hex": "#070706",
+      "rgb": {
+        "r": 7,
+        "g": 7,
+        "b": 6
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3174p",
+      "name": "Matt Varnish",
+      "code": "WP3174P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#A6A39B",
+      "rgb": {
+        "r": 166,
+        "g": 163,
+        "b": 155
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1102p",
+      "name": "Matt White",
+      "code": "AW1102P",
+      "set": "Warpaints Air",
+      "hex": "#F4F2EE",
+      "rgb": {
+        "r": 244,
+        "g": 242,
+        "b": 238
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3012p",
+      "name": "Matt White",
+      "code": "WP3012P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D7D3C7",
+      "rgb": {
+        "r": 215,
+        "g": 211,
+        "b": 199
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3062p",
+      "name": "Medieval Forest",
+      "code": "WP3062P",
+      "set": "Warpaints Fanatic",
+      "hex": "#3B6756",
+      "rgb": {
+        "r": 59,
+        "g": 103,
+        "b": 86
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2000p",
+      "name": "Medium",
+      "code": "WP2000P",
+      "set": "Speedpaint",
+      "hex": "#F4F2EF",
+      "rgb": {
+        "r": 244,
+        "g": 242,
+        "b": 239
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2090p",
+      "name": "Medium",
+      "code": "WP2090P",
+      "set": "Speedpaint",
+      "hex": "#F6F5F2",
+      "rgb": {
+        "r": 246,
+        "g": 245,
+        "b": 242
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "100ml",
+          "value": 100,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3438p",
+      "name": "Meteor Rock",
+      "code": "AW3438P",
+      "set": "Warpaints Air",
+      "hex": "#F5C702",
+      "rgb": {
+        "r": 245,
+        "g": 199,
+        "b": 2
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4012p",
+      "name": "Midnight Olive",
+      "code": "WP4012P",
+      "set": "John Blanche",
+      "hex": "#1D220F",
+      "rgb": {
+        "r": 29,
+        "g": 34,
+        "b": 15
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3209p",
+      "name": "Military Shade",
+      "code": "WP3209P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#30331A",
+      "rgb": {
+        "r": 48,
+        "g": 51,
+        "b": 26
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3110p",
+      "name": "Militia Green",
+      "code": "AW3110P",
+      "set": "Warpaints Air",
+      "hex": "#42543C",
+      "rgb": {
+        "r": 66,
+        "g": 84,
+        "b": 60
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3190p",
+      "name": "Mithril",
+      "code": "WP3190P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#C5C0B5",
+      "rgb": {
+        "r": 197,
+        "g": 192,
+        "b": 181
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3159p",
+      "name": "Mocca Skin",
+      "code": "WP3159P",
+      "set": "Warpaints Fanatic",
+      "hex": "#6D5548",
+      "rgb": {
+        "r": 109,
+        "g": 85,
+        "b": 72
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3140p",
+      "name": "Moldy Wine",
+      "code": "WP3140P",
+      "set": "Warpaints Fanatic",
+      "hex": "#682C3C",
+      "rgb": {
+        "r": 104,
+        "g": 44,
+        "b": 60
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3097p",
+      "name": "Molten Lava",
+      "code": "WP3097P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C84B32",
+      "rgb": {
+        "r": 200,
+        "g": 75,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3106p",
+      "name": "Molten Orange",
+      "code": "AW3106P",
+      "set": "Warpaints Air",
+      "hex": "#B44D25",
+      "rgb": {
+        "r": 180,
+        "g": 77,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2032p",
+      "name": "Moody Mauve",
+      "code": "WP2032P",
+      "set": "Speedpaint",
+      "hex": "#B1638F",
+      "rgb": {
+        "r": 177,
+        "g": 99,
+        "b": 143
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1438p",
+      "name": "Moon Dust",
+      "code": "AW1438P",
+      "set": "Warpaints Air",
+      "hex": "#FCE07B",
+      "rgb": {
+        "r": 252,
+        "g": 224,
+        "b": 123
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4003p",
+      "name": "Moonbeam Yellow",
+      "code": "WP4003P",
+      "set": "John Blanche",
+      "hex": "#C49F26",
+      "rgb": {
+        "r": 196,
+        "g": 159,
+        "b": 38
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2034p",
+      "name": "Moonlake Coral",
+      "code": "WP2034P",
+      "set": "Speedpaint",
+      "hex": "#B64F7F",
+      "rgb": {
+        "r": 182,
+        "g": 79,
+        "b": 127
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4105p",
+      "name": "Moonpetal",
+      "code": "WP4105P",
+      "set": "John Blanche",
+      "hex": "#933D5B",
+      "rgb": {
+        "r": 147,
+        "g": 61,
+        "b": 91
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3145p",
+      "name": "Moonstone Skin",
+      "code": "WP3145P",
+      "set": "Warpaints Fanatic",
+      "hex": "#A3655A",
+      "rgb": {
+        "r": 163,
+        "g": 101,
+        "b": 90
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3066p",
+      "name": "Mossy Green",
+      "code": "WP3066P",
+      "set": "Warpaints Fanatic",
+      "hex": "#94B597",
+      "rgb": {
+        "r": 148,
+        "g": 181,
+        "b": 151
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3139p",
+      "name": "Mulled Berry",
+      "code": "WP3139P",
+      "set": "Warpaints Fanatic",
+      "hex": "#542C39",
+      "rgb": {
+        "r": 84,
+        "g": 44,
+        "b": 57
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2078p",
+      "name": "Mummified Grime",
+      "code": "WP2078P",
+      "set": "Speedpaint",
+      "hex": "#616145",
+      "rgb": {
+        "r": 97,
+        "g": 97,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2057p",
+      "name": "Murder Scene",
+      "code": "WP2057P",
+      "set": "Speedpaint",
+      "hex": "#60242F",
+      "rgb": {
+        "r": 96,
+        "g": 36,
+        "b": 47
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1108p",
+      "name": "Necrotic Flesh",
+      "code": "AW1108P",
+      "set": "Warpaints Air",
+      "hex": "#CCD2A0",
+      "rgb": {
+        "r": 204,
+        "g": 210,
+        "b": 160
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3071p",
+      "name": "Necrotic Flesh",
+      "code": "WP3071P",
+      "set": "Warpaints Fanatic",
+      "hex": "#818A66",
+      "rgb": {
+        "r": 129,
+        "g": 138,
+        "b": 102
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1504p",
+      "name": "Neon Yellow",
+      "code": "AW1504P",
+      "set": "Warpaints Air",
+      "hex": "#FCF302",
+      "rgb": {
+        "r": 252,
+        "g": 243,
+        "b": 2
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3041p",
+      "name": "Neptune Glow",
+      "code": "WP3041P",
+      "set": "Warpaints Fanatic",
+      "hex": "#66A7A3",
+      "rgb": {
+        "r": 102,
+        "g": 167,
+        "b": 163
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1490p",
+      "name": "Night Scales",
+      "code": "AW1490P",
+      "set": "Warpaints Air",
+      "hex": "#383230",
+      "rgb": {
+        "r": 56,
+        "g": 50,
+        "b": 48
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3013p",
+      "name": "Night Sky",
+      "code": "WP3013P",
+      "set": "Warpaints Fanatic",
+      "hex": "#2A3A48",
+      "rgb": {
+        "r": 42,
+        "g": 58,
+        "b": 72
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4112p",
+      "name": "Nightroot Shade",
+      "code": "WP4112P",
+      "set": "John Blanche",
+      "hex": "#331F3F",
+      "rgb": {
+        "r": 51,
+        "g": 31,
+        "b": 63
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2063p",
+      "name": "Noble Skin",
+      "code": "WP2063P",
+      "set": "Speedpaint",
+      "hex": "#433E34",
+      "rgb": {
+        "r": 67,
+        "g": 62,
+        "b": 52
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3126p",
+      "name": "Nomad Flesh",
+      "code": "AW3126P",
+      "set": "Warpaints Air",
+      "hex": "#DC8567",
+      "rgb": {
+        "r": 220,
+        "g": 133,
+        "b": 103
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2061p",
+      "name": "Nuclear Sunrise",
+      "code": "WP2061P",
+      "set": "Speedpaint",
+      "hex": "#F98040",
+      "rgb": {
+        "r": 249,
+        "g": 128,
+        "b": 64
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1124p",
+      "name": "Oak Brown",
+      "code": "AW1124P",
+      "set": "Warpaints Air",
+      "hex": "#633306",
+      "rgb": {
+        "r": 99,
+        "g": 51,
+        "b": 6
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3109p",
+      "name": "Oak Brown",
+      "code": "WP3109P",
+      "set": "Warpaints Fanatic",
+      "hex": "#342424",
+      "rgb": {
+        "r": 52,
+        "g": 36,
+        "b": 36
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3157p",
+      "name": "Obsidian Skin",
+      "code": "WP3157P",
+      "set": "Warpaints Fanatic",
+      "hex": "#3F3636",
+      "rgb": {
+        "r": 63,
+        "g": 54,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2027p",
+      "name": "Occultist Cloak",
+      "code": "WP2027P",
+      "set": "Speedpaint",
+      "hex": "#282930",
+      "rgb": {
+        "r": 40,
+        "g": 41,
+        "b": 48
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3141p",
+      "name": "Ocean Depths",
+      "code": "AW3141P",
+      "set": "Warpaints Air",
+      "hex": "#026F82",
+      "rgb": {
+        "r": 2,
+        "g": 111,
+        "b": 130
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2066p",
+      "name": "Ochre Clay",
+      "code": "WP2066P",
+      "set": "Speedpaint",
+      "hex": "#AFA134",
+      "rgb": {
+        "r": 175,
+        "g": 161,
+        "b": 52
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3169p",
+      "name": "Oil Stains",
+      "code": "WP3169P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#111616",
+      "rgb": {
+        "r": 17,
+        "g": 22,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3070p",
+      "name": "Olive Drab",
+      "code": "WP3070P",
+      "set": "Warpaints Fanatic",
+      "hex": "#65754A",
+      "rgb": {
+        "r": 101,
+        "g": 117,
+        "b": 74
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3115p",
+      "name": "Omega Blue",
+      "code": "AW3115P",
+      "set": "Warpaints Air",
+      "hex": "#155C92",
+      "rgb": {
+        "r": 21,
+        "g": 92,
+        "b": 146
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3158p",
+      "name": "Onyx Skin",
+      "code": "WP3158P",
+      "set": "Warpaints Fanatic",
+      "hex": "#56413B",
+      "rgb": {
+        "r": 86,
+        "g": 65,
+        "b": 59
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3170p",
+      "name": "Oozing Vomit",
+      "code": "WP3170P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#624E19",
+      "rgb": {
+        "r": 98,
+        "g": 78,
+        "b": 25
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3149p",
+      "name": "Opal Skin",
+      "code": "WP3149P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D1AD98",
+      "rgb": {
+        "r": 209,
+        "g": 173,
+        "b": 152
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4106p",
+      "name": "Orange Magma",
+      "code": "AW4106P",
+      "set": "Warpaints Air",
+      "hex": "#FBB06C",
+      "rgb": {
+        "r": 251,
+        "g": 176,
+        "b": 108
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3207p",
+      "name": "Orange Tone",
+      "code": "WP3207P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#723516",
+      "rgb": {
+        "r": 114,
+        "g": 53,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2009p",
+      "name": "Orc Skin",
+      "code": "WP2009P",
+      "set": "Speedpaint",
+      "hex": "#247B32",
+      "rgb": {
+        "r": 36,
+        "g": 123,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1022p",
+      "name": "Orc Skin",
+      "code": "SM1022P",
+      "set": "Speedpaint Marker",
+      "hex": "#247B32",
+      "rgb": {
+        "r": 36,
+        "g": 123,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3090p",
+      "name": "Pale Sand",
+      "code": "WP3090P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C8C1A5",
+      "rgb": {
+        "r": 200,
+        "g": 193,
+        "b": 165
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2006p",
+      "name": "Pallid Bone",
+      "code": "WP2006P",
+      "set": "Speedpaint",
+      "hex": "#F4DEA5",
+      "rgb": {
+        "r": 244,
+        "g": 222,
+        "b": 165
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1021p",
+      "name": "Pallid Bone",
+      "code": "SM1021P",
+      "set": "Speedpaint Marker",
+      "hex": "#F4DEA5",
+      "rgb": {
+        "r": 244,
+        "g": 222,
+        "b": 165
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3076p",
+      "name": "Paratrooper Tan",
+      "code": "WP3076P",
+      "set": "Warpaints Fanatic",
+      "hex": "#816357",
+      "rgb": {
+        "r": 129,
+        "g": 99,
+        "b": 87
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2088p",
+      "name": "Pastel Indigo",
+      "code": "WP2088P",
+      "set": "Speedpaint",
+      "hex": "#AECFF1",
+      "rgb": {
+        "r": 174,
+        "g": 207,
+        "b": 241
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2087p",
+      "name": "Pastel Lavender",
+      "code": "WP2087P",
+      "set": "Speedpaint",
+      "hex": "#C2B1BF",
+      "rgb": {
+        "r": 194,
+        "g": 177,
+        "b": 191
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2085p",
+      "name": "Pastel Salmon",
+      "code": "WP2085P",
+      "set": "Speedpaint",
+      "hex": "#F8CCA0",
+      "rgb": {
+        "r": 248,
+        "g": 204,
+        "b": 160
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2089p",
+      "name": "Pastel Seafoam",
+      "code": "WP2089P",
+      "set": "Speedpaint",
+      "hex": "#B2CFC1",
+      "rgb": {
+        "r": 178,
+        "g": 207,
+        "b": 193
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2084p",
+      "name": "Pastel Yellow",
+      "code": "WP2084P",
+      "set": "Speedpaint",
+      "hex": "#F1DD76",
+      "rgb": {
+        "r": 241,
+        "g": 221,
+        "b": 118
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3063p",
+      "name": "Patagon Pine",
+      "code": "WP3063P",
+      "set": "Warpaints Fanatic",
+      "hex": "#537964",
+      "rgb": {
+        "r": 83,
+        "g": 121,
+        "b": 100
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2037p",
+      "name": "Peachy Flesh",
+      "code": "WP2037P",
+      "set": "Speedpaint",
+      "hex": "#F5AC70",
+      "rgb": {
+        "r": 245,
+        "g": 172,
+        "b": 112
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3150p",
+      "name": "Pearl Skin",
+      "code": "WP3150P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D2BAA7",
+      "rgb": {
+        "r": 210,
+        "g": 186,
+        "b": 167
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2035p",
+      "name": "Periwinkle Purple",
+      "code": "WP2035P",
+      "set": "Speedpaint",
+      "hex": "#54508D",
+      "rgb": {
+        "r": 84,
+        "g": 80,
+        "b": 141
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3108p",
+      "name": "Pestilent Flesh",
+      "code": "AW3108P",
+      "set": "Warpaints Air",
+      "hex": "#A09D55",
+      "rgb": {
+        "r": 160,
+        "g": 157,
+        "b": 85
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3034p",
+      "name": "Phalanx Blue",
+      "code": "WP3034P",
+      "set": "Warpaints Fanatic",
+      "hex": "#0D7288",
+      "rgb": {
+        "r": 13,
+        "g": 114,
+        "b": 136
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4141p",
+      "name": "Phantasmal Blue",
+      "code": "AW4141P",
+      "set": "Warpaints Air",
+      "hex": "#37BFC1",
+      "rgb": {
+        "r": 55,
+        "g": 191,
+        "b": 193
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3045p",
+      "name": "Pharaoh Guard",
+      "code": "WP3045P",
+      "set": "Warpaints Fanatic",
+      "hex": "#0C664C",
+      "rgb": {
+        "r": 12,
+        "g": 102,
+        "b": 76
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4111p",
+      "name": "Pine Hollow Shade",
+      "code": "WP4111P",
+      "set": "John Blanche",
+      "hex": "#2F5150",
+      "rgb": {
+        "r": 47,
+        "g": 81,
+        "b": 80
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3125p",
+      "name": "Pink Potion",
+      "code": "WP3125P",
+      "set": "Warpaints Fanatic",
+      "hex": "#A27982",
+      "rgb": {
+        "r": 162,
+        "g": 121,
+        "b": 130
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1447p",
+      "name": "Pixie Pink",
+      "code": "AW1447P",
+      "set": "Warpaints Air",
+      "hex": "#EE76AE",
+      "rgb": {
+        "r": 238,
+        "g": 118,
+        "b": 174
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3123p",
+      "name": "Pixie Pink",
+      "code": "WP3123P",
+      "set": "Warpaints Fanatic",
+      "hex": "#8B4766",
+      "rgb": {
+        "r": 139,
+        "g": 71,
+        "b": 102
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3176p",
+      "name": "Plasma Coil Glow",
+      "code": "WP3176P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#338297",
+      "rgb": {
+        "r": 51,
+        "g": 130,
+        "b": 151
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2019p",
+      "name": "Plasmatic Bolt",
+      "code": "WP2019P",
+      "set": "Speedpaint",
+      "hex": "#079081",
+      "rgb": {
+        "r": 7,
+        "g": 144,
+        "b": 129
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1130p",
+      "name": "Plate Mail Metal",
+      "code": "AW1130P",
+      "set": "Warpaints Air",
+      "hex": "#757471",
+      "rgb": {
+        "r": 117,
+        "g": 116,
+        "b": 113
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3192p",
+      "name": "Plate Mail Metal",
+      "code": "WP3192P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#A6A5A0",
+      "rgb": {
+        "r": 166,
+        "g": 165,
+        "b": 160
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2071p",
+      "name": "Polished Silver",
+      "code": "WP2071P",
+      "set": "Speedpaint",
+      "hex": "#74736F",
+      "rgb": {
+        "r": 116,
+        "g": 115,
+        "b": 111
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1017p",
+      "name": "Polished Silver",
+      "code": "SM1017P",
+      "set": "Speedpaint Marker",
+      "hex": "#B0B5B3",
+      "rgb": {
+        "r": 176,
+        "g": 181,
+        "b": 179
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2056p",
+      "name": "Poppy Red",
+      "code": "WP2056P",
+      "set": "Speedpaint",
+      "hex": "#B94136",
+      "rgb": {
+        "r": 185,
+        "g": 65,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4466p",
+      "name": "Potion Green",
+      "code": "AW4466P",
+      "set": "Warpaints Air",
+      "hex": "#7FAF98",
+      "rgb": {
+        "r": 127,
+        "g": 175,
+        "b": 152
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3180p",
+      "name": "Power Node Glow",
+      "code": "WP3180P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#A15671",
+      "rgb": {
+        "r": 161,
+        "g": 86,
+        "b": 113
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3080p",
+      "name": "Prairie Ochre",
+      "code": "WP3080P",
+      "set": "Warpaints Fanatic",
+      "hex": "#595436",
+      "rgb": {
+        "r": 89,
+        "g": 84,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw2011p",
+      "name": "Primer Black",
+      "code": "AW2011P",
+      "set": "Warpaints Air",
+      "hex": "#3B3C32",
+      "rgb": {
+        "r": 59,
+        "g": 60,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "100ml",
+          "value": 100,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "army-painter-aw2012p",
+      "name": "Primer White",
+      "code": "AW2012P",
+      "set": "Warpaints Air",
+      "hex": "#313229",
+      "rgb": {
+        "r": 49,
+        "g": 50,
+        "b": 41
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": [
+        {
+          "raw": "100ml",
+          "value": 100,
+          "unit": "ml"
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2086p",
+      "name": "Princess Pink",
+      "code": "WP2086P",
+      "set": "Speedpaint",
+      "hex": "#F5B0C3",
+      "rgb": {
+        "r": 245,
+        "g": 176,
+        "b": 195
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4419p",
+      "name": "Psychic Shock",
+      "code": "AW4419P",
+      "set": "Warpaints Air",
+      "hex": "#62C2AF",
+      "rgb": {
+        "r": 98,
+        "g": 194,
+        "b": 175
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1104p",
+      "name": "Pure Red",
+      "code": "AW1104P",
+      "set": "Warpaints Air",
+      "hex": "#DE080F",
+      "rgb": {
+        "r": 222,
+        "g": 8,
+        "b": 15
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3118p",
+      "name": "Pure Red",
+      "code": "WP3118P",
+      "set": "Warpaints Fanatic",
+      "hex": "#AA1619",
+      "rgb": {
+        "r": 170,
+        "g": 22,
+        "b": 25
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2021p",
+      "name": "Purple Alchemy",
+      "code": "WP2021P",
+      "set": "Speedpaint",
+      "hex": "#9E3B60",
+      "rgb": {
+        "r": 158,
+        "g": 59,
+        "b": 96
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2031p",
+      "name": "Purple Swarm",
+      "code": "WP2031P",
+      "set": "Speedpaint",
+      "hex": "#61337D",
+      "rgb": {
+        "r": 97,
+        "g": 51,
+        "b": 125
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1007p",
+      "name": "Purple Swarm",
+      "code": "SM1007P",
+      "set": "Speedpaint Marker",
+      "hex": "#61337D",
+      "rgb": {
+        "r": 97,
+        "g": 51,
+        "b": 125
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3212p",
+      "name": "Purple Tone",
+      "code": "WP3212P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#36283D",
+      "rgb": {
+        "r": 54,
+        "g": 40,
+        "b": 61
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3162p",
+      "name": "Quartz Skin",
+      "code": "WP3162P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C8A988",
+      "rgb": {
+        "r": 200,
+        "g": 169,
+        "b": 136
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3179p",
+      "name": "Radiation Glow",
+      "code": "WP3179P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#A47548",
+      "rgb": {
+        "r": 164,
+        "g": 117,
+        "b": 72
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3120p",
+      "name": "Raging Rose",
+      "code": "WP3120P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C2554C",
+      "rgb": {
+        "r": 194,
+        "g": 85,
+        "b": 76
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3108p",
+      "name": "Raging Rouge",
+      "code": "WP3108P",
+      "set": "Warpaints Fanatic",
+      "hex": "#CA7564",
+      "rgb": {
+        "r": 202,
+        "g": 117,
+        "b": 100
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2053p",
+      "name": "Raging Sea",
+      "code": "WP2053P",
+      "set": "Speedpaint",
+      "hex": "#16828C",
+      "rgb": {
+        "r": 22,
+        "g": 130,
+        "b": 140
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3057p",
+      "name": "Rainforest",
+      "code": "WP3057P",
+      "set": "Warpaints Fanatic",
+      "hex": "#77A433",
+      "rgb": {
+        "r": 119,
+        "g": 164,
+        "b": 51
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3101p",
+      "name": "Raven Black",
+      "code": "AW3101P",
+      "set": "Warpaints Air",
+      "hex": "#445153",
+      "rgb": {
+        "r": 68,
+        "g": 81,
+        "b": 83
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3123p",
+      "name": "Rawhide Brown",
+      "code": "AW3123P",
+      "set": "Warpaints Air",
+      "hex": "#805835",
+      "rgb": {
+        "r": 128,
+        "g": 88,
+        "b": 53
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4142p",
+      "name": "Rebel Red",
+      "code": "AW4142P",
+      "set": "Warpaints Air",
+      "hex": "#A91760",
+      "rgb": {
+        "r": 169,
+        "g": 23,
+        "b": 96
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3182p",
+      "name": "Red Copper",
+      "code": "WP3182P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#7D4037",
+      "rgb": {
+        "r": 125,
+        "g": 64,
+        "b": 55
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3206p",
+      "name": "Red Tone",
+      "code": "WP3206P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#532126",
+      "rgb": {
+        "r": 83,
+        "g": 33,
+        "b": 38
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3026p",
+      "name": "Regal Blue",
+      "code": "WP3026P",
+      "set": "Warpaints Fanatic",
+      "hex": "#09436B",
+      "rgb": {
+        "r": 9,
+        "g": 67,
+        "b": 107
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3118p",
+      "name": "Regiment Grey",
+      "code": "AW3118P",
+      "set": "Warpaints Air",
+      "hex": "#677273",
+      "rgb": {
+        "r": 103,
+        "g": 114,
+        "b": 115
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3103p",
+      "name": "Resplendent Red",
+      "code": "WP3103P",
+      "set": "Warpaints Fanatic",
+      "hex": "#822526",
+      "rgb": {
+        "r": 130,
+        "g": 37,
+        "b": 38
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2080p",
+      "name": "Rigor Mortis",
+      "code": "WP2080P",
+      "set": "Speedpaint",
+      "hex": "#C3C07F",
+      "rgb": {
+        "r": 195,
+        "g": 192,
+        "b": 127
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4119p",
+      "name": "Rootpath",
+      "code": "WP4119P",
+      "set": "John Blanche",
+      "hex": "#524115",
+      "rgb": {
+        "r": 82,
+        "g": 65,
+        "b": 21
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1468p",
+      "name": "Rough Iron",
+      "code": "AW1468P",
+      "set": "Warpaints Air",
+      "hex": "#421406",
+      "rgb": {
+        "r": 66,
+        "g": 20,
+        "b": 6
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3181p",
+      "name": "Rough Iron",
+      "code": "WP3181P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#2D241C",
+      "rgb": {
+        "r": 45,
+        "g": 36,
+        "b": 28
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3027p",
+      "name": "Royal Blue",
+      "code": "WP3027P",
+      "set": "Warpaints Fanatic",
+      "hex": "#095289",
+      "rgb": {
+        "r": 9,
+        "g": 82,
+        "b": 137
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1488p",
+      "name": "Royal Purple",
+      "code": "AW1488P",
+      "set": "Warpaints Air",
+      "hex": "#762263",
+      "rgb": {
+        "r": 118,
+        "g": 34,
+        "b": 99
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2050p",
+      "name": "Royal Robes",
+      "code": "WP2050P",
+      "set": "Speedpaint",
+      "hex": "#606FAE",
+      "rgb": {
+        "r": 96,
+        "g": 111,
+        "b": 174
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3148p",
+      "name": "Ruby Skin",
+      "code": "WP3148P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D0977B",
+      "rgb": {
+        "r": 208,
+        "g": 151,
+        "b": 123
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2065p",
+      "name": "Ruddy Fur",
+      "code": "WP2065P",
+      "set": "Speedpaint",
+      "hex": "#914322",
+      "rgb": {
+        "r": 145,
+        "g": 67,
+        "b": 34
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4015p",
+      "name": "Ruddy Terra",
+      "code": "WP4015P",
+      "set": "John Blanche",
+      "hex": "#6C2C18",
+      "rgb": {
+        "r": 108,
+        "g": 44,
+        "b": 24
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3113p",
+      "name": "Ruddy Umber",
+      "code": "WP3113P",
+      "set": "Warpaints Fanatic",
+      "hex": "#73463B",
+      "rgb": {
+        "r": 115,
+        "g": 70,
+        "b": 59
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3466p",
+      "name": "Ruinous Spell",
+      "code": "AW3466P",
+      "set": "Warpaints Air",
+      "hex": "#3A614E",
+      "rgb": {
+        "r": 58,
+        "g": 97,
+        "b": 78
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3017p",
+      "name": "Runic Cobalt",
+      "code": "WP3017P",
+      "set": "Warpaints Fanatic",
+      "hex": "#627987",
+      "rgb": {
+        "r": 98,
+        "g": 121,
+        "b": 135
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2016p",
+      "name": "Runic Grey",
+      "code": "WP2016P",
+      "set": "Speedpaint",
+      "hex": "#56727F",
+      "rgb": {
+        "r": 86,
+        "g": 114,
+        "b": 127
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1039p",
+      "name": "Runic Grey",
+      "code": "SM1039P",
+      "set": "Speedpaint Marker",
+      "hex": "#56727F",
+      "rgb": {
+        "r": 86,
+        "g": 114,
+        "b": 127
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3204p",
+      "name": "Rust Tone",
+      "code": "WP3204P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#4E3219",
+      "rgb": {
+        "r": 78,
+        "g": 50,
+        "b": 25
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3106p",
+      "name": "Sacred Scarlet",
+      "code": "WP3106P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C7513C",
+      "rgb": {
+        "r": 199,
+        "g": 81,
+        "b": 60
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1505p",
+      "name": "Safety Orange",
+      "code": "AW1505P",
+      "set": "Warpaints Air",
+      "hex": "#F59C55",
+      "rgb": {
+        "r": 245,
+        "g": 156,
+        "b": 85
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2020p",
+      "name": "Sand Golem",
+      "code": "WP2020P",
+      "set": "Speedpaint",
+      "hex": "#C18F12",
+      "rgb": {
+        "r": 193,
+        "g": 143,
+        "b": 18
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1004p",
+      "name": "Sand Golem",
+      "code": "SM1004P",
+      "set": "Speedpaint Marker",
+      "hex": "#C18F12",
+      "rgb": {
+        "r": 193,
+        "g": 143,
+        "b": 18
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3114p",
+      "name": "Sapphire Gem",
+      "code": "AW3114P",
+      "set": "Warpaints Air",
+      "hex": "#02B3DE",
+      "rgb": {
+        "r": 2,
+        "g": 179,
+        "b": 222
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2068p",
+      "name": "Satchel Brown",
+      "code": "WP2068P",
+      "set": "Speedpaint",
+      "hex": "#50382F",
+      "rgb": {
+        "r": 80,
+        "g": 56,
+        "b": 47
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3111p",
+      "name": "Savage Green",
+      "code": "AW3111P",
+      "set": "Warpaints Air",
+      "hex": "#02743B",
+      "rgb": {
+        "r": 2,
+        "g": 116,
+        "b": 59
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3043p",
+      "name": "Scarab Green",
+      "code": "WP3043P",
+      "set": "Warpaints Fanatic",
+      "hex": "#1B3437",
+      "rgb": {
+        "r": 27,
+        "g": 52,
+        "b": 55
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3203p",
+      "name": "Sepia Tone",
+      "code": "WP3203P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#744219",
+      "rgb": {
+        "r": 116,
+        "g": 66,
+        "b": 25
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4107p",
+      "name": "Shadow Thorn",
+      "code": "WP4107P",
+      "set": "John Blanche",
+      "hex": "#213B54",
+      "rgb": {
+        "r": 33,
+        "g": 59,
+        "b": 84
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2041p",
+      "name": "Shamrock Green",
+      "code": "WP2041P",
+      "set": "Speedpaint",
+      "hex": "#569A26",
+      "rgb": {
+        "r": 86,
+        "g": 154,
+        "b": 38
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3102p",
+      "name": "Shark White",
+      "code": "AW3102P",
+      "set": "Warpaints Air",
+      "hex": "#B1B9B4",
+      "rgb": {
+        "r": 177,
+        "g": 185,
+        "b": 180
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3035p",
+      "name": "Shieldwall Blue",
+      "code": "WP3035P",
+      "set": "Warpaints Fanatic",
+      "hex": "#0A859B",
+      "rgb": {
+        "r": 10,
+        "g": 133,
+        "b": 155
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1129p",
+      "name": "Shining Silver",
+      "code": "AW1129P",
+      "set": "Warpaints Air",
+      "hex": "#B4B0AD",
+      "rgb": {
+        "r": 180,
+        "g": 176,
+        "b": 173
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3191p",
+      "name": "Shining Silver",
+      "code": "WP3191P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#A5A49F",
+      "rgb": {
+        "r": 165,
+        "g": 164,
+        "b": 159
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1125p",
+      "name": "Skeleton Bone",
+      "code": "AW1125P",
+      "set": "Warpaints Air",
+      "hex": "#E1D2A7",
+      "rgb": {
+        "r": 225,
+        "g": 210,
+        "b": 167
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3087p",
+      "name": "Skeleton Bone",
+      "code": "WP3087P",
+      "set": "Warpaints Fanatic",
+      "hex": "#A19473",
+      "rgb": {
+        "r": 161,
+        "g": 148,
+        "b": 115
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4110p",
+      "name": "Skyshard",
+      "code": "WP4110P",
+      "set": "John Blanche",
+      "hex": "#C7D4D3",
+      "rgb": {
+        "r": 199,
+        "g": 212,
+        "b": 211
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2012p",
+      "name": "Slaughter Red",
+      "code": "WP2012P",
+      "set": "Speedpaint",
+      "hex": "#8C1621",
+      "rgb": {
+        "r": 140,
+        "g": 22,
+        "b": 33
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3201p",
+      "name": "Soft Tone",
+      "code": "WP3201P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#523E2A",
+      "rgb": {
+        "r": 82,
+        "g": 62,
+        "b": 42
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3095p",
+      "name": "Space Dust",
+      "code": "WP3095P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D3BB67",
+      "rgb": {
+        "r": 211,
+        "g": 187,
+        "b": 103
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3136p",
+      "name": "Spellbound Fuchsia",
+      "code": "WP3136P",
+      "set": "Warpaints Fanatic",
+      "hex": "#93447C",
+      "rgb": {
+        "r": 147,
+        "g": 68,
+        "b": 124
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4119p",
+      "name": "Storm Wolf",
+      "code": "AW4119P",
+      "set": "Warpaints Air",
+      "hex": "#B1C4E4",
+      "rgb": {
+        "r": 177,
+        "g": 196,
+        "b": 228
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3015p",
+      "name": "Stratos Blue",
+      "code": "WP3015P",
+      "set": "Warpaints Fanatic",
+      "hex": "#2B546E",
+      "rgb": {
+        "r": 43,
+        "g": 84,
+        "b": 110
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3214p",
+      "name": "Strong Skin Shade",
+      "code": "WP3214P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#37231F",
+      "rgb": {
+        "r": 55,
+        "g": 35,
+        "b": 31
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3200p",
+      "name": "Strong Tone",
+      "code": "WP3200P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#2B2117",
+      "rgb": {
+        "r": 43,
+        "g": 33,
+        "b": 23
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4011p",
+      "name": "Sunburst Ochre",
+      "code": "WP4011P",
+      "set": "John Blanche",
+      "hex": "#653A11",
+      "rgb": {
+        "r": 101,
+        "g": 58,
+        "b": 17
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4115p",
+      "name": "Sunpetal",
+      "code": "WP4115P",
+      "set": "John Blanche",
+      "hex": "#DCC832",
+      "rgb": {
+        "r": 220,
+        "g": 200,
+        "b": 50
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4013p",
+      "name": "Tainted Garden",
+      "code": "WP4013P",
+      "set": "John Blanche",
+      "hex": "#2F3010",
+      "rgb": {
+        "r": 47,
+        "g": 48,
+        "b": 16
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1482p",
+      "name": "Tainted Gold",
+      "code": "AW1482P",
+      "set": "Warpaints Air",
+      "hex": "#756D3F",
+      "rgb": {
+        "r": 117,
+        "g": 109,
+        "b": 63
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3187p",
+      "name": "Tainted Gold",
+      "code": "WP3187P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#A5914D",
+      "rgb": {
+        "r": 165,
+        "g": 145,
+        "b": 77
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4451p",
+      "name": "Talisman Purple",
+      "code": "AW4451P",
+      "set": "Warpaints Air",
+      "hex": "#F1A4B6",
+      "rgb": {
+        "r": 241,
+        "g": 164,
+        "b": 182
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3046p",
+      "name": "Talisman Teal",
+      "code": "WP3046P",
+      "set": "Warpaints Fanatic",
+      "hex": "#139372",
+      "rgb": {
+        "r": 19,
+        "g": 147,
+        "b": 114
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2029p",
+      "name": "Talos Bronze",
+      "code": "WP2029P",
+      "set": "Speedpaint",
+      "hex": "#5F3025",
+      "rgb": {
+        "r": 95,
+        "g": 48,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3044p",
+      "name": "Temple Gate Teal",
+      "code": "WP3044P",
+      "set": "Warpaints Fanatic",
+      "hex": "#0C5242",
+      "rgb": {
+        "r": 12,
+        "g": 82,
+        "b": 66
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3127p",
+      "name": "Terrestrial Titan",
+      "code": "WP3127P",
+      "set": "Warpaints Fanatic",
+      "hex": "#282637",
+      "rgb": {
+        "r": 40,
+        "g": 38,
+        "b": 55
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4000p",
+      "name": "The Darkness",
+      "code": "WP4000P",
+      "set": "John Blanche",
+      "hex": "#0E161E",
+      "rgb": {
+        "r": 14,
+        "g": 22,
+        "b": 30
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4118p",
+      "name": "Thicket Grove",
+      "code": "WP4118P",
+      "set": "John Blanche",
+      "hex": "#58571F",
+      "rgb": {
+        "r": 88,
+        "g": 87,
+        "b": 31
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3415p",
+      "name": "Thunder Storm",
+      "code": "AW3415P",
+      "set": "Warpaints Air",
+      "hex": "#2D4354",
+      "rgb": {
+        "r": 45,
+        "g": 67,
+        "b": 84
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2081p",
+      "name": "Thunderbird Blue",
+      "code": "WP2081P",
+      "set": "Speedpaint",
+      "hex": "#63AF92",
+      "rgb": {
+        "r": 99,
+        "g": 175,
+        "b": 146
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3014p",
+      "name": "Thunderous Blue",
+      "code": "WP3014P",
+      "set": "Warpaints Fanatic",
+      "hex": "#314B62",
+      "rgb": {
+        "r": 49,
+        "g": 75,
+        "b": 98
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3033p",
+      "name": "Tidal Blue",
+      "code": "WP3033P",
+      "set": "Warpaints Fanatic",
+      "hex": "#0A5A74",
+      "rgb": {
+        "r": 10,
+        "g": 90,
+        "b": 116
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2052p",
+      "name": "Tidal Wave",
+      "code": "WP2052P",
+      "set": "Speedpaint",
+      "hex": "#1173AD",
+      "rgb": {
+        "r": 17,
+        "g": 115,
+        "b": 173
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3152p",
+      "name": "Tiger's Eye",
+      "code": "WP3152P",
+      "set": "Warpaints Fanatic",
+      "hex": "#7B4342",
+      "rgb": {
+        "r": 123,
+        "g": 67,
+        "b": 66
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3086p",
+      "name": "Tomb King Tan",
+      "code": "WP3086P",
+      "set": "Warpaints Fanatic",
+      "hex": "#86775C",
+      "rgb": {
+        "r": 134,
+        "g": 119,
+        "b": 92
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3153p",
+      "name": "Topaz Skin",
+      "code": "WP3153P",
+      "set": "Warpaints Fanatic",
+      "hex": "#974C43",
+      "rgb": {
+        "r": 151,
+        "g": 76,
+        "b": 67
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3155p",
+      "name": "Tourmaline Skin",
+      "code": "WP3155P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C18371",
+      "rgb": {
+        "r": 193,
+        "g": 131,
+        "b": 113
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1437p",
+      "name": "Toxic Mist",
+      "code": "AW1437P",
+      "set": "Warpaints Air",
+      "hex": "#57CECF",
+      "rgb": {
+        "r": 87,
+        "g": 206,
+        "b": 207
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3142p",
+      "name": "Traitor Red",
+      "code": "AW3142P",
+      "set": "Warpaints Air",
+      "hex": "#8A224F",
+      "rgb": {
+        "r": 138,
+        "g": 34,
+        "b": 79
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3110p",
+      "name": "Tree Ancient",
+      "code": "WP3110P",
+      "set": "Warpaints Fanatic",
+      "hex": "#432E28",
+      "rgb": {
+        "r": 67,
+        "g": 46,
+        "b": 40
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3019p",
+      "name": "Triumphant Navy",
+      "code": "WP3019P",
+      "set": "Warpaints Fanatic",
+      "hex": "#1A2745",
+      "rgb": {
+        "r": 26,
+        "g": 39,
+        "b": 69
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3165p",
+      "name": "True Blood",
+      "code": "WP3165P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#5B0916",
+      "rgb": {
+        "r": 91,
+        "g": 9,
+        "b": 22
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3186p",
+      "name": "True Brass",
+      "code": "WP3186P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#C4B48E",
+      "rgb": {
+        "r": 196,
+        "g": 180,
+        "b": 142
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1467p",
+      "name": "True Copper",
+      "code": "AW1467P",
+      "set": "Warpaints Air",
+      "hex": "#A55D03",
+      "rgb": {
+        "r": 165,
+        "g": 93,
+        "b": 3
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3184p",
+      "name": "True Copper",
+      "code": "WP3184P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#C67140",
+      "rgb": {
+        "r": 198,
+        "g": 113,
+        "b": 64
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3079p",
+      "name": "Tundra Taupe",
+      "code": "WP3079P",
+      "set": "Warpaints Fanatic",
+      "hex": "#434534",
+      "rgb": {
+        "r": 67,
+        "g": 69,
+        "b": 52
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4016p",
+      "name": "Turnbull Turquoise",
+      "code": "WP4016P",
+      "set": "John Blanche",
+      "hex": "#374F53",
+      "rgb": {
+        "r": 55,
+        "g": 79,
+        "b": 83
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3039p",
+      "name": "Turquoise Siren",
+      "code": "WP3039P",
+      "set": "Warpaints Fanatic",
+      "hex": "#249692",
+      "rgb": {
+        "r": 36,
+        "g": 150,
+        "b": 146
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4415p",
+      "name": "Twilight Sky",
+      "code": "AW4415P",
+      "set": "Warpaints Air",
+      "hex": "#026A86",
+      "rgb": {
+        "r": 2,
+        "g": 106,
+        "b": 134
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2051p",
+      "name": "Tyrian Navy",
+      "code": "WP2051P",
+      "set": "Speedpaint",
+      "hex": "#243741",
+      "rgb": {
+        "r": 36,
+        "g": 55,
+        "b": 65
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1115p",
+      "name": "Ultramarine Blue",
+      "code": "AW1115P",
+      "set": "Warpaints Air",
+      "hex": "#02719A",
+      "rgb": {
+        "r": 2,
+        "g": 113,
+        "b": 154
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3021p",
+      "name": "Ultramarine Blue",
+      "code": "WP3021P",
+      "set": "Warpaints Fanatic",
+      "hex": "#264473",
+      "rgb": {
+        "r": 38,
+        "g": 68,
+        "b": 115
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4116p",
+      "name": "Umberroot",
+      "code": "WP4116P",
+      "set": "John Blanche",
+      "hex": "#451E0D",
+      "rgb": {
+        "r": 69,
+        "g": 30,
+        "b": 13
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3433p",
+      "name": "Undergrowth Green",
+      "code": "AW3433P",
+      "set": "Warpaints Air",
+      "hex": "#6CA435",
+      "rgb": {
+        "r": 108,
+        "g": 164,
+        "b": 53
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3112p",
+      "name": "Unforgiven Green",
+      "code": "AW3112P",
+      "set": "Warpaints Air",
+      "hex": "#364038",
+      "rgb": {
+        "r": 54,
+        "g": 64,
+        "b": 56
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1118p",
+      "name": "Uniform Grey",
+      "code": "AW1118P",
+      "set": "Warpaints Air",
+      "hex": "#788284",
+      "rgb": {
+        "r": 120,
+        "g": 130,
+        "b": 132
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3003p",
+      "name": "Uniform Grey",
+      "code": "WP3003P",
+      "set": "Warpaints Fanatic",
+      "hex": "#5A5D60",
+      "rgb": {
+        "r": 90,
+        "g": 93,
+        "b": 96
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3078p",
+      "name": "Urban Buff",
+      "code": "WP3078P",
+      "set": "Warpaints Fanatic",
+      "hex": "#B69883",
+      "rgb": {
+        "r": 182,
+        "g": 152,
+        "b": 131
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3168p",
+      "name": "Verdigris",
+      "code": "WP3168P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#417961",
+      "rgb": {
+        "r": 65,
+        "g": 121,
+        "b": 97
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4122p",
+      "name": "Vineroot Shade",
+      "code": "WP4122P",
+      "set": "John Blanche",
+      "hex": "#2C0703",
+      "rgb": {
+        "r": 44,
+        "g": 7,
+        "b": 3
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3107p",
+      "name": "Violent Vermilion",
+      "code": "WP3107P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C8634C",
+      "rgb": {
+        "r": 200,
+        "g": 99,
+        "b": 76
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3131p",
+      "name": "Violet Coven",
+      "code": "WP3131P",
+      "set": "Warpaints Fanatic",
+      "hex": "#72667E",
+      "rgb": {
+        "r": 114,
+        "g": 102,
+        "b": 126
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1501p",
+      "name": "Violet Volt",
+      "code": "AW1501P",
+      "set": "Warpaints Air",
+      "hex": "#AA67AC",
+      "rgb": {
+        "r": 170,
+        "g": 103,
+        "b": 172
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4122p",
+      "name": "Viper Brown",
+      "code": "AW4122P",
+      "set": "Warpaints Air",
+      "hex": "#CE896E",
+      "rgb": {
+        "r": 206,
+        "g": 137,
+        "b": 110
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3059p",
+      "name": "Vivid Volt",
+      "code": "WP3059P",
+      "set": "Warpaints Fanatic",
+      "hex": "#ABB43E",
+      "rgb": {
+        "r": 171,
+        "g": 180,
+        "b": 62
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4017p",
+      "name": "Voodoo Shade",
+      "code": "WP4017P",
+      "set": "John Blanche",
+      "hex": "#3F3010",
+      "rgb": {
+        "r": 63,
+        "g": 48,
+        "b": 16
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3135p",
+      "name": "Warlock Magenta",
+      "code": "WP3135P",
+      "set": "Warpaints Fanatic",
+      "hex": "#74437E",
+      "rgb": {
+        "r": 116,
+        "g": 67,
+        "b": 126
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1451p",
+      "name": "Warlock Purple",
+      "code": "AW1451P",
+      "set": "Warpaints Air",
+      "hex": "#BF4B81",
+      "rgb": {
+        "r": 191,
+        "g": 75,
+        "b": 129
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp4007p",
+      "name": "Warm Skin Shade",
+      "code": "WP4007P",
+      "set": "John Blanche",
+      "hex": "#714E25",
+      "rgb": {
+        "r": 113,
+        "g": 78,
+        "b": 37
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3172p",
+      "name": "Warpaints Retarder",
+      "code": "WP3172P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#A6A29B",
+      "rgb": {
+        "r": 166,
+        "g": 162,
+        "b": 155
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3171p",
+      "name": "Warpaints Stabilizer",
+      "code": "WP3171P",
+      "set": "Warpaints Fanatic Effects",
+      "hex": "#A5A29A",
+      "rgb": {
+        "r": 165,
+        "g": 162,
+        "b": 154
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3094p",
+      "name": "Warped Yellow",
+      "code": "WP3094P",
+      "set": "Warpaints Fanatic",
+      "hex": "#D3AD39",
+      "rgb": {
+        "r": 211,
+        "g": 173,
+        "b": 57
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2064p",
+      "name": "Warrior Skin",
+      "code": "WP2064P",
+      "set": "Speedpaint",
+      "hex": "#8B6149",
+      "rgb": {
+        "r": 139,
+        "g": 97,
+        "b": 73
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3216p",
+      "name": "Wash Medium",
+      "code": "WP3216P",
+      "set": "Warpaints Fanatic Wash",
+      "hex": "#C2BFB5",
+      "rgb": {
+        "r": 194,
+        "g": 191,
+        "b": 181
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3082p",
+      "name": "Wasteland Clay",
+      "code": "WP3082P",
+      "set": "Warpaints Fanatic",
+      "hex": "#897143",
+      "rgb": {
+        "r": 137,
+        "g": 113,
+        "b": 67
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1133p",
+      "name": "Weapon Bronze",
+      "code": "AW1133P",
+      "set": "Warpaints Air",
+      "hex": "#A45804",
+      "rgb": {
+        "r": 164,
+        "g": 88,
+        "b": 4
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3183p",
+      "name": "Weapon Bronze",
+      "code": "WP3183P",
+      "set": "Warpaints Fanatic Metallic",
+      "hex": "#D6700A",
+      "rgb": {
+        "r": 214,
+        "g": 112,
+        "b": 10
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3124p",
+      "name": "Weird Elixir",
+      "code": "WP3124P",
+      "set": "Warpaints Fanatic",
+      "hex": "#956076",
+      "rgb": {
+        "r": 149,
+        "g": 96,
+        "b": 118
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3121p",
+      "name": "Wicked Pink",
+      "code": "WP3121P",
+      "set": "Warpaints Fanatic",
+      "hex": "#AA0C66",
+      "rgb": {
+        "r": 170,
+        "g": 12,
+        "b": 102
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3053p",
+      "name": "Wild Green",
+      "code": "WP3053P",
+      "set": "Warpaints Fanatic",
+      "hex": "#3B9644",
+      "rgb": {
+        "r": 59,
+        "g": 150,
+        "b": 68
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4126p",
+      "name": "Wildling Flesh",
+      "code": "AW4126P",
+      "set": "Warpaints Air",
+      "hex": "#FCAE8F",
+      "rgb": {
+        "r": 252,
+        "g": 174,
+        "b": 143
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3144p",
+      "name": "Wilted Rose",
+      "code": "WP3144P",
+      "set": "Warpaints Fanatic",
+      "hex": "#C5A3A8",
+      "rgb": {
+        "r": 197,
+        "g": 163,
+        "b": 168
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw3451p",
+      "name": "Witchbane Plum",
+      "code": "AW3451P",
+      "set": "Warpaints Air",
+      "hex": "#9A2068",
+      "rgb": {
+        "r": 154,
+        "g": 32,
+        "b": 104
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1466p",
+      "name": "Wizards Orb",
+      "code": "AW1466P",
+      "set": "Warpaints Air",
+      "hex": "#029081",
+      "rgb": {
+        "r": 2,
+        "g": 144,
+        "b": 129
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1119p",
+      "name": "Wolf Grey",
+      "code": "AW1119P",
+      "set": "Warpaints Air",
+      "hex": "#7294A1",
+      "rgb": {
+        "r": 114,
+        "g": 148,
+        "b": 161
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3016p",
+      "name": "Wolf Grey",
+      "code": "WP3016P",
+      "set": "Warpaints Fanatic",
+      "hex": "#466781",
+      "rgb": {
+        "r": 70,
+        "g": 103,
+        "b": 129
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3067p",
+      "name": "Woodland Camo",
+      "code": "WP3067P",
+      "set": "Warpaints Fanatic",
+      "hex": "#41503B",
+      "rgb": {
+        "r": 65,
+        "g": 80,
+        "b": 59
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3010p",
+      "name": "Worn Stone",
+      "code": "WP3010P",
+      "set": "Warpaints Fanatic",
+      "hex": "#A09D87",
+      "rgb": {
+        "r": 160,
+        "g": 157,
+        "b": 135
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4105p",
+      "name": "Wyrmling Red",
+      "code": "AW4105P",
+      "set": "Warpaints Air",
+      "hex": "#EB5265",
+      "rgb": {
+        "r": 235,
+        "g": 82,
+        "b": 101
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp3116p",
+      "name": "Wyvern Fury",
+      "code": "WP3116P",
+      "set": "Warpaints Fanatic",
+      "hex": "#832C36",
+      "rgb": {
+        "r": 131,
+        "g": 44,
+        "b": 54
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4121p",
+      "name": "Yellow Dune",
+      "code": "AW4121P",
+      "set": "Warpaints Air",
+      "hex": "#E0B257",
+      "rgb": {
+        "r": 224,
+        "g": 178,
+        "b": 87
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4102p",
+      "name": "Yeti White",
+      "code": "AW4102P",
+      "set": "Warpaints Air",
+      "hex": "#D2D3D7",
+      "rgb": {
+        "r": 210,
+        "g": 211,
+        "b": 215
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-wp2013p",
+      "name": "Zealot Yellow",
+      "code": "WP2013P",
+      "set": "Speedpaint",
+      "hex": "#E2C106",
+      "rgb": {
+        "r": 226,
+        "g": 193,
+        "b": 6
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-sm1023p",
+      "name": "Zealot Yellow",
+      "code": "SM1023P",
+      "set": "Speedpaint Marker",
+      "hex": "#E2C106",
+      "rgb": {
+        "r": 226,
+        "g": 193,
+        "b": 6
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw1485p",
+      "name": "Zephyr Pink",
+      "code": "AW1485P",
+      "set": "Warpaints Air",
+      "hex": "#9B4673",
+      "rgb": {
+        "r": 155,
+        "g": 70,
+        "b": 115
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    },
+    {
+      "id": "army-painter-aw4108p",
+      "name": "Zombie Flesh",
+      "code": "AW4108P",
+      "set": "Warpaints Air",
+      "hex": "#D1CFB3",
+      "rgb": {
+        "r": 209,
+        "g": 207,
+        "b": 179
+      },
+      "shiftColors": null,
+      "colourless": false,
+      "potSizes": null,
+      "description": null
+    }
+  ]
+}

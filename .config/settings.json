@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "app": {
+    "defaultTheme": "dark",
+    "orbitSpeed": 1.0,
+    "panSpeed": 1.0,
+    "zoomSpeed": 1.0,
+    "keybindings": {
+      "brush": "p",
+      "box": "b",
+      "radius": "r",
+      "subsplit": "s"
+    },
+    "edgeDetection": {
+      "defaultDihedralAngle": 24,
+      "defaultAreaPercent": 2.0,
+      "defaultMinEdgeLen": 3,
+      "defaultStraightness": 0.0
+    }
+  },
+  "paintDefaults": {
+    "defaultManufacturer": "Warhammer_Colour.json",
+    "colorMatchingFormula": "CIEDE2000"
+  }
+}

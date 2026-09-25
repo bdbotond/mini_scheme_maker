@@ -1,0 +1,233 @@
+[
+  {
+    "file": "Acrilex.json",
+    "id": "Acrilex",
+    "displayName": "Acrilex",
+    "company": "Acrilex Tintas Especiais S.A.",
+    "paintCount": 95
+  },
+  {
+    "file": "AK.json",
+    "id": "AK",
+    "displayName": "AK",
+    "company": "AK-INTERACTIVE, S.L.",
+    "paintCount": 980
+  },
+  {
+    "file": "AppleBarrel.json",
+    "id": "AppleBarrel",
+    "displayName": "Apple Barrel",
+    "company": "Plaid Enterprises, Inc.",
+    "paintCount": 213
+  },
+  {
+    "file": "Army_Painter.json",
+    "id": "Army_Painter",
+    "displayName": "Army Painter",
+    "company": "The Army Painter ApS",
+    "paintCount": 501
+  },
+  {
+    "file": "Arteza.json",
+    "id": "Arteza",
+    "displayName": "Arteza",
+    "company": "Plaid Enterprises, Inc.",
+    "paintCount": 96
+  },
+  {
+    "file": "CoatDArmes.json",
+    "id": "CoatDArmes",
+    "displayName": "Coat D Armes",
+    "company": "Battlezone Miniatures",
+    "paintCount": 157
+  },
+  {
+    "file": "Creature.json",
+    "id": "Creature",
+    "displayName": "Creature",
+    "company": "Creature Caster",
+    "paintCount": 53
+  },
+  {
+    "file": "FolkArt.json",
+    "id": "FolkArt",
+    "displayName": "Folk Art",
+    "company": "Plaid Enterprises, Inc.",
+    "paintCount": 436
+  },
+  {
+    "file": "Foundry.json",
+    "id": "Foundry",
+    "displayName": "Foundry",
+    "company": "Wargames Foundry Limited",
+    "paintCount": 360
+  },
+  {
+    "file": "Golden.json",
+    "id": "Golden",
+    "displayName": "Golden",
+    "company": "Golden Artist Colors, Inc.",
+    "paintCount": 346
+  },
+  {
+    "file": "GreenStuffWorld.json",
+    "id": "GreenStuffWorld",
+    "displayName": "Green Stuff World",
+    "company": "GREEN STUFF WORLD, S.L.",
+    "paintCount": 220
+  },
+  {
+    "file": "Humbrol.json",
+    "id": "Humbrol",
+    "displayName": "Humbrol",
+    "company": "Hornby Hobbies Limited",
+    "paintCount": 115
+  },
+  {
+    "file": "Italeri.json",
+    "id": "Italeri",
+    "displayName": "Italeri",
+    "company": "Italeri S.p.A.",
+    "paintCount": 100
+  },
+  {
+    "file": "KimeraKolors.json",
+    "id": "KimeraKolors",
+    "displayName": "Kimera Kolors",
+    "company": "Pegaso Models S.r.l.",
+    "paintCount": 39
+  },
+  {
+    "file": "Liquitex.json",
+    "id": "Liquitex",
+    "displayName": "Liquitex",
+    "company": "Colart Americas, Inc.",
+    "paintCount": 579
+  },
+  {
+    "file": "Mig.json",
+    "id": "Mig",
+    "displayName": "Mig",
+    "company": "AMMO of Mig Jimenez S.L.",
+    "paintCount": 473
+  },
+  {
+    "file": "MissionModels.json",
+    "id": "MissionModels",
+    "displayName": "Mission Models",
+    "company": "Mission Models",
+    "paintCount": 202
+  },
+  {
+    "file": "Monument.json",
+    "id": "Monument",
+    "displayName": "Monument",
+    "company": "Monument Hobbies",
+    "paintCount": 131
+  },
+  {
+    "file": "MrHobby.json",
+    "id": "MrHobby",
+    "displayName": "Mr Hobby",
+    "company": "GSI Creos Corporation",
+    "paintCount": 669
+  },
+  {
+    "file": "MrPaint.json",
+    "id": "MrPaint",
+    "displayName": "Mr Paint",
+    "company": "GREEN s.r.o.",
+    "paintCount": 568
+  },
+  {
+    "file": "P3.json",
+    "id": "P3",
+    "displayName": "P3",
+    "company": "Privateer Press Inc.",
+    "paintCount": 110
+  },
+  {
+    "file": "Pantone.json",
+    "id": "Pantone",
+    "displayName": "Pantone",
+    "company": "Pantone LLC",
+    "paintCount": 1341
+  },
+  {
+    "file": "RAL.json",
+    "id": "RAL",
+    "displayName": "RAL",
+    "company": "RAL Deutsches Institut für Gütesicherung und Kennzeichnung e. V.",
+    "paintCount": 193
+  },
+  {
+    "file": "Reaper.json",
+    "id": "Reaper",
+    "displayName": "Reaper",
+    "company": "Hobby-Q, Inc. (DBA Reaper Miniatures)",
+    "paintCount": 438
+  },
+  {
+    "file": "Revell.json",
+    "id": "Revell",
+    "displayName": "Revell",
+    "company": "Carrera Revell GmbH",
+    "paintCount": 208
+  },
+  {
+    "file": "Scale75.json",
+    "id": "Scale75",
+    "displayName": "Scale75",
+    "company": "SCALE75 HOBBIES AND GAMES, S.L.",
+    "paintCount": 358
+  },
+  {
+    "file": "Tamiya.json",
+    "id": "Tamiya",
+    "displayName": "Tamiya",
+    "company": "Tamiya, Inc.",
+    "paintCount": 320
+  },
+  {
+    "file": "TomColor.json",
+    "id": "TomColor",
+    "displayName": "Tom Color",
+    "company": "Tom Colors Ltda",
+    "paintCount": 271
+  },
+  {
+    "file": "TurboDork.json",
+    "id": "TurboDork",
+    "displayName": "Turbo Dork",
+    "company": "Turbo Dork",
+    "paintCount": 80
+  },
+  {
+    "file": "Duncan.json",
+    "id": "Duncan",
+    "displayName": "Two Thin Coats",
+    "company": "Duncan Rhodes Painting Academy Limited",
+    "paintCount": 180
+  },
+  {
+    "file": "Vallejo.json",
+    "id": "Vallejo",
+    "displayName": "Vallejo",
+    "company": "ACRYLICOS VALLEJO, S.L.",
+    "paintCount": 1337
+  },
+  {
+    "file": "Warcolours.json",
+    "id": "Warcolours",
+    "displayName": "Warcolours",
+    "company": "Warcolours",
+    "paintCount": 178
+  },
+  {
+    "file": "Warhammer_Colour.json",
+    "id": "Warhammer_Colour",
+    "displayName": "Warhammer Colour",
+    "company": "Games Workshop Limited",
+    "paintCount": 331
+  }
+]

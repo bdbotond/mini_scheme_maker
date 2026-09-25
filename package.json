@@ -1,0 +1,24 @@
+{
+  "name": "mini-segmentor",
+  "version": "1.0.0",
+  "description": "Fast 3D mesh surface classifier and WebGL viewer",
+  "main": "src/surface_classifier.js",
+  "bin": {
+    "surface-classifier": "./src/surface_classifier.js"
+  },
+  "scripts": {
+    "start": "npx serve .",
+    "test": "node test/classifier.test.js",
+    "benchmark": "node tools/benchmark.js"
+  },
+  "keywords": [
+    "3d",
+    "stl",
+    "mesh",
+    "surface-classification",
+    "threejs",
+    "webgl"
+  ],
+  "author": "",
+  "license": "MIT"
+}
