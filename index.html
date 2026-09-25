@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Mesh Surface Classifier &amp; Interactive Segmentor</title>
+  <link rel="stylesheet" href="src/css/viewer.css">
+
+  <!-- Local Vendored Dependencies -->
+  <script src="dep/three.min.js"></script>
+  <script src="dep/OrbitControls.js"></script>
+  <script src="dep/STLLoader.js"></script>
+  <script src="dep/OBJLoader.js"></script>
+  <script src="dep/paints/paints_db.js"></script>
+</head>
+<body>
+
+<header id="top-bar">
+  <!-- Left Zone: Brand + Open Model -->
+  <div class="top-bar-left">
+    <div class="brand">
+      <span class="brand-title">3D Surface Segmentor</span>
+
+    </div>
+    <label class="btn btn-primary top-open-btn">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      Open Model
+      <input type="file" id="file-input" accept=".stl,.obj" style="display: none;">
+    </label>
+  </div>
+
+  <!-- Center Zone: Tool buttons, radius slider, active brush indicator, keys legend -->
+  <div class="top-bar-center">
+    <div class="tool-btn-group">
+      <button type="button" class="tool-mode-btn active" id="tool-brush" onclick="setToolMode('brush')" title="Surface Brush (P) - Click to inspect, Shift+Drag to paint">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/><path d="M12 9v12"/></svg>
+        Brush <kbd>P</kbd>
+      </button>
+      <button type="button" class="tool-mode-btn" id="tool-box" onclick="setToolMode('box')" title="Box Area Select (B) - Drag rectangle to select segments">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="3 3"/></svg>
+        Box Select <kbd>B</kbd>
+      </button>
+      <button type="button" class="tool-mode-btn" id="tool-radius" onclick="setToolMode('radius')" title="Radius Area Select (R) - Click or drag circle to select segments">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="1.5"/></svg>
+        Radius Select <kbd>R</kbd>
+      </button>
+      <button type="button" class="tool-mode-btn" id="tool-subsplit" onclick="setToolMode('subsplit')" title="Patch Brush (S) - Click to split & paint patch, Shift+Drag to continuously paint patches">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+        Patch Brush <kbd>S</kbd>
+      </button>
+    </div>
+
+    <!-- Active Brush Indicator -->
+    <div class="active-brush-pill" title="Current active brush color (Keys 1-9 to pick)">
+      <span style="font-size: 11px; color: var(--text-muted);">Brush:</span>
+      <span id="brush-dot" class="cat-dot" style="background: var(--col-smooth);"></span>
+      <span id="brush-name" style="color: var(--text); font-weight: 700; font-size: 12px;">1: Smooth</span>
+      <span id="brush-hex" class="group-color-hex" style="cursor: default;">#94a3b8</span>
+    </div>
+  </div>
+
+  <!-- Right Zone: Mesh Statistics Chips + Settings -->
+  <div class="top-bar-right">
+    <div class="stat-chip" title="Model filename">
+      <span class="stat-chip-label">Model:</span>
+      <b id="stat-name" class="stat-chip-val" style="max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">-</b>
+    </div>
+    <div class="stat-chip" title="Total triangles">
+      <span class="stat-chip-label">Tris:</span>
+      <b id="stat-faces" class="stat-chip-val">0</b>
+    </div>
+    <div class="stat-chip" title="Connected surface segments">
+      <span class="stat-chip-label">Parts:</span>
+      <b id="stat-parts" class="stat-chip-val">0</b>
+
+    </div>
+    <div class="stat-chip" title="Total surface area">
+      <span class="stat-chip-label">Area:</span>
+      <b id="stat-area" class="stat-chip-val">0</b>
+    </div>
+    <button class="btn" id="settings-btn" title="Settings" onclick="openSettings()" style="padding: 5px 10px;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+  </div>
+
+</header>
+
+<div id="app-workspace">
+<div id="canvas-container">
+  <div id="drop-overlay">
+    <h2>Drop 3D Miniature Here</h2>
+    <p>Supports .STL and .OBJ mesh files</p>
+  </div>
+  <div id="loading-indicator">Segmenting surface geometry...</div>
+  <div id="surface-inspector">Hover over surface to inspect geometry</div>
+  <div id="selection-marquee"></div>
+  <div id="radius-cursor-ring"></div>
+  <canvas id="gizmo-canvas" title="Click a face to snap camera"></canvas>
+
+  <!-- Reassignment Popup -->
+  <div id="group-popup">
+    <div class="popup-header">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span class="popup-badge" id="popup-part-badge">Part #1</span>
+        <span id="popup-face-count" style="font-size: 11px; color: var(--text-muted);">0 faces</span>
+      </div>
+      <button class="popup-close" id="popup-close-btn" onclick="closeGroupPopup()">&times;</button>
+    </div>
+    
+    <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;" id="popup-prompt-text">Reassign surface part to:</div>
+    <div class="popup-cat-buttons">
+      <button type="button" class="btn-cat-choice" id="choice-g1" onclick="assignSelectionToGroup(1)">
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span class="cat-dot" id="choice-dot-1" style="background: var(--col-smooth);"></span>
+            <span id="popup-name-g1">1: Large Smooth Surfaces</span>
+          </div>
+          <span class="group-color-hex" id="popup-hex-g1" style="cursor: default;">#94a3b8</span>
+        </div>
+      </button>
+
+      <button type="button" class="btn-cat-choice" id="choice-g2" onclick="assignSelectionToGroup(2)">
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span class="cat-dot" id="choice-dot-2" style="background: var(--col-detail);"></span>
+            <span id="popup-name-g2">2: Fine Detail / Textured</span>
+          </div>
+          <span class="group-color-hex" id="popup-hex-g2" style="cursor: default;">#eab308</span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Custom / Additional Group Number -->
+    <div style="font-size: 11px; color: var(--text-muted); margin-top: 10px;">Or custom group number:</div>
+    <div id="popup-pills" class="popup-pills-container"></div>
+    <form id="popup-form" style="display: flex; gap: 6px; margin-top: 6px;" onsubmit="handlePopupSubmit(event)">
+      <input type="number" id="popup-group-input" min="1" step="1" placeholder="Group #" required />
+      <button type="submit" class="btn btn-primary" style="flex: 1;">Assign</button>
+    </form>
+  </div>
+</div>
+
+<div id="ui">
+  <!-- Selection Action Bar (Shown at top of right sidebar when parts are selected) -->
+  <div id="selection-action-bar" style="display: none; background: #1e2433; padding: 10px; border-radius: 6px; border: 1px solid #3b82f6; flex-direction: column; gap: 6px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+      <span id="selection-count-badge" style="color: #60a5fa; font-weight: 700;">0 parts selected</span>
+      <button class="btn" style="padding: 1px 6px; font-size: 10px;" onclick="clearSelection(); closeGroupPopup(); updateSelectionUI();">Deselect</button>
+    </div>
+    <button class="btn btn-primary" style="width: 100%; font-size: 11px; padding: 6px 8px;" onclick="assignSelectionToActiveBrush()">
+      Map Selected to Active Brush
+    </button>
+  </div>
+
+  <div id="tool-help-text" style="display: none;"></div>
+
+  <!-- Paint Groups (unified scrollable list) -->
+  <div class="panel-section">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="section-title">Paint Groups</div>
+      <div style="display: flex; gap: 4px; align-items: center;">
+        <button class="btn" style="padding: 2px 8px; font-size: 11px;" onclick="createNewCustomGroup()">+ Add</button>
+        <button class="btn" id="reset-base-btn" style="padding: 2px 8px; font-size: 11px; display: none;" onclick="resetToInitialCategories()" title="Reset all assignments to auto-segmentation">Reset</button>
+      </div>
+    </div>
+    <div class="dist-bar-container" id="dist-bar"></div>
+    <div id="paint-groups-list"></div>
+  </div>
+
+  <!-- Miniature Paint Matching -->
+  <div class="panel-section" id="miniature-paint-panel">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+      <span class="section-title">Paint Matching</span>
+      <span id="paint-brand-count" style="font-size: 10px; color: var(--text-muted);">Loading brands...</span>
+    </div>
+    <div class="control-box">
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <label for="paint-brand-select" style="font-size: 11px; font-weight: 500; color: var(--text-muted);">Manufacturer / Brand:</label>
+        <select id="paint-brand-select" style="width: 100%; padding: 5px 8px; border-radius: 4px; background: #121318; color: #e2e8f0; border: 1px solid var(--panel-border); font-size: 12px; outline: none; cursor: pointer;" onchange="handlePaintBrandChange(this.value)">
+          <option value="">Loading brands...</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Segmentation & Edge Tuner -->
+  <div class="panel-section" id="edge-detection-panel">
+    <div class="section-title">Edge Detection &amp; Hardness Tuner</div>
+    <div class="control-box">
+      <div>
+        <div class="slider-header">
+          <span>Edge Detection Hardness</span>
+          <b id="hardness-val">24°</b>
+        </div>
+        <input type="range" id="hardness-slider" min="10" max="60" step="1" value="24">
+        <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+          Dihedral boundary angle break. Lower = harder/more edges, Higher = softer.
+        </div>
+      </div>
+
+      <div>
+        <div class="slider-header">
+          <span>Smooth Patch Min Area</span>
+          <b id="area-val">2.0%</b>
+        </div>
+        <input type="range" id="area-slider" min="0.2" max="6.0" step="0.2" value="2.0">
+        <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Patches smaller than this become Detail (Yellow).</div>
+      </div>
+
+      <div>
+        <div class="slider-header">
+          <span>Min Feature Edge Length</span>
+          <b id="edge-len-val">3 edges</b>
+        </div>
+        <input type="range" id="edge-len-slider" min="1" max="25" step="1" value="3">
+        <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+          Filter out sharp crease noise shorter than N connected edges.
+        </div>
+      </div>
+
+      <div>
+        <div class="slider-header">
+          <span>Edge Straightness Filter</span>
+          <b id="edge-straight-val">0.0 (Off)</b>
+        </div>
+        <input type="range" id="edge-straight-slider" min="0.0" max="0.95" step="0.05" value="0.0">
+        <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+          Require straight feature chains (chord / arc length ratio). 0.0 = any straightness.
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 6px; margin-top: 4px;">
+        <button class="btn btn-primary" style="flex: 1;" onclick="autoCalibrateAndSegment()">Auto-Calibrate</button>
+        <button class="btn" style="flex: 1;" onclick="runSegmentation()">Re-Segment</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contextual Tool Settings (dynamically shown based on selected tool) -->
+  <div class="panel-section" id="tool-settings-panel" style="display: none;">
+    <div class="section-title" id="tool-settings-title">Tool Parameters</div>
+    <div class="control-box">
+      <!-- Patch Brush Controls -->
+      <div id="subsplit-tool-settings" style="display: none;">
+        <div class="slider-header">
+          <span>Patch Brush Crease Angle</span>
+          <b id="sub-angle-val">12°</b>
+        </div>
+        <input type="range" id="sub-angle-slider" min="3" max="90" step="1" value="12">
+        <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+          Crease threshold for Patch Brush (<kbd>S</kbd>). Does not recalculate base model segmentation.
+        </div>
+      </div>
+
+      <!-- Radius Select Controls -->
+      <div id="radius-tool-settings" style="display: none;">
+        <div class="slider-header">
+          <span>Selection Radius</span>
+          <b id="radius-val">35 px</b>
+        </div>
+        <input type="range" id="radius-slider" min="10" max="100" step="5" value="35" oninput="selectionRadiusPx = parseInt(this.value, 10); document.getElementById('radius-val').textContent = this.value + ' px'">
+        <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+          Radius threshold for circular area selection (<kbd>R</kbd>).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Export & Download -->
+  <div class="panel-section">
+    <div class="section-title">Export &amp; Download</div>
+    <div class="control-box">
+      <button class="btn" style="width: 100%;" onclick="downloadViewPNG()" id="btn-download-png" title="Download PNG snapshot of the current 3D view with surface colors">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        Download View (PNG)
+      </button>
+
+      <div style="display: flex; gap: 6px;">
+        <button class="btn btn-primary" style="flex: 1;" onclick="exportColoredPLY()" id="btn-export-ply" title="Export 3D mesh with per-vertex colors in Stanford PLY format">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Export 3D (.ply)
+        </button>
+        <button class="btn" style="flex: 1;" onclick="exportColoredOBJ()" id="btn-export-obj" title="Export 3D mesh with vertex colors in OBJ format">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Export 3D (.obj)
+        </button>
+      </div>
+
+      <button class="btn" style="width: 100%;" onclick="exportColorsCSV()" title="Download group colors as CSV spreadsheet">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Export Colors (.csv)
+      </button>
+
+      <button class="btn" style="width: 100%;" onclick="saveViewHTML()" title="Save a paint reference sheet as HTML">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Save Paint Sheet (HTML)
+      </button>
+
+      <div style="font-size: 10px; color: var(--text-muted); line-height: 1.3;">
+        Colored 3D exports include all custom group colors &amp; manual paint edits.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Settings Modal -->
+<div id="settings-modal" onclick="closeSettings()">
+  <div class="settings-dialog" onclick="event.stopPropagation()">
+    <h2>Settings <button class="settings-close" onclick="closeSettings()">&times;</button></h2>
+
+    <div>
+      <div class="settings-section-title">Theme</div>
+      <div class="theme-toggle">
+        <button class="theme-btn active" id="theme-btn-dark" onclick="setTheme('dark')">🌙 Dark</button>
+        <button class="theme-btn" id="theme-btn-light" onclick="setTheme('light')">☀️ Light</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="settings-section-title">Mouse Sensitivity</div>
+      <div class="settings-row">
+        <label>Orbit Speed</label>
+        <input type="range" min="0.2" max="3.0" step="0.1" id="setting-orbit" oninput="updateSettingVal('orbit')">
+        <span class="settings-val" id="setting-orbit-val">1.0</span>
+      </div>
+      <div class="settings-row">
+        <label>Pan Speed</label>
+        <input type="range" min="0.2" max="3.0" step="0.1" id="setting-pan" oninput="updateSettingVal('pan')">
+        <span class="settings-val" id="setting-pan-val">1.0</span>
+      </div>
+      <div class="settings-row">
+        <label>Zoom Speed</label>
+        <input type="range" min="0.2" max="3.0" step="0.1" id="setting-zoom" oninput="updateSettingVal('zoom')">
+        <span class="settings-val" id="setting-zoom-val">1.0</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="settings-section-title">Keyboard Shortcuts</div>
+      <div class="settings-keybind">
+        <label>Brush Tool</label>
+        <button class="keybind-btn" id="kb-brush" onclick="startRebind('brush')">P</button>
+      </div>
+      <div class="settings-keybind">
+        <label>Box Select</label>
+        <button class="keybind-btn" id="kb-box" onclick="startRebind('box')">B</button>
+      </div>
+      <div class="settings-keybind">
+        <label>Radius Select</label>
+        <button class="keybind-btn" id="kb-radius" onclick="startRebind('radius')">R</button>
+      </div>
+      <div class="settings-keybind">
+        <label>Patch Brush</label>
+        <button class="keybind-btn" id="kb-subsplit" onclick="startRebind('subsplit')">S</button>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 8px; margin-top: 4px;">
+      <button class="btn btn-primary" style="flex:1" onclick="saveSettings()">Save Settings</button>
+      <button class="btn" style="flex:1" onclick="resetSettings()">Reset Defaults</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast-container"></div>
+
+  <!-- Application Source Modules -->
+  <script src="src/js/color_utils.js"></script>
+  <script src="src/js/mesh_topology.js"></script>
+  <script src="src/js/paint_manager.js"></script>
+  <script src="src/js/exporters.js"></script>
+  <script src="src/js/app.js"></script>
+</body>
+</html>

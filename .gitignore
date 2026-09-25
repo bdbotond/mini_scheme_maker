@@ -1,0 +1,24 @@
+# Output & temporary builds
+output/
+dist/
+*.log
+
+# Dependencies & runtime
+node_modules/
+npm-debug.log*
+
+# Tool-generated & IDE caches
+.codegraph/
+.kilo/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large raw models (optional local tests)
+samples/*.stl
+!samples/SG_Assault_r_3_head.stl
+samples/
+*.stl
+samples/
+*.stl
