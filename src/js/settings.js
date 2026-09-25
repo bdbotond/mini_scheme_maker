@@ -8,7 +8,7 @@
     module.exports = factory();
   } else {
     const exports = factory();
-    Object.assign(root, exports);
+    Object.defineProperties(root, Object.getOwnPropertyDescriptors(exports));
     root.Settings = exports;
   }
 })(typeof self !== 'undefined' ? self : this, function () {
