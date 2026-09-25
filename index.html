@@ -44,9 +44,9 @@
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="1.5"/></svg>
         Radius Select <kbd>R</kbd>
       </button>
-      <button type="button" class="tool-mode-btn" id="tool-subsplit" onclick="setToolMode('subsplit')" title="Patch Brush (S) - Click to split & paint patch, Shift+Drag to continuously paint patches">
+      <button type="button" class="tool-mode-btn" id="tool-subsplit" onclick="setToolMode('subsplit')" title="Sub-Split Mode (S) - Hover to preview softer crease patch, click to split and reassign">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
-        Patch Brush <kbd>S</kbd>
+        Sub-Split <kbd>S</kbd>
       </button>
     </div>
 
@@ -240,15 +240,15 @@
   <div class="panel-section" id="tool-settings-panel" style="display: none;">
     <div class="section-title" id="tool-settings-title">Tool Parameters</div>
     <div class="control-box">
-      <!-- Patch Brush Controls -->
+      <!-- Sub-Split Controls -->
       <div id="subsplit-tool-settings" style="display: none;">
         <div class="slider-header">
-          <span>Patch Brush Crease Angle</span>
+          <span>Sub-surface Split Angle</span>
           <b id="sub-angle-val">12°</b>
         </div>
         <input type="range" id="sub-angle-slider" min="3" max="90" step="1" value="12">
         <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
-          Crease threshold for Patch Brush (<kbd>S</kbd>). Does not recalculate base model segmentation.
+          Crease threshold for Sub-Split tool (<kbd>S</kbd>) when hovering/clicking on surfaces.
         </div>
       </div>
 
@@ -351,7 +351,7 @@
         <button class="keybind-btn" id="kb-radius" onclick="startRebind('radius')">R</button>
       </div>
       <div class="settings-keybind">
-        <label>Patch Brush</label>
+        <label>Sub-Split</label>
         <button class="keybind-btn" id="kb-subsplit" onclick="startRebind('subsplit')">S</button>
       </div>
     </div>
@@ -370,6 +370,12 @@
   <script src="src/js/mesh_topology.js"></script>
   <script src="src/js/paint_manager.js"></script>
   <script src="src/js/exporters.js"></script>
+  <script src="src/js/scene.js"></script>
+  <script src="src/js/selection.js"></script>
+  <script src="src/js/popup.js"></script>
+  <script src="src/js/gizmo.js"></script>
+  <script src="src/js/settings.js"></script>
+  <script src="src/js/file_loader.js"></script>
   <script src="src/js/app.js"></script>
 </body>
 </html>
