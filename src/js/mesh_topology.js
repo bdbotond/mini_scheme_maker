@@ -25,6 +25,7 @@
 
   // Topology TypedArrays
   let faceNormals = null;      // Float32Array (numFaces * 3)
+  let faceCentroids = null;    // Float32Array (numFaces * 3)
   let faceAreas = null;        // Float32Array (numFaces)
   let faceMaxAngle = null;     // Float32Array (numFaces)
 
@@ -42,6 +43,11 @@
   let partGroup = null;        // Int32Array (numParts) - group assigned to each part (1, 2, 3, 4...)
   let initialPartGroup = null; // Int32Array (numParts) - original auto classification
   let numParts = 0;
+
+  // Secondary Brush Partition State (Background segmentation, independent from partGroup)
+  let secondaryPartOfFace = null;  // Int32Array (numFaces) - maps each face to its secondary part ID
+  let secondaryPartFaces = [];     // Array of Array<number> for each secondary part ID
+  let numSecondaryParts = 0;
 
   let partCenters = null;      // Float32Array (numParts * 3)
   let partNormals = null;      // Float32Array (numParts * 3)
@@ -89,14 +95,22 @@
     let maxX = -Infinity, maxY = -Infinity, maxZ = -Infinity;
 
     faceNormals = new Float32Array(count * 3);
+    faceCentroids = new Float32Array(count * 3);
     faceAreas = new Float32Array(count);
     totalMeshArea = 0;
+    secondaryPartOfFace = null;
+    secondaryPartFaces = [];
+    numSecondaryParts = 0;
 
     for (let f = 0; f < count; f++) {
       const f9 = f * 9;
       const ax = posArray[f9], ay = posArray[f9+1], az = posArray[f9+2];
       const bx = posArray[f9+3], by = posArray[f9+4], bz = posArray[f9+5];
       const cx = posArray[f9+6], cy = posArray[f9+7], cz = posArray[f9+8];
+
+      faceCentroids[f * 3] = (ax + bx + cx) / 3;
+      faceCentroids[f * 3 + 1] = (ay + by + cy) / 3;
+      faceCentroids[f * 3 + 2] = (az + bz + cz) / 3;
 
       if (ax < minX) minX = ax; if (ax > maxX) maxX = ax;
       if (bx < minX) minX = bx; if (bx > maxX) maxX = bx;
@@ -194,20 +208,11 @@
     }
   }
 
-  // 2. Crease-Angle BFS & Connected Component Segmentation
-  function runSegmentation() {
-    if (!faceMaxAngle || numFaces === 0 || !currentMesh) return;
+  // 2. Core Crease-Angle BFS & Connected Component Segmentation
+  function partitionMeshFaces(edgeThresh, areaPct, minEdgeLen, minStraightness) {
+    if (!faceMaxAngle || numFaces === 0 || !currentMesh) return null;
 
-    const edgeThreshEl = document.getElementById('hardness-slider');
-    const areaPctEl = document.getElementById('area-slider');
-    const edgeThresh = edgeThreshEl ? parseFloat(edgeThreshEl.value) : 24;
-    const areaPct = areaPctEl ? parseFloat(areaPctEl.value) : 2.0;
     const smoothAreaThreshold = totalMeshArea * (areaPct / 100);
-
-    const edgeLenEl = document.getElementById('edge-len-slider');
-    const edgeStraightEl = document.getElementById('edge-straight-slider');
-    const minEdgeLen = edgeLenEl ? (parseInt(edgeLenEl.value, 10) || 1) : 3;
-    const minStraightness = edgeStraightEl ? (parseFloat(edgeStraightEl.value) || 0.0) : 0.0;
 
     // 1. Detect edge faces using edge chain following & straightness filtering
     const isEdgeFace = new Uint8Array(numFaces);
@@ -313,17 +318,17 @@
     }
 
     // 2. BFS: partition non-edge faces
-    partOfFace = new Int32Array(numFaces).fill(-1);
+    const resPartOfFace = new Int32Array(numFaces).fill(-1);
     const queue = new Int32Array(numFaces);
-    numParts = 0;
-    const partArea = [];
-    partFaces = [];
+    let resNumParts = 0;
+    const resPartArea = [];
+    const resPartFaces = [];
 
     for (let f = 0; f < numFaces; f++) {
-      if (isEdgeFace[f] || partOfFace[f] !== -1) continue;
+      if (isEdgeFace[f] || resPartOfFace[f] !== -1) continue;
       let qHead = 0, qTail = 0;
       queue[qTail++] = f;
-      partOfFace[f] = numParts;
+      resPartOfFace[f] = resNumParts;
       let pArea = 0;
       const pFaceList = [];
 
@@ -333,65 +338,95 @@
         pFaceList.push(curr);
         for (let e = adjHead[curr]; e !== -1; e = adjNext[e]) {
           const n = adjTo[e];
-          if (!isEdgeFace[n] && partOfFace[n] === -1) {
-            partOfFace[n] = numParts;
+          if (!isEdgeFace[n] && resPartOfFace[n] === -1) {
+            resPartOfFace[n] = resNumParts;
             queue[qTail++] = n;
           }
         }
       }
-      partArea.push(pArea);
-      partFaces.push(pFaceList);
-      numParts++;
+      resPartArea.push(pArea);
+      resPartFaces.push(pFaceList);
+      resNumParts++;
     }
 
-    // 3. Classify non-edge parts
-    partGroup = [];
-    initialPartGroup = [];
-    for (let p = 0; p < numParts; p++) {
-      const g = partArea[p] >= smoothAreaThreshold ? 1 : 2;
-      partGroup.push(g);
-      initialPartGroup.push(g);
-    }
-
-    // 4. Per-triangle vote-based edge absorption
+    // 3. Per-triangle vote-based edge absorption
     let changed = true;
     while (changed) {
       changed = false;
       for (let f = 0; f < numFaces; f++) {
-        if (!isEdgeFace[f] || partOfFace[f] !== -1) continue;
+        if (!isEdgeFace[f] || resPartOfFace[f] !== -1) continue;
 
         let bestPart = -1, bestVotes = 0;
         for (let e = adjHead[f]; e !== -1; e = adjNext[e]) {
-          const rp = partOfFace[adjTo[e]];
+          const rp = resPartOfFace[adjTo[e]];
           if (rp === -1) continue;
           let votes = 0;
           for (let e2 = adjHead[f]; e2 !== -1; e2 = adjNext[e2]) {
-            if (partOfFace[adjTo[e2]] === rp) votes++;
+            if (resPartOfFace[adjTo[e2]] === rp) votes++;
           }
-          if (votes > bestVotes || (votes === bestVotes && partArea[rp] > partArea[bestPart])) {
+          if (votes > bestVotes || (votes === bestVotes && resPartArea[rp] > resPartArea[bestPart])) {
             bestVotes = votes; bestPart = rp;
           }
         }
 
         if (bestPart !== -1) {
-          partOfFace[f] = bestPart;
-          partFaces[bestPart].push(f);
-          partArea[bestPart] += faceAreas[f];
+          resPartOfFace[f] = bestPart;
+          resPartFaces[bestPart].push(f);
+          resPartArea[bestPart] += faceAreas[f];
           changed = true;
         }
       }
     }
 
-    // 5. Fallback: isolated faces
+    // 4. Fallback: isolated faces
     let biggestPart = 0;
-    for (let p = 1; p < numParts; p++) {
-      if (partArea[p] > partArea[biggestPart]) biggestPart = p;
+    for (let p = 1; p < resNumParts; p++) {
+      if (resPartArea[p] > resPartArea[biggestPart]) biggestPart = p;
     }
     for (let f = 0; f < numFaces; f++) {
-      if (partOfFace[f] === -1) {
-        partOfFace[f] = biggestPart;
-        partFaces[biggestPart].push(f);
+      if (resPartOfFace[f] === -1) {
+        resPartOfFace[f] = biggestPart;
+        resPartFaces[biggestPart].push(f);
       }
+    }
+
+    return {
+      partOfFace: resPartOfFace,
+      partFaces: resPartFaces,
+      numParts: resNumParts,
+      partArea: resPartArea,
+      smoothAreaThreshold
+    };
+  }
+
+  function runSegmentation() {
+    if (!faceMaxAngle || numFaces === 0 || !currentMesh) return;
+
+    const edgeThreshEl = document.getElementById('hardness-slider');
+    const areaPctEl = document.getElementById('area-slider');
+    const edgeThresh = edgeThreshEl ? parseFloat(edgeThreshEl.value) : 24;
+    const areaPct = areaPctEl ? parseFloat(areaPctEl.value) : 2.0;
+
+    const edgeLenEl = document.getElementById('edge-len-slider');
+    const edgeStraightEl = document.getElementById('edge-straight-slider');
+    const minEdgeLen = edgeLenEl ? (parseInt(edgeLenEl.value, 10) || 1) : 3;
+    const minStraightness = edgeStraightEl ? (parseFloat(edgeStraightEl.value) || 0.0) : 0.0;
+
+    const res = partitionMeshFaces(edgeThresh, areaPct, minEdgeLen, minStraightness);
+    if (!res) return;
+
+    partOfFace = res.partOfFace;
+    partFaces = res.partFaces;
+    numParts = res.numParts;
+    const partArea = res.partArea;
+
+    // Classify non-edge parts
+    partGroup = [];
+    initialPartGroup = [];
+    for (let p = 0; p < numParts; p++) {
+      const g = partArea[p] >= res.smoothAreaThreshold ? 1 : 2;
+      partGroup.push(g);
+      initialPartGroup.push(g);
     }
 
     const statParts = document.getElementById('stat-parts');
@@ -404,6 +439,116 @@
     if (typeof closeGroupPopup === 'function') closeGroupPopup();
     fullColorMesh();
     if (typeof updateLiveStats === 'function') updateLiveStats();
+
+    // Re-run secondary segmentation in background to align with new geometry
+    runSecondarySegmentation();
+  }
+
+  // Secondary Brush: background partition without altering mesh colors or existing partGroup
+  function runSecondarySegmentation() {
+    if (!faceMaxAngle || numFaces === 0 || !currentMesh) return;
+
+    const edgeThreshEl = document.getElementById('sec-hardness-slider');
+    const areaPctEl = document.getElementById('sec-area-slider');
+    const edgeLenEl = document.getElementById('sec-edge-len-slider');
+    const edgeStraightEl = document.getElementById('sec-edge-straight-slider');
+
+    const edgeThresh = edgeThreshEl ? parseFloat(edgeThreshEl.value) : 24;
+    const areaPct = areaPctEl ? parseFloat(areaPctEl.value) : 2.0;
+    const minEdgeLen = edgeLenEl ? (parseInt(edgeLenEl.value, 10) || 1) : 3;
+    const minStraightness = edgeStraightEl ? (parseFloat(edgeStraightEl.value) || 0.0) : 0.0;
+
+    const res = partitionMeshFaces(edgeThresh, areaPct, minEdgeLen, minStraightness);
+    if (!res) return;
+
+    secondaryPartOfFace = res.partOfFace;
+    secondaryPartFaces = res.partFaces;
+    numSecondaryParts = res.numParts;
+
+    if (typeof clearSecondaryHoverPreview === 'function') {
+      clearSecondaryHoverPreview();
+    }
+  }
+
+  // Assign arbitrary set of faces to groupNum, splitting primary parts surgically
+  function assignFacesToGroup(targetFaces, groupNum) {
+    if (!targetFaces) return;
+    groupNum = parseInt(groupNum, 10);
+    if (isNaN(groupNum) || groupNum < 1) return;
+
+    if (groupNum > 2) {
+      if (typeof userCreatedGroups !== 'undefined') userCreatedGroups.add(groupNum);
+      if (typeof groupColors !== 'undefined' && !groupColors.has(groupNum)) {
+        groupColors.set(groupNum, getGroupColorHex(groupNum));
+      }
+    }
+
+    const targetFacesSet = (targetFaces instanceof Set) ? targetFaces : new Set(targetFaces);
+    if (targetFacesSet.size === 0) return;
+
+    // Find which primary parts are touched
+    const affectedPrimaryParts = new Set();
+    targetFacesSet.forEach(f => {
+      const p = partOfFace[f];
+      if (p !== -1 && p !== undefined) affectedPrimaryParts.add(p);
+    });
+
+    affectedPrimaryParts.forEach(pId => {
+      const oldFaces = partFaces[pId];
+      if (!oldFaces) return;
+      const remainingFaces = [];
+      const splitFaces = [];
+
+      for (let i = 0; i < oldFaces.length; i++) {
+        const f = oldFaces[i];
+        if (targetFacesSet.has(f)) {
+          splitFaces.push(f);
+        } else {
+          remainingFaces.push(f);
+        }
+      }
+
+      if (remainingFaces.length === 0) {
+        // All faces in primary part were selected: simply reassign group
+        partGroup[pId] = groupNum;
+      } else if (splitFaces.length > 0) {
+        // Split primary part: remaining faces keep existing partId & group;
+        // split faces become a new primary part assigned to groupNum
+        partFaces[pId] = remainingFaces;
+        const newPId = numParts++;
+        partFaces.push(splitFaces);
+        partGroup.push(groupNum);
+        const origInitial = (initialPartGroup && pId < initialPartGroup.length) ? initialPartGroup[pId] : (partGroup[pId] || 1);
+        initialPartGroup.push(origInitial);
+        for (let i = 0; i < splitFaces.length; i++) {
+          partOfFace[splitFaces[i]] = newPId;
+        }
+      }
+    });
+
+    // Write updated colors for target faces
+    const targetFacesArr = Array.from(targetFacesSet);
+    writeFaceSliceColor(targetFacesArr, -1, 'base');
+
+    computePartSpatialData();
+    const statParts = document.getElementById('stat-parts');
+    if (statParts) statParts.textContent = numParts.toLocaleString();
+
+    if (typeof updateLiveStats === 'function') updateLiveStats();
+    if (typeof renderPaintGroupsList === 'function') renderPaintGroupsList();
+  }
+
+  // Assign faces of selected secondary segments to groupNum, splitting primary parts surgically
+  function assignSecondarySelectionToGroup(selectedSecondaryPartIds, groupNum) {
+    if (!selectedSecondaryPartIds || selectedSecondaryPartIds.size === 0 || !secondaryPartFaces) return;
+    const targetFacesSet = new Set();
+    selectedSecondaryPartIds.forEach(spId => {
+      const faces = secondaryPartFaces[spId];
+      if (faces) {
+        for (let i = 0; i < faces.length; i++) targetFacesSet.add(faces[i]);
+      }
+    });
+    assignFacesToGroup(targetFacesSet, groupNum);
   }
 
   function autoCalibrateAndSegment() {
@@ -497,25 +642,43 @@
     const colorAttr = currentMesh.geometry.attributes.color;
     const colorsArr = colorAttr.array;
 
-    let col;
     if (mode === 'hover') {
-      col = COLOR_HOVER;
-    } else if (mode === 'selected') {
-      col = COLOR_SELECTED;
-    } else {
-      const g = (parentPartId >= 0 && parentPartId < numParts) ? partGroup[parentPartId] : 1;
-      col = getGroupColor(g);
-      if (typeof isolatedCategory !== 'undefined' && isolatedCategory !== -1 && g !== isolatedCategory) {
-        col = COLOR_DIMMED;
+      const col = COLOR_HOVER;
+      for (let i = 0; i < faceIndices.length; i++) {
+        const f9 = faceIndices[i] * 9;
+        for (let v = 0; v < 3; v++) {
+          colorsArr[f9 + v*3] = col.r;
+          colorsArr[f9 + v*3 + 1] = col.g;
+          colorsArr[f9 + v*3 + 2] = col.b;
+        }
       }
-    }
-
-    for (let i = 0; i < faceIndices.length; i++) {
-      const f9 = faceIndices[i] * 9;
-      for (let v = 0; v < 3; v++) {
-        colorsArr[f9 + v*3] = col.r;
-        colorsArr[f9 + v*3 + 1] = col.g;
-        colorsArr[f9 + v*3 + 2] = col.b;
+    } else if (mode === 'selected') {
+      const col = COLOR_SELECTED;
+      for (let i = 0; i < faceIndices.length; i++) {
+        const f9 = faceIndices[i] * 9;
+        for (let v = 0; v < 3; v++) {
+          colorsArr[f9 + v*3] = col.r;
+          colorsArr[f9 + v*3 + 1] = col.g;
+          colorsArr[f9 + v*3 + 2] = col.b;
+        }
+      }
+    } else {
+      for (let i = 0; i < faceIndices.length; i++) {
+        const f = faceIndices[i];
+        const p = (parentPartId >= 0 && parentPartId < numParts)
+          ? parentPartId
+          : ((partOfFace && f < partOfFace.length) ? partOfFace[f] : 0);
+        const g = (p >= 0 && p < numParts) ? partGroup[p] : 1;
+        let col = getGroupColor(g);
+        if (typeof isolatedCategory !== 'undefined' && isolatedCategory !== -1 && g !== isolatedCategory) {
+          col = COLOR_DIMMED;
+        }
+        const f9 = f * 9;
+        for (let v = 0; v < 3; v++) {
+          colorsArr[f9 + v*3] = col.r;
+          colorsArr[f9 + v*3 + 1] = col.g;
+          colorsArr[f9 + v*3 + 2] = col.b;
+        }
       }
     }
     colorAttr.needsUpdate = true;
@@ -595,6 +758,8 @@
     set totalMeshArea(v) { totalMeshArea = v; },
     get faceNormals() { return faceNormals; },
     set faceNormals(v) { faceNormals = v; },
+    get faceCentroids() { return faceCentroids; },
+    set faceCentroids(v) { faceCentroids = v; },
     get faceAreas() { return faceAreas; },
     set faceAreas(v) { faceAreas = v; },
     get faceMaxAngle() { return faceMaxAngle; },
@@ -625,9 +790,19 @@
     set subSplitHoverFaces(v) { subSplitHoverFaces = v; },
     get subSplitHoverParentPart() { return subSplitHoverParentPart; },
     set subSplitHoverParentPart(v) { subSplitHoverParentPart = v; },
+    get secondaryPartOfFace() { return secondaryPartOfFace; },
+    set secondaryPartOfFace(v) { secondaryPartOfFace = v; },
+    get secondaryPartFaces() { return secondaryPartFaces; },
+    set secondaryPartFaces(v) { secondaryPartFaces = v; },
+    get numSecondaryParts() { return numSecondaryParts; },
+    set numSecondaryParts(v) { numSecondaryParts = v; },
+    partitionMeshFaces,
     computePartSpatialData,
     buildMeshTopology,
     runSegmentation,
+    runSecondarySegmentation,
+    assignFacesToGroup,
+    assignSecondarySelectionToGroup,
     autoCalibrateAndSegment,
     clearSubSplitPreview,
     computeSubPatchAtFace,

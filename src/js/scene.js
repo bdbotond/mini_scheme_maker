@@ -23,10 +23,9 @@
   const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance', preserveDrawingBuffer: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   if (container) renderer.setSize(container.clientWidth, container.clientHeight);
-  if ('outputEncoding' in renderer) renderer.outputEncoding = THREE.sRGBEncoding;
+  if ('outputEncoding' in renderer) renderer.outputEncoding = THREE.LinearEncoding;
   if ('toneMapping' in renderer) {
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.05;
+    renderer.toneMapping = THREE.NoToneMapping;
   }
   if (container) container.appendChild(renderer.domElement);
 
@@ -35,18 +34,14 @@
   controls.dampingFactor = 0.08;
   controls.mouseButtons = { LEFT: THREE.MOUSE.ROTATE, MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.PAN };
 
-  // Studio lighting
-  scene.add(new THREE.AmbientLight(0xffffff, 0.3));
+  // Calibrated lighting for faithful paint color reproduction with subtle 3D depth
+  scene.add(new THREE.AmbientLight(0xffffff, 0.65));
 
-  const hemiLight = new THREE.HemisphereLight(0xffffff, 0xd0d5dd, 0.3);
-  hemiLight.position.set(0, 50, 0);
-  scene.add(hemiLight);
-
-  const cameraLight = new THREE.DirectionalLight(0xffffff, 0.3);
+  const cameraLight = new THREE.DirectionalLight(0xffffff, 0.35);
   cameraLight.position.set(0, 10, 30);
   camera.add(cameraLight);
 
-  const backFillLight = new THREE.DirectionalLight(0xffffff, 0.3);
+  const backFillLight = new THREE.DirectionalLight(0xffffff, 0.2);
   backFillLight.position.set(0, -10, -30);
   camera.add(backFillLight);
   scene.add(camera);

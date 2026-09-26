@@ -25,11 +25,15 @@
     if (hadHover !== -1) writePartSliceColor(hadHover, 'base');
     hadSelected.forEach(pId => writePartSliceColor(pId, 'base'));
 
+    const wasShapeActive = (typeof ShapeSegmentor !== 'undefined' && ShapeSegmentor.isToolActive);
+    if (wasShapeActive) ShapeSegmentor.deactivateShapeTool();
+
     renderer.render(scene, camera);
 
     renderer.domElement.toBlob((blob) => {
       hadSelected.forEach(pId => writePartSliceColor(pId, 'selected'));
       if (hadHover !== -1 && !hadSelected.has(hadHover)) writePartSliceColor(hadHover, 'hover');
+      if (wasShapeActive) ShapeSegmentor.activateShapeTool();
       renderer.render(scene, camera);
 
       if (!blob) return;
@@ -218,25 +222,69 @@
       return;
     }
 
-    if (typeof clearSubSplitPreview === 'function') clearSubSplitPreview();
-    const hadHover = typeof hoveredPartId !== 'undefined' ? hoveredPartId : -1;
-    const hadSelected = typeof selectedPartIds !== 'undefined' ? new Set(selectedPartIds) : new Set();
-    if (hadHover !== -1) writePartSliceColor(hadHover, 'base');
-    hadSelected.forEach(p => writePartSliceColor(p, 'base'));
-    renderer.render(scene, camera);
-    const imgDataUrl = renderer.domElement.toDataURL('image/png');
-    hadSelected.forEach(p => writePartSliceColor(p, 'selected'));
-    if (hadHover !== -1 && !hadSelected.has(hadHover)) writePartSliceColor(hadHover, 'hover');
-    renderer.render(scene, camera);
-
     const paints = loadedPaintBrands.get(currentSelectedBrandFile) || [];
     const mfr = (currentSelectedBrandFile || '').replace(/_/g,' ').replace('.json','');
     const allGroups = [1, 2, ...Array.from(userCreatedGroups).filter(g=>g>2).sort((a,b)=>a-b)];
     const baseName = (loadedFileName||'model').replace(/\.[^/.]+$/, '');
 
+    // Map each group to its paint match and effective display/model color
+    const groupMatches = new Map();
+    const groupPaintColors = new Map();
+    for (const g of allGroups) {
+      const colHex = getGroupColorHex(g);
+      let match = null;
+      if (paints.length > 0) {
+        match = findClosestPaint(colHex, paints);
+      }
+      groupMatches.set(g, match);
+      groupPaintColors.set(g, match ? match.paint.hex : colHex);
+    }
+
+    if (typeof clearSubSplitPreview === 'function') clearSubSplitPreview();
+    const hadHover = typeof hoveredPartId !== 'undefined' ? hoveredPartId : -1;
+    const hadSelected = typeof selectedPartIds !== 'undefined' ? new Set(selectedPartIds) : new Set();
+
+    const wasShapeActive = (typeof ShapeSegmentor !== 'undefined' && ShapeSegmentor.isToolActive);
+    if (wasShapeActive) ShapeSegmentor.deactivateShapeTool();
+
+    // Temporarily paint mesh with exact paint colors for the reference snapshot
+    const colorAttr = currentMesh.geometry.attributes.color;
+    const colorsArr = colorAttr.array;
+    const origColors = colorsArr.slice();
+
+    for (let p = 0; p < numParts; p++) {
+      const g = partGroup[p];
+      const hex = groupPaintColors.get(g) || getGroupColorHex(g);
+      const tempCol = new THREE.Color(hex);
+      const faces = partFaces[p];
+      if (faces) {
+        for (let i = 0; i < faces.length; i++) {
+          const f9 = faces[i] * 9;
+          for (let v = 0; v < 3; v++) {
+            colorsArr[f9 + v*3] = tempCol.r;
+            colorsArr[f9 + v*3 + 1] = tempCol.g;
+            colorsArr[f9 + v*3 + 2] = tempCol.b;
+          }
+        }
+      }
+    }
+    colorAttr.needsUpdate = true;
+    renderer.render(scene, camera);
+    const imgDataUrl = renderer.domElement.toDataURL('image/png');
+
+    // Restore interactive state and mesh colors
+    colorsArr.set(origColors);
+    colorAttr.needsUpdate = true;
+    hadSelected.forEach(p => writePartSliceColor(p, 'selected'));
+    if (hadHover !== -1 && !hadSelected.has(hadHover)) writePartSliceColor(hadHover, 'hover');
+    if (wasShapeActive) ShapeSegmentor.activateShapeTool();
+    renderer.render(scene, camera);
+
     let rowsHtml = '';
     for (const g of allGroups) {
       const colHex = getGroupColorHex(g);
+      const match = groupMatches.get(g);
+      const paintHex = match ? match.paint.hex : colHex;
       const name = getGroupName(g, false);
       let areaSum = 0;
       for (let p = 0; p < numParts; p++) {
@@ -245,24 +293,27 @@
       }
       const pct = totalMeshArea > 0 ? (areaSum / totalMeshArea * 100).toFixed(1) : '0';
 
-      let paintRow = '';
-      if (paints.length > 0) {
-        const match = findClosestPaint(colHex, paints);
-        if (match) {
-          paintRow = `<div style="font-size:11px;color:#888;margin-top:3px;display:flex;align-items:center;gap:5px;">
-            <span style="width:10px;height:10px;border-radius:2px;background:${match.paint.hex};display:inline-block;border:1px solid #ccc"></span>
-            ${escapeHtml(mfr)}: ${escapeHtml(match.paint.name)} <span style="color:#aaa">${match.paint.hex}</span>
+      let paintDetails = '';
+      if (match) {
+        const dEText = match.dE < 1.0 ? 'Exact' : `ΔE ${match.dE.toFixed(1)}`;
+        paintDetails = `
+          <div style="font-size:12px;font-weight:600;color:#1e293b;margin-top:2px;">
+            ${escapeHtml(match.paint.name)}
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-top:1px;">
+            ${escapeHtml(mfr)} &bull; ${dEText} &bull; <span style="font-family:monospace;color:#475569">${match.paint.hex}</span>
           </div>`;
-        }
       }
 
       rowsHtml += `
-        <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #eee;">
-          <span style="width:24px;height:24px;border-radius:4px;background:${colHex};display:inline-block;flex-shrink:0;border:1px solid #ccc;margin-top:2px"></span>
-          <div>
-            <div style="font-size:13px;font-weight:700;color:#222">${escapeHtml(name)} <span style="font-size:11px;color:#888;font-weight:400">${colHex}</span></div>
-            <div style="font-size:11px;color:#666">Coverage: ${pct}%</div>
-            ${paintRow}
+        <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #e5e7eb;">
+          <span style="width:28px;height:28px;border-radius:6px;background:${paintHex};display:inline-block;flex-shrink:0;border:1px solid rgba(0,0,0,0.2);box-shadow:0 1px 3px rgba(0,0,0,0.08);margin-top:2px"></span>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:13px;font-weight:700;color:#0f172a;display:flex;justify-content:space-between;align-items:center;">
+              <span>${escapeHtml(name)}</span>
+              <span style="font-size:11px;color:#64748b;font-weight:500;">${pct}%</span>
+            </div>
+            ${paintDetails}
           </div>
         </div>`;
     }
@@ -271,12 +322,12 @@
 <html lang="en">
 <head><meta charset="UTF-8"><title>${escapeHtml(baseName)} – Paint Reference</title>
 <style>
-  body { margin:0; font-family: -apple-system, sans-serif; background:#fafafa; color:#222; }
+  body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#f8fafc; color:#0f172a; }
   .wrap { display:flex; min-height:100vh; }
-  .canvas-col { flex:1; background:#1a1a1a; display:flex; align-items:center; justify-content:center; padding:24px; }
-  .canvas-col img { max-width:100%; max-height:90vh; border-radius:8px; }
-  .sidebar { width:280px; background:#fff; border-left:1px solid #e5e7eb; padding:20px; overflow-y:auto; }
-  h1 { font-size:16px; font-weight:700; margin:0 0 16px; color:#111; }
+  .canvas-col { flex:1; background:#121316; display:flex; align-items:center; justify-content:center; padding:24px; }
+  .canvas-col img { max-width:100%; max-height:90vh; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.5); }
+  .sidebar { width:320px; background:#fff; border-left:1px solid #e2e8f0; padding:24px; overflow-y:auto; box-sizing:border-box; }
+  h1 { font-size:18px; font-weight:700; margin:0 0 16px; color:#0f172a; }
 </style>
 </head>
 <body>
@@ -301,11 +352,64 @@
     showToast(`Saved paint sheet: ${baseName}_paint_reference.html`, 'success');
   }
 
+  function saveProjectJSON() {
+    if (!currentMesh || numFaces === 0) {
+      showToast("Please load a 3D model first.", "warning");
+      return;
+    }
+
+    const pos = currentMesh.geometry.attributes.position.array;
+    const bytes = new Uint8Array(pos.buffer, pos.byteOffset, pos.byteLength);
+    let binary = '';
+    const chunkSize = 32768;
+    for (let i = 0; i < bytes.length; i += chunkSize) {
+      binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunkSize));
+    }
+    const positionsBase64 = btoa(binary);
+
+    const colorsObj = {};
+    if (typeof groupColors !== 'undefined') {
+      groupColors.forEach((hex, id) => { colorsObj[id] = hex; });
+    }
+    const namesObj = {};
+    if (typeof groupNames !== 'undefined') {
+      groupNames.forEach((name, id) => { namesObj[id] = name; });
+    }
+
+    const project = {
+      format: 'miniseg',
+      version: 1,
+      modelName: loadedFileName || 'model',
+      numFaces: numFaces,
+      positionsBase64: positionsBase64,
+      partFaces: partFaces || [],
+      partGroup: partGroup ? Array.from(partGroup) : [],
+      initialPartGroup: (typeof initialPartGroup !== 'undefined' && initialPartGroup) ? Array.from(initialPartGroup) : [],
+      groupColors: colorsObj,
+      groupNames: namesObj,
+      userCreatedGroups: (typeof userCreatedGroups !== 'undefined') ? Array.from(userCreatedGroups) : []
+    };
+
+    const baseName = (loadedFileName || 'model').replace(/\.[^/.]+$/, '');
+    const jsonStr = JSON.stringify(project);
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const link = document.createElement('a');
+    const blobUrl = URL.createObjectURL(blob);
+    link.href = blobUrl;
+    link.download = `${baseName}.miniseg.json`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setTimeout(() => URL.revokeObjectURL(blobUrl), 4000);
+    showToast(`Saved presegmented model: ${baseName}.miniseg.json`, "success");
+  }
+
   return {
     downloadViewPNG,
     exportColoredPLY,
     exportColoredOBJ,
     exportColorsCSV,
-    saveViewHTML
+    saveViewHTML,
+    saveProjectJSON
   };
 });

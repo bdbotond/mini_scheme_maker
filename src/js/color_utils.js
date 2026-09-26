@@ -148,6 +148,9 @@
   function setGroupColor(groupNum, hex) {
     groupNum = parseInt(groupNum, 10);
     groupColors.set(groupNum, hex);
+    if (groupNum > 2 && typeof userCreatedGroups !== 'undefined') {
+      userCreatedGroups.add(groupNum);
+    }
     if (typeof THREE !== 'undefined') {
       threeColorCache.set(groupNum, new THREE.Color(hex));
     }

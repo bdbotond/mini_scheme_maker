@@ -9,6 +9,7 @@
   <!-- Local Vendored Dependencies -->
   <script src="dep/three.min.js"></script>
   <script src="dep/OrbitControls.js"></script>
+  <script src="dep/TransformControls.js"></script>
   <script src="dep/STLLoader.js"></script>
   <script src="dep/OBJLoader.js"></script>
   <script src="dep/paints/paints_db.js"></script>
@@ -25,7 +26,7 @@
     <label class="btn btn-primary top-open-btn">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
       Open Model
-      <input type="file" id="file-input" accept=".stl,.obj" style="display: none;">
+      <input type="file" id="file-input" accept=".stl,.obj,.json,.miniseg.json" style="display: none;">
     </label>
   </div>
 
@@ -35,6 +36,10 @@
       <button type="button" class="tool-mode-btn active" id="tool-brush" onclick="setToolMode('brush')" title="Surface Brush (P) - Click to inspect, Shift+Drag to paint">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/><path d="M12 9v12"/></svg>
         Brush <kbd>P</kbd>
+      </button>
+      <button type="button" class="tool-mode-btn" id="tool-secbrush" onclick="setToolMode('secbrush')" title="Secondary Brush (Alt+P) - Background segmentation, hover to preview, click to select area">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/><path d="M12 9v12"/><path d="M5 3v4"/><path d="M3 5h4"/></svg>
+        Secondary Brush <kbd>Alt+P</kbd>
       </button>
       <button type="button" class="tool-mode-btn" id="tool-box" onclick="setToolMode('box')" title="Box Area Select (B) - Drag rectangle to select segments">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="3 3"/></svg>
@@ -47,6 +52,10 @@
       <button type="button" class="tool-mode-btn" id="tool-subsplit" onclick="setToolMode('subsplit')" title="Sub-Split Mode (S) - Hover to preview softer crease patch, click to split and reassign">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
         Sub-Split <kbd>S</kbd>
+      </button>
+      <button type="button" class="tool-mode-btn" id="tool-shape" onclick="setToolMode('shape')" title="Shape Volume Select (V) - Movable & resizable 3D shape to segment and color">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        Shape <kbd>V</kbd>
       </button>
     </div>
 
@@ -78,9 +87,19 @@
       <span class="stat-chip-label">Area:</span>
       <b id="stat-area" class="stat-chip-val">0</b>
     </div>
+    <button class="btn" title="Color Recommender — pick a 3-color harmony scheme" onclick="openColorRecommender()" style="padding: 5px 10px; font-size: 13px;">
+      🎨
+    </button>
+    <button class="btn" id="tutorial-btn" title="Tutorial & Guide (?)" onclick="openTutorial()" style="padding: 5px 10px; font-size: 12px; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Tutorial
+    </button>
     <button class="btn" id="settings-btn" title="Settings" onclick="openSettings()" style="padding: 5px 10px;">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
     </button>
+    <a href="https://buymeacoffee.com/bdbotond" target="_blank" rel="noopener noreferrer" class="bmac-badge-link" title="Support the project on Buy Me a Coffee">
+      <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee">
+    </a>
   </div>
 
 </header>
@@ -89,7 +108,7 @@
 <div id="canvas-container">
   <div id="drop-overlay">
     <h2>Drop 3D Miniature Here</h2>
-    <p>Supports .STL and .OBJ mesh files</p>
+    <p>Supports .STL, .OBJ, and .miniseg.json project files</p>
   </div>
   <div id="loading-indicator">Segmenting surface geometry...</div>
   <div id="surface-inspector">Hover over surface to inspect geometry</div>
@@ -171,7 +190,10 @@
   <div class="panel-section" id="miniature-paint-panel">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
       <span class="section-title">Paint Matching</span>
-      <span id="paint-brand-count" style="font-size: 10px; color: var(--text-muted);">Loading brands...</span>
+      <div style="display: flex; gap: 6px; align-items: center;">
+        <button class="btn" style="padding: 2px 7px; font-size: 11px;" onclick="applyMatchedPaintsToAllGroups()" title="Apply matched miniature paint colors to all groups on the model">Apply to Model</button>
+        <span id="paint-brand-count" style="font-size: 10px; color: var(--text-muted);">Loading brands...</span>
+      </div>
     </div>
     <div class="control-box">
       <div style="display: flex; flex-direction: column; gap: 4px;">
@@ -240,6 +262,51 @@
   <div class="panel-section" id="tool-settings-panel" style="display: none;">
     <div class="section-title" id="tool-settings-title">Tool Parameters</div>
     <div class="control-box">
+      <!-- Secondary Brush Controls -->
+      <div id="secbrush-tool-settings" style="display: none;">
+        <div>
+          <div class="slider-header">
+            <span>Edge Detection Hardness</span>
+            <b id="sec-hardness-val">24°</b>
+          </div>
+          <input type="range" id="sec-hardness-slider" min="10" max="60" step="1" value="24">
+          <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+            Dihedral boundary angle break for secondary segmentation. Does not alter colors.
+          </div>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <div class="slider-header">
+            <span>Smooth Patch Min Area</span>
+            <b id="sec-area-val">2.0%</b>
+          </div>
+          <input type="range" id="sec-area-slider" min="0.2" max="6.0" step="0.2" value="2.0">
+          <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Patches smaller than this become Fine Detail.</div>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <div class="slider-header">
+            <span>Min Feature Edge Length</span>
+            <b id="sec-edge-len-val">3 edges</b>
+          </div>
+          <input type="range" id="sec-edge-len-slider" min="1" max="25" step="1" value="3">
+          <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+            Filter out sharp crease noise shorter than N connected edges.
+          </div>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <div class="slider-header">
+            <span>Edge Straightness Filter</span>
+            <b id="sec-edge-straight-val">0.0 (Off)</b>
+          </div>
+          <input type="range" id="sec-edge-straight-slider" min="0.0" max="0.95" step="0.05" value="0.0">
+          <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+            Require straight feature chains. 0.0 = any straightness.
+          </div>
+        </div>
+      </div>
+
       <!-- Sub-Split Controls -->
       <div id="subsplit-tool-settings" style="display: none;">
         <div class="slider-header">
@@ -261,6 +328,70 @@
         <input type="range" id="radius-slider" min="10" max="100" step="5" value="35" oninput="selectionRadiusPx = parseInt(this.value, 10); document.getElementById('radius-val').textContent = this.value + ' px'">
         <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">
           Radius threshold for circular area selection (<kbd>R</kbd>).
+        </div>
+      </div>
+
+      <!-- Shape Tool Controls -->
+      <div id="shape-tool-settings" style="display: none;">
+        <!-- Shape Type Selector -->
+        <div style="font-size: 11px; font-weight: 600; color: var(--text-muted); margin-bottom: 6px;">Shape Type</div>
+        <div style="display: flex; gap: 4px; margin-bottom: 12px;">
+          <button type="button" class="btn shape-type-btn active" id="btn-shape-box" onclick="ShapeSegmentor.setShapeType('box')" style="flex: 1; padding: 5px 8px; font-size: 11px;">Box</button>
+          <button type="button" class="btn shape-type-btn" id="btn-shape-sphere" onclick="ShapeSegmentor.setShapeType('sphere')" style="flex: 1; padding: 5px 8px; font-size: 11px;">Sphere</button>
+          <button type="button" class="btn shape-type-btn" id="btn-shape-cylinder" onclick="ShapeSegmentor.setShapeType('cylinder')" style="flex: 1; padding: 5px 8px; font-size: 11px;">Cylinder</button>
+        </div>
+
+        <!-- Transform Gizmo Mode -->
+        <div style="font-size: 11px; font-weight: 600; color: var(--text-muted); margin-bottom: 6px;">Gizmo Mode</div>
+        <div style="display: flex; gap: 4px; margin-bottom: 12px;">
+          <button type="button" class="btn shape-transform-btn active" id="btn-shape-mode-translate" onclick="ShapeSegmentor.setTransformMode('translate')" style="flex: 1; padding: 5px 6px; font-size: 11px;">Move <kbd>W</kbd></button>
+          <button type="button" class="btn shape-transform-btn" id="btn-shape-mode-rotate" onclick="ShapeSegmentor.setTransformMode('rotate')" style="flex: 1; padding: 5px 6px; font-size: 11px;">Rotate <kbd>E</kbd></button>
+          <button type="button" class="btn shape-transform-btn" id="btn-shape-mode-scale" onclick="ShapeSegmentor.setTransformMode('scale')" style="flex: 1; padding: 5px 6px; font-size: 11px;">Scale <kbd>R</kbd></button>
+        </div>
+
+        <!-- Position Controls -->
+        <div style="font-size: 11px; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Position (X, Y, Z)</div>
+        <div style="display: flex; gap: 4px; margin-bottom: 10px;">
+          <input type="number" id="shape-pos-x" step="0.5" class="shape-num-input" title="X Position" placeholder="X">
+          <input type="number" id="shape-pos-y" step="0.5" class="shape-num-input" title="Y Position" placeholder="Y">
+          <input type="number" id="shape-pos-z" step="0.5" class="shape-num-input" title="Z Position" placeholder="Z">
+        </div>
+
+        <!-- Size / Dimensions -->
+        <div style="font-size: 11px; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Size / Scale (X, Y, Z)</div>
+        <div style="display: flex; gap: 4px; margin-bottom: 10px;">
+          <input type="number" id="shape-scale-x" min="0.1" step="0.5" class="shape-num-input" title="X Dimension" placeholder="W">
+          <input type="number" id="shape-scale-y" min="0.1" step="0.5" class="shape-num-input" title="Y Dimension" placeholder="H">
+          <input type="number" id="shape-scale-z" min="0.1" step="0.5" class="shape-num-input" title="Z Dimension" placeholder="D">
+        </div>
+
+        <!-- Rotation -->
+        <div style="font-size: 11px; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Rotation (deg)</div>
+        <div style="display: flex; gap: 4px; margin-bottom: 12px;">
+          <input type="number" id="shape-rot-x" step="5" class="shape-num-input" title="X Rotation in degrees" placeholder="RX">
+          <input type="number" id="shape-rot-y" step="5" class="shape-num-input" title="Y Rotation in degrees" placeholder="RY">
+          <input type="number" id="shape-rot-z" step="5" class="shape-num-input" title="Z Rotation in degrees" placeholder="RZ">
+        </div>
+
+        <!-- Intersection Live Readout -->
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; background: rgba(0,0,0,0.25); border-radius: 4px; margin-bottom: 12px; font-size: 11px;">
+          <span style="color: var(--text-muted);">Intersection:</span>
+          <b id="shape-intersect-count" style="color: #38bdf8;">0 faces</b>
+        </div>
+
+        <!-- Actions -->
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <button type="button" class="btn btn-primary" id="btn-shape-apply" onclick="ShapeSegmentor.applyShapeSegmentation()" style="width: 100%; font-weight: 700; padding: 8px;">
+            Apply Color <kbd>Enter</kbd>
+          </button>
+          <div style="display: flex; gap: 4px;">
+            <button type="button" class="btn" id="btn-shape-snap-toggle" style="flex: 1; padding: 6px; font-size: 11px;" title="Click on the miniature to snap the shape center to that spot">
+              🎯 Snap to Click
+            </button>
+            <button type="button" class="btn" id="btn-shape-reset" onclick="ShapeSegmentor.resetShape()" style="flex: 1; padding: 6px; font-size: 11px;" title="Center and fit shape on model">
+              Reset Shape
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -296,13 +427,449 @@
         Save Paint Sheet (HTML)
       </button>
 
+      <button class="btn btn-primary" style="width: 100%; margin-top: 6px;" onclick="saveProjectJSON()" id="btn-save-project" title="Save presegmented model with all geometry and color groups (.miniseg.json)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+        Save Project (.miniseg.json)
+      </button>
+
       <div style="font-size: 10px; color: var(--text-muted); line-height: 1.3;">
-        Colored 3D exports include all custom group colors &amp; manual paint edits.
+        Save Project stores geometry &amp; segmented parts to reopen or set as default later.
       </div>
     </div>
   </div>
 </div>
 </div>
+
+<!-- Tutorial & Guide Modal -->
+<div id="tutorial-modal" onclick="if(event.target===this)closeTutorial()">
+  <div class="tutorial-dialog" onclick="event.stopPropagation()">
+    
+    <!-- Modal Header -->
+    <div class="tutorial-header">
+      <div class="tutorial-header-title">
+        <h2>
+          <span>💡</span> Mini Scheme Maker Guide &amp; Tutorial
+        </h2>
+        <div class="tutorial-header-subtitle">Interactive 3D Miniature Paint-Scheme Planner &amp; Surface Segmentor</div>
+      </div>
+      <button class="settings-close" onclick="closeTutorial()" title="Close (Esc)">&times;</button>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="tutorial-tabs">
+      <button type="button" class="tutorial-tab-btn active" data-tab="workflow" onclick="switchTutorialTab('workflow')">
+        <span>🚀</span> Quick Start
+      </button>
+      <button type="button" class="tutorial-tab-btn" data-tab="tools" onclick="switchTutorialTab('tools')">
+        <span>🛠️</span> Tools Available
+      </button>
+      <button type="button" class="tutorial-tab-btn" data-tab="options" onclick="switchTutorialTab('options')">
+        <span>🎛️</span> Options &amp; Panels
+      </button>
+      <button type="button" class="tutorial-tab-btn" data-tab="shortcuts" onclick="switchTutorialTab('shortcuts')">
+        <span>⌨️</span> Shortcuts &amp; Controls
+      </button>
+    </div>
+
+    <!-- Modal Body / Tab Panes -->
+    <div class="tutorial-body">
+
+      <!-- Tab 1: Quick Start Workflow -->
+      <div class="tutorial-tab-pane active" id="tutorial-tab-workflow">
+        <div style="font-size: 13px; color: var(--text); line-height: 1.5;">
+          Welcome to <b>Mini Scheme Maker</b>! This tool segments your 3D miniature into geometric surface patches so you can plan, test, and match realistic paint schemes right in your browser.
+        </div>
+
+        <div class="tutorial-step-list">
+          <div class="tutorial-step-item">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-content">
+              <div class="tutorial-step-title">Load your 3D Miniature</div>
+              <div class="tutorial-step-desc">
+                Click the <b>Open Model</b> button in the top left or drag and drop a <code>.STL</code>, <code>.OBJ</code>, or <code>.miniseg.json</code> project file directly into the viewport.
+              </div>
+            </div>
+          </div>
+
+          <div class="tutorial-step-item">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-content">
+              <div class="tutorial-step-title">Automatic Surface Segmentation</div>
+              <div class="tutorial-step-desc">
+                The mesh is instantly segmented based on dihedral crease angles. Large smooth surfaces automatically group into <b>Group 1 (Slate Grey)</b>, while fine textures and small details become <b>Group 2 (Yellow)</b>.
+              </div>
+            </div>
+          </div>
+
+          <div class="tutorial-step-item">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-content">
+              <div class="tutorial-step-title">Tune &amp; Auto-Calibrate Edge Detection</div>
+              <div class="tutorial-step-desc">
+                Use the sliders in the <b>Edge Detection &amp; Hardness Tuner</b> panel to tweak crease sensitivity, or click <b>Auto-Calibrate</b> to calculate the optimal crease threshold for your specific model automatically.
+              </div>
+            </div>
+          </div>
+
+          <div class="tutorial-step-item">
+            <div class="tutorial-step-num">4</div>
+            <div class="tutorial-step-content">
+              <div class="tutorial-step-title">Select &amp; Repaint Surfaces</div>
+              <div class="tutorial-step-desc">
+                Pick a selection tool from the top toolbar: use <b>Brush (<kbd>P</kbd>)</b> or <code>Shift+Drag</code> to paint, <b>Box Select (<kbd>B</kbd>)</b> or <b>Radius Select (<kbd>R</kbd>)</b> for multi-part selection, <b>Sub-Split (<kbd>S</kbd>)</b> to slice finer creases, or <b>Shape (<kbd>V</kbd>)</b> for 3D volumetric coloring.
+              </div>
+            </div>
+          </div>
+
+          <div class="tutorial-step-item">
+            <div class="tutorial-step-num">5</div>
+            <div class="tutorial-step-content">
+              <div class="tutorial-step-title">Explore Color Harmonies &amp; Miniature Paints</div>
+              <div class="tutorial-step-desc">
+                Click the <b>Color Recommender (🎨)</b> to generate complementary or triadic color harmonies. In the <b>Paint Matching</b> panel, choose your favorite hobby brand (Citadel, Vallejo, Army Painter, Scale75, etc.) and click <b>Apply to Model</b> to preview authentic miniature paints.
+              </div>
+            </div>
+          </div>
+
+          <div class="tutorial-step-item">
+            <div class="tutorial-step-num">6</div>
+            <div class="tutorial-step-content">
+              <div class="tutorial-step-title">Export Your Scheme</div>
+              <div class="tutorial-step-desc">
+                Download a clean PNG snapshot, export a vertex-colored 3D model (<code>.PLY</code> or <code>.OBJ</code>) for 3D software, download a palette CSV, generate a standalone <b>HTML Paint Reference Sheet</b>, or save a <code>.miniseg.json</code> project file.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Available Tools -->
+      <div class="tutorial-tab-pane" id="tutorial-tab-tools">
+        <div class="tutorial-grid-2">
+          
+          <!-- Brush Tool -->
+          <div class="tutorial-card">
+            <div class="tutorial-card-header">
+              <div class="tutorial-card-title">
+                <span>🖌️</span> Surface Brush
+              </div>
+              <span class="tutorial-card-badge"><kbd>P</kbd></span>
+            </div>
+            <div class="tutorial-card-desc">
+              <b>Default Inspection &amp; Paint Tool:</b>
+              <ul style="margin: 6px 0 0; padding-left: 18px;">
+                <li><b>Click a segment:</b> Inspects face count &amp; opens the quick group reassignment popup.</li>
+                <li><b>Shift + Drag:</b> Direct continuous painting on the mesh using the current active brush color.</li>
+                <li><b>Keys 1–9:</b> Instantly change the active brush group or assign the current selection.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Secondary Brush Tool -->
+          <div class="tutorial-card">
+            <div class="tutorial-card-header">
+              <div class="tutorial-card-title">
+                <span>🎨</span> Secondary Brush
+              </div>
+              <span class="tutorial-card-badge"><kbd>Alt+P</kbd></span>
+            </div>
+            <div class="tutorial-card-desc">
+              <b>Non-Destructive Background Segmentation:</b>
+              <ul style="margin: 6px 0 0; padding-left: 18px;">
+                <li>Runs an independent, fine-grained surface segmentation without wiping existing custom paint groups.</li>
+                <li><b>Hover:</b> Live preview of delicate sub-regions and creases.</li>
+                <li><b>Click:</b> Selects the hovered sub-region and assigns it surgically to your chosen paint group.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Box Select Tool -->
+          <div class="tutorial-card">
+            <div class="tutorial-card-header">
+              <div class="tutorial-card-title">
+                <span>⬚</span> Box Area Select
+              </div>
+              <span class="tutorial-card-badge"><kbd>B</kbd></span>
+            </div>
+            <div class="tutorial-card-desc">
+              <b>2D Marquee Selection:</b>
+              <ul style="margin: 6px 0 0; padding-left: 18px;">
+                <li>Click and drag a rectangular box across the 3D viewport.</li>
+                <li>All surface parts falling within the bounding rectangle are selected simultaneously.</li>
+                <li>Click <b>Map Selected to Active Brush</b> or press keys <kbd>1</kbd>–<kbd>9</kbd> to paint all selected parts at once.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Radius Select Tool -->
+          <div class="tutorial-card">
+            <div class="tutorial-card-header">
+              <div class="tutorial-card-title">
+                <span>⭕</span> Radius Area Select
+              </div>
+              <span class="tutorial-card-badge"><kbd>R</kbd></span>
+            </div>
+            <div class="tutorial-card-desc">
+              <b>Circular Radial Brush:</b>
+              <ul style="margin: 6px 0 0; padding-left: 18px;">
+                <li>Displays an interactive circle cursor on the model.</li>
+                <li>Click or drag to select all surface segments within the circular zone.</li>
+                <li>Adjust selection radius (10–100 px) in the <b>Contextual Tool Parameters</b> panel.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Sub-Split Tool -->
+          <div class="tutorial-card">
+            <div class="tutorial-card-header">
+              <div class="tutorial-card-title">
+                <span>✂️</span> Sub-Split Tool
+              </div>
+              <span class="tutorial-card-badge"><kbd>S</kbd></span>
+            </div>
+            <div class="tutorial-card-desc">
+              <b>Crease Subdivision Slicer:</b>
+              <ul style="margin: 6px 0 0; padding-left: 18px;">
+                <li>Hover over surfaces to preview subtle sub-patches defined by the <b>Sub-surface Split Angle</b> slider.</li>
+                <li><b>Click:</b> Permanently splits the highlighted sub-patch into its own independent surface segment.</li>
+                <li>Allows separating armor plates, buckles, straps, and insignias without re-segmenting the whole model.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Shape Tool -->
+          <div class="tutorial-card">
+            <div class="tutorial-card-header">
+              <div class="tutorial-card-title">
+                <span>🧊</span> Shape 3D Volume Select
+              </div>
+              <span class="tutorial-card-badge"><kbd>V</kbd></span>
+            </div>
+            <div class="tutorial-card-desc">
+              <b>3D Volumetric Cutter &amp; Painter:</b>
+              <ul style="margin: 6px 0 0; padding-left: 18px;">
+                <li>Spawn a 3D primitive volume: <b>Box</b>, <b>Sphere</b>, or <b>Cylinder</b>.</li>
+                <li>Interactive 3D transform gizmos: Move (<kbd>W</kbd>), Rotate (<kbd>E</kbd>), Scale (<kbd>R</kbd>).</li>
+                <li><b>Snap to Click:</b> Click any spot on the miniature to instantly teleport the shape center there.</li>
+                <li><b>Apply Color (<kbd>Enter</kbd>):</b> Surgically colors all triangles enclosed inside the 3D volume.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tab 3: Options & Panels -->
+      <div class="tutorial-tab-pane" id="tutorial-tab-options">
+        
+        <!-- Paint Groups & Palette -->
+        <div class="tutorial-card">
+          <div class="tutorial-card-title">
+            <span>🎨</span> Paint Groups Panel &amp; Color Recommender
+          </div>
+          <div class="tutorial-card-desc">
+            <ul style="margin: 4px 0 0; padding-left: 18px;">
+              <li><b>Color Swatch &amp; Hex:</b> Click any group's color square to pick custom colors or enter hexadecimal codes.</li>
+              <li><b>Group Renaming:</b> Click on any group name to edit it (e.g. <i>"Power Armor Base"</i>, <i>"Trim Gold"</i>, <i>"Purity Seals"</i>).</li>
+              <li><b>Distribution Bar:</b> Shows real-time percentage breakdown of surface area covered by each color group.</li>
+              <li><b>+ Add Group:</b> Create unlimited custom color groups.</li>
+              <li><b>Color Recommender (🎨):</b> Open from the top bar to browse color harmony rules (Complementary, Triadic, Analogous, Split-Complementary) and apply balanced palettes in one click.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Miniature Paint Matching -->
+        <div class="tutorial-card">
+          <div class="tutorial-card-title">
+            <span>🏷️</span> Miniature Paint Matching (CIEDE2000 ΔE)
+          </div>
+          <div class="tutorial-card-desc">
+            <ul style="margin: 4px 0 0; padding-left: 18px;">
+              <li>Select your preferred paint brand from the dropdown: <b>Citadel / Warhammer</b>, <b>Vallejo Model Color</b>, <b>Vallejo Game Color</b>, <b>Army Painter Warpaints</b>, <b>Scale75</b>, and more.</li>
+              <li>Calculates the mathematically closest physical hobby paint using the industry-standard <b>CIEDE2000 ΔE</b> perceptual formula.</li>
+              <li><b>Apply to Model:</b> Snaps your digital colors to real-world hobby paint values so your preview matches your physical paint rack.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Edge Detection & Hardness Tuner -->
+        <div class="tutorial-card">
+          <div class="tutorial-card-title">
+            <span>📐</span> Edge Detection &amp; Hardness Tuner
+          </div>
+          <div class="tutorial-card-desc">
+            <ul style="margin: 4px 0 0; padding-left: 18px;">
+              <li><b>Edge Detection Hardness (10°–60°):</b> Dihedral crease angle threshold. Lower values detect softer creases; higher values isolate only sharp breaks.</li>
+              <li><b>Smooth Patch Min Area (0.2%–6.0%):</b> Minimum percentage of total mesh area required for a patch to stay in Group 1 (Smooth). Smaller patches become Group 2 (Detail).</li>
+              <li><b>Min Feature Edge Length:</b> Eliminates noisy sharp creases shorter than N connected edges.</li>
+              <li><b>Edge Straightness Filter:</b> Enforces chord/arc straightness on crease chains to ignore jagged organic noise.</li>
+              <li><b>Auto-Calibrate:</b> Automatically analyzes the geometric curvature of your mesh and picks optimal thresholds.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contextual Tool Settings -->
+        <div class="tutorial-card">
+          <div class="tutorial-card-title">
+            <span>🎚️</span> Contextual Tool Parameters Panel
+          </div>
+          <div class="tutorial-card-desc">
+            Automatically reveals parameter controls specific to your currently active tool:
+            <ul style="margin: 4px 0 0; padding-left: 18px;">
+              <li><b>Secondary Brush:</b> Dedicated hardness angle, min area, edge length, and straightness sliders.</li>
+              <li><b>Sub-Split:</b> Sub-surface split angle slider with real-time hover highlight updates.</li>
+              <li><b>Radius Select:</b> Cursor pixel radius slider (10–100 px).</li>
+              <li><b>Shape Tool:</b> Shape type selection, transform mode, exact numeric XYZ position, dimensions, rotation inputs, and live face count readout.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Export & Download -->
+        <div class="tutorial-card">
+          <div class="tutorial-card-title">
+            <span>💾</span> Export &amp; Download Options
+          </div>
+          <div class="tutorial-card-desc">
+            <ul style="margin: 4px 0 0; padding-left: 18px;">
+              <li><b>Download View (PNG):</b> High-resolution viewport render with transparent or dark background.</li>
+              <li><b>Export 3D (.ply):</b> Stanford PLY file containing the 3D mesh with per-vertex RGBA color data (compatible with Blender, 3D printing slicers, ZBrush).</li>
+              <li><b>Export 3D (.obj):</b> Wavefront OBJ file with vertex colors.</li>
+              <li><b>Export Colors (.csv):</b> Spreadsheet table listing group names, hex codes, triangle counts, surface area percentages, and matched miniature paints.</li>
+              <li><b>Save Paint Sheet (HTML):</b> Standalone, interactive HTML file featuring miniature snapshot, interactive color swatches, and paint shopping guide.</li>
+              <li><b>Save Project (.miniseg.json):</b> Complete project serialization storing geometry, precomputed partition cuts, and custom paint groups.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div class="tutorial-card">
+          <div class="tutorial-card-title">
+            <span>⚙️</span> Preferences &amp; Settings
+          </div>
+          <div class="tutorial-card-desc">
+            <ul style="margin: 4px 0 0; padding-left: 18px;">
+              <li><b>Theme:</b> Switch between <b>Dark</b> (default) and <b>Light</b> themes.</li>
+              <li><b>Mouse Sensitivity:</b> Independent sliders for Orbit speed, Pan speed, and Zoom speed.</li>
+              <li><b>Keybinding Rebinding:</b> Click any tool shortcut button to rebind it to any key combination.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tab 4: Shortcuts & Navigation -->
+      <div class="tutorial-tab-pane" id="tutorial-tab-shortcuts">
+        <div style="font-size: 13px; font-weight: 700; color: var(--text);">Keyboard Shortcuts</div>
+        
+        <table class="tutorial-table">
+          <thead>
+            <tr>
+              <th style="width: 140px;">Key / Shortcut</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><kbd>P</kbd></td>
+              <td>Activate <b>Surface Brush Tool</b> (Click to inspect, Shift+Drag to paint)</td>
+            </tr>
+            <tr>
+              <td><kbd>Alt+P</kbd></td>
+              <td>Activate <b>Secondary Brush Tool</b> (Background segmentation, hover to preview)</td>
+            </tr>
+            <tr>
+              <td><kbd>B</kbd></td>
+              <td>Activate <b>Box Area Select</b> (Drag 2D rectangle)</td>
+            </tr>
+            <tr>
+              <td><kbd>R</kbd></td>
+              <td>Activate <b>Radius Area Select</b> (Click/drag circular brush)</td>
+            </tr>
+            <tr>
+              <td><kbd>S</kbd></td>
+              <td>Activate <b>Sub-Split Tool</b> (Hover to preview crease patch, click to carve)</td>
+            </tr>
+            <tr>
+              <td><kbd>V</kbd></td>
+              <td>Activate <b>Shape 3D Volume Select</b> (Box, Sphere, Cylinder 3D volume)</td>
+            </tr>
+            <tr>
+              <td><kbd>1</kbd> – <kbd>9</kbd></td>
+              <td>Set active brush group / Assign current selection to Group 1–9</td>
+            </tr>
+            <tr>
+              <td><kbd>Shift</kbd> + Drag</td>
+              <td>Paint surfaces directly with active brush color (in Brush mode)</td>
+            </tr>
+            <tr>
+              <td><kbd>W</kbd> / <kbd>E</kbd> / <kbd>R</kbd></td>
+              <td>Switch Shape gizmo mode: <b>Move</b> (<kbd>W</kbd>), <b>Rotate</b> (<kbd>E</kbd>), <b>Scale</b> (<kbd>R</kbd>)</td>
+            </tr>
+            <tr>
+              <td><kbd>Enter</kbd></td>
+              <td>Apply active color to all triangles inside the 3D Shape volume</td>
+            </tr>
+            <tr>
+              <td><kbd>Esc</kbd></td>
+              <td>Deselect all selected parts / Close open popups</td>
+            </tr>
+            <tr>
+              <td><kbd>?</kbd></td>
+              <td>Open this <b>Tutorial &amp; Feature Guide</b></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="font-size: 13px; font-weight: 700; color: var(--text); margin-top: 10px;">3D Viewport Navigation</div>
+        
+        <table class="tutorial-table">
+          <thead>
+            <tr>
+              <th style="width: 140px;">Mouse Input</th>
+              <th>Navigation Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Left Click + Drag</b></td>
+              <td>Orbit / Rotate camera around miniature</td>
+            </tr>
+            <tr>
+              <td><b>Right Click + Drag</b></td>
+              <td>Pan / Translate camera</td>
+            </tr>
+            <tr>
+              <td><b>Scroll Wheel</b></td>
+              <td>Zoom in / Zoom out</td>
+            </tr>
+            <tr>
+              <td><b>Orientation Cube</b> (top-right gizmo)</td>
+              <td>Click any cube face (Top, Front, Right, etc.) to snap camera to that exact axis</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div><!-- /.tutorial-body -->
+
+    <!-- Modal Footer -->
+    <div class="tutorial-footer">
+      <label class="tutorial-startup-toggle">
+        <input type="checkbox" id="tutorial-startup-chk" checked>
+        Show tutorial when opening page
+      </label>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="https://buymeacoffee.com/bdbotond" target="_blank" rel="noopener noreferrer" class="bmac-badge-link" title="Support the project on Buy Me a Coffee">
+          <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee">
+        </a>
+        <button type="button" class="btn btn-primary" onclick="closeTutorial()" style="padding: 7px 18px; font-weight: 600;">
+          Got It, Let's Paint! 🚀
+        </button>
+      </div>
+    </div>
+
+  </div><!-- /.tutorial-dialog -->
+</div><!-- /#tutorial-modal -->
 
 <!-- Settings Modal -->
 <div id="settings-modal" onclick="closeSettings()">
@@ -343,6 +910,10 @@
         <button class="keybind-btn" id="kb-brush" onclick="startRebind('brush')">P</button>
       </div>
       <div class="settings-keybind">
+        <label>Secondary Brush</label>
+        <button class="keybind-btn" id="kb-secbrush" onclick="startRebind('secbrush')">ALT+P</button>
+      </div>
+      <div class="settings-keybind">
         <label>Box Select</label>
         <button class="keybind-btn" id="kb-box" onclick="startRebind('box')">B</button>
       </div>
@@ -354,6 +925,16 @@
         <label>Sub-Split</label>
         <button class="keybind-btn" id="kb-subsplit" onclick="startRebind('subsplit')">S</button>
       </div>
+      <div class="settings-keybind">
+        <label>Shape Tool</label>
+        <button class="keybind-btn" id="kb-shape" onclick="startRebind('shape')">V</button>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin: 4px 0;">
+      <a href="https://buymeacoffee.com/bdbotond" target="_blank" rel="noopener noreferrer" class="bmac-badge-link" title="Support the project on Buy Me a Coffee">
+        <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee">
+      </a>
     </div>
 
     <div style="display: flex; gap: 8px; margin-top: 4px;">
@@ -364,6 +945,76 @@
 </div>
 
 <div id="toast-container"></div>
+
+  <!-- Color Recommender Modal -->
+  <div id="color-recommender-modal" onclick="if(event.target===this)closeColorRecommender()">
+    <div class="crec-dialog">
+
+      <div class="crec-header">
+        <h3>🎨 Color Recommender</h3>
+        <button class="popup-close" onclick="closeColorRecommender()">&times;</button>
+      </div>
+
+      <div class="crec-body">
+
+        <!-- Step indicator + 3 color slots -->
+        <div id="crec-step-label" style="font-size:11px;font-weight:700;color:#60a5fa;">Editing: Color 1</div>
+        <div class="crec-slots">
+          <div class="crec-slot" id="crec-slot-0" onclick="crecSetActiveSlot(0)" title="Color 1 — click to edit">
+            <button class="crec-slot-clear" onclick="event.stopPropagation();crecClearSlot(0)" title="Clear">×</button>
+            <span class="crec-slot-num">1</span>
+            <span class="crec-slot-hex">—</span>
+          </div>
+          <div class="crec-slot" id="crec-slot-1" onclick="crecSetActiveSlot(1)" title="Color 2 — click to edit">
+            <button class="crec-slot-clear" onclick="event.stopPropagation();crecClearSlot(1)" title="Clear">×</button>
+            <span class="crec-slot-num">2</span>
+            <span class="crec-slot-hex">—</span>
+          </div>
+          <div class="crec-slot" id="crec-slot-2" onclick="crecSetActiveSlot(2)" title="Color 3 — click to edit">
+            <button class="crec-slot-clear" onclick="event.stopPropagation();crecClearSlot(2)" title="Clear">×</button>
+            <span class="crec-slot-num">3</span>
+            <span class="crec-slot-hex">—</span>
+          </div>
+        </div>
+
+        <!-- Color Wheel + controls -->
+        <div class="crec-wheel-row">
+          <canvas id="crec-wheel" width="200" height="200" title="Click or drag to pick a color"></canvas>
+          <div class="crec-wheel-controls">
+            <div id="crec-preview-bar">
+              <span id="crec-preview-hex" style="font-size:12px;font-family:monospace;font-weight:700;">—</span>
+            </div>
+            <div class="crec-lightness-row">
+              <span>Lightness</span>
+              <input type="range" id="crec-lightness-slider" min="10" max="90" step="1" value="55">
+              <span id="crec-lightness-val">55%</span>
+            </div>
+            <div class="crec-hex-row">
+              <input type="text" id="crec-hex-input" placeholder="#rrggbb — press Enter" maxlength="7">
+            </div>
+            <div class="crec-hex-hint">Type a hex code and press Enter to set</div>
+          </div>
+        </div>
+
+        <!-- Harmony suggestions -->
+        <div class="crec-recs-section">
+          <div id="crec-recs">
+            <div class="crec-hint">Pick your first color from the wheel above, or enter a hex code.</div>
+          </div>
+        </div>
+
+      </div><!-- /.crec-body -->
+
+      <!-- Footer -->
+      <div class="crec-footer">
+        <div id="crec-apply-row">
+          <button class="crec-apply-btn" onclick="applyCrecColors()">✓ Apply to Groups 1–3</button>
+        </div>
+        <button class="crec-cancel-btn" onclick="closeColorRecommender()">Cancel</button>
+      </div>
+
+    </div><!-- /.crec-dialog -->
+  </div><!-- /#color-recommender-modal -->
 
   <!-- Application Source Modules -->
   <script src="src/js/color_utils.js"></script>
@@ -376,6 +1027,9 @@
   <script src="src/js/gizmo.js"></script>
   <script src="src/js/settings.js"></script>
   <script src="src/js/file_loader.js"></script>
+  <script src="src/js/color_recommender.js"></script>
+  <script src="src/js/shape_segmentor.js"></script>
+  <script src="src/js/tutorial.js"></script>
   <script src="src/js/app.js"></script>
 </body>
 </html>

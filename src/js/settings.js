@@ -18,7 +18,7 @@
     orbitSpeed: 1.0,
     panSpeed: 1.0,
     zoomSpeed: 1.0,
-    keys: { brush: 'p', box: 'b', radius: 'r', subsplit: 's' }
+    keys: { brush: 'p', secbrush: 'alt+p', box: 'b', radius: 'r', subsplit: 's', shape: 'v' }
   };
 
   let appSettings = typeof structuredClone === 'function'
@@ -28,7 +28,11 @@
   function loadSettings() {
     try {
       const stored = localStorage.getItem('mini_seg_settings');
-      if (stored) appSettings = Object.assign({}, DEFAULT_SETTINGS, JSON.parse(stored));
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        appSettings = Object.assign({}, DEFAULT_SETTINGS, parsed);
+        if (parsed.keys) appSettings.keys = Object.assign({}, DEFAULT_SETTINGS.keys, parsed.keys);
+      }
     } catch (e) {}
     applySettings();
   }
@@ -51,9 +55,9 @@
     if (sp) { sp.value = appSettings.panSpeed; const spv = document.getElementById('setting-pan-val'); if (spv) spv.textContent = appSettings.panSpeed.toFixed(1); }
     if (sz) { sz.value = appSettings.zoomSpeed; const szv = document.getElementById('setting-zoom-val'); if (szv) szv.textContent = appSettings.zoomSpeed.toFixed(1); }
 
-    ['brush', 'box', 'radius', 'subsplit'].forEach(t => {
+    ['brush', 'secbrush', 'box', 'radius', 'subsplit', 'shape'].forEach(t => {
       const btn = document.getElementById(`kb-${t}`);
-      if (btn) btn.textContent = appSettings.keys[t].toUpperCase();
+      if (btn && appSettings.keys[t]) btn.textContent = appSettings.keys[t].toUpperCase();
     });
   }
 
@@ -121,9 +125,13 @@
       applySettings();
       return;
     }
-    const key = e.key.toLowerCase();
-    if (key.length !== 1) return;
-    appSettings.keys[rebindTarget] = key;
+    if (e.key === 'Alt' || e.key === 'Control' || e.key === 'Shift' || e.key === 'Meta') return;
+    const parts = [];
+    if (e.ctrlKey) parts.push('ctrl');
+    if (e.altKey) parts.push('alt');
+    if (e.shiftKey) parts.push('shift');
+    parts.push(e.key.toLowerCase());
+    appSettings.keys[rebindTarget] = parts.join('+');
     rebindTarget = null;
     document.querySelectorAll('.keybind-btn').forEach(b => b.classList.remove('listening'));
     applySettings();

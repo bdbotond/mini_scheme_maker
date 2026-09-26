@@ -14,8 +14,10 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 
   const selectedPartIds = new Set();
+  const secondarySelectedPartIds = new Set();
   let activeBrushGroup = 1;
   let hoveredPartId = -1;
+  let hoveredSecondaryPartId = -1;
   let isolatedCategory = -1;
   let isPainting = false;
   let paintDirty = false;
@@ -40,6 +42,24 @@
     if (typeof renderPaintGroupsList === 'function') renderPaintGroupsList();
   }
 
+  function clearSecondaryHoverPreview() {
+    if (hoveredSecondaryPartId !== -1 && typeof secondaryPartFaces !== 'undefined' && secondaryPartFaces && secondaryPartFaces[hoveredSecondaryPartId]) {
+      if (!secondarySelectedPartIds.has(hoveredSecondaryPartId)) {
+        writeFaceSliceColor(secondaryPartFaces[hoveredSecondaryPartId], -1, 'base');
+      }
+    }
+    hoveredSecondaryPartId = -1;
+  }
+
+  function clearSecondarySelection() {
+    if (secondarySelectedPartIds.size > 0 && typeof secondaryPartFaces !== 'undefined' && secondaryPartFaces) {
+      secondarySelectedPartIds.forEach(sp => {
+        if (secondaryPartFaces[sp]) writeFaceSliceColor(secondaryPartFaces[sp], -1, 'base');
+      });
+      secondarySelectedPartIds.clear();
+    }
+  }
+
   function setToolMode(mode) {
     toolMode = mode;
     document.querySelectorAll('.tool-mode-btn').forEach(btn => btn.classList.remove('active'));
@@ -48,27 +68,57 @@
 
     const edgeDetectionPanel = document.getElementById('edge-detection-panel');
     const toolSettingsPanel = document.getElementById('tool-settings-panel');
+    const secbrushSettings = document.getElementById('secbrush-tool-settings');
     const subsplitSettings = document.getElementById('subsplit-tool-settings');
     const radiusSettings = document.getElementById('radius-tool-settings');
+    const shapeSettings = document.getElementById('shape-tool-settings');
     const toolSettingsTitle = document.getElementById('tool-settings-title');
 
     if (edgeDetectionPanel) edgeDetectionPanel.style.display = mode === 'brush' ? 'block' : 'none';
 
     if (toolSettingsPanel) {
-      if (mode === 'subsplit') {
+      if (mode === 'secbrush') {
         toolSettingsPanel.style.display = 'block';
+        if (secbrushSettings) secbrushSettings.style.display = 'block';
+        if (subsplitSettings) subsplitSettings.style.display = 'none';
+        if (radiusSettings) radiusSettings.style.display = 'none';
+        if (shapeSettings) shapeSettings.style.display = 'none';
+        if (toolSettingsTitle) toolSettingsTitle.textContent = 'Secondary Brush Settings';
+      } else if (mode === 'subsplit') {
+        toolSettingsPanel.style.display = 'block';
+        if (secbrushSettings) secbrushSettings.style.display = 'none';
         if (subsplitSettings) subsplitSettings.style.display = 'block';
         if (radiusSettings) radiusSettings.style.display = 'none';
+        if (shapeSettings) shapeSettings.style.display = 'none';
         if (toolSettingsTitle) toolSettingsTitle.textContent = 'Sub-Split Settings';
       } else if (mode === 'radius') {
         toolSettingsPanel.style.display = 'block';
+        if (secbrushSettings) secbrushSettings.style.display = 'none';
         if (subsplitSettings) subsplitSettings.style.display = 'none';
         if (radiusSettings) radiusSettings.style.display = 'block';
+        if (shapeSettings) shapeSettings.style.display = 'none';
         if (toolSettingsTitle) toolSettingsTitle.textContent = 'Radius Select Settings';
-      } else {
-        toolSettingsPanel.style.display = 'none';
+      } else if (mode === 'shape') {
+        toolSettingsPanel.style.display = 'block';
+        if (secbrushSettings) secbrushSettings.style.display = 'none';
         if (subsplitSettings) subsplitSettings.style.display = 'none';
         if (radiusSettings) radiusSettings.style.display = 'none';
+        if (shapeSettings) shapeSettings.style.display = 'block';
+        if (toolSettingsTitle) toolSettingsTitle.textContent = 'Shape Volume Settings';
+      } else {
+        toolSettingsPanel.style.display = 'none';
+        if (secbrushSettings) secbrushSettings.style.display = 'none';
+        if (subsplitSettings) subsplitSettings.style.display = 'none';
+        if (radiusSettings) radiusSettings.style.display = 'none';
+        if (shapeSettings) shapeSettings.style.display = 'none';
+      }
+    }
+
+    if (typeof ShapeSegmentor !== 'undefined') {
+      if (mode === 'shape') {
+        ShapeSegmentor.activateShapeTool();
+      } else {
+        ShapeSegmentor.deactivateShapeTool();
       }
     }
 
@@ -76,12 +126,16 @@
     if (helpEl) {
       if (mode === 'brush') {
         helpEl.innerHTML = '💡 <b>Brush Mode:</b> Click to select &bull; <b>Shift+Drag</b> to paint &bull; Keys <b>1-9</b> pick color.';
+      } else if (mode === 'secbrush') {
+        helpEl.innerHTML = '💡 <b>Secondary Brush:</b> Background segmentation with custom parameters &bull; <b>Click</b> to select &bull; <b>Shift+Click</b> to add &bull; Keys <b>1-9</b> assign color.';
       } else if (mode === 'box') {
         helpEl.innerHTML = '💡 <b>Box Area Select:</b> Drag a rectangle over the model to select all segments in that area &bull; <b>Shift</b> to add.';
       } else if (mode === 'radius') {
         helpEl.innerHTML = '💡 <b>Radius Area Select:</b> Click or drag circle over the model to select segments in that radius &bull; <b>Shift</b> to add.';
       } else if (mode === 'subsplit') {
         helpEl.innerHTML = '💡 <b>Sub-Split Mode:</b> Hover to preview softer crease patch &bull; <b>Click</b> to split off and reassign.';
+      } else if (mode === 'shape') {
+        helpEl.innerHTML = '💡 <b>Shape Tool:</b> Move/Scale/Rotate 3D volume &bull; <b>W/E/R</b> gizmo modes &bull; <b>Enter</b> to apply active color.';
       }
     }
 
@@ -89,11 +143,23 @@
     if (ring && mode !== 'radius') ring.style.display = 'none';
 
     if (typeof clearSubSplitPreview === 'function' && mode !== 'subsplit') clearSubSplitPreview();
+    if (mode !== 'secbrush') {
+      clearSecondaryHoverPreview();
+      clearSecondarySelection();
+    } else {
+      if (!secondaryPartOfFace && typeof runSecondarySegmentation === 'function') {
+        runSecondarySegmentation();
+      }
+    }
 
     if (mode === 'box' || mode === 'radius') {
       renderer.domElement.style.cursor = 'crosshair';
     } else if (mode === 'subsplit') {
       renderer.domElement.style.cursor = 'cell';
+    } else if (mode === 'secbrush') {
+      renderer.domElement.style.cursor = 'pointer';
+    } else if (mode === 'shape') {
+      renderer.domElement.style.cursor = 'default';
     } else {
       renderer.domElement.style.cursor = 'default';
     }
@@ -103,6 +169,23 @@
     const bar = document.getElementById('selection-action-bar');
     const badge = document.getElementById('selection-count-badge');
     if (!bar) return;
+
+    if (toolMode === 'secbrush') {
+      if (secondarySelectedPartIds.size > 0) {
+        bar.style.display = 'flex';
+        let totalFaces = 0;
+        secondarySelectedPartIds.forEach(p => {
+          if (typeof secondaryPartFaces !== 'undefined' && secondaryPartFaces && secondaryPartFaces[p]) {
+            totalFaces += secondaryPartFaces[p].length;
+          }
+        });
+        badge.textContent = `${secondarySelectedPartIds.size} secondary segments (${totalFaces.toLocaleString()} faces)`;
+      } else {
+        bar.style.display = 'none';
+      }
+      return;
+    }
+
     if (selectedPartIds.size > 0) {
       bar.style.display = 'flex';
       let totalFaces = 0;
@@ -114,11 +197,30 @@
   }
 
   function assignSelectionToActiveBrush() {
+    if (toolMode === 'secbrush') {
+      if (secondarySelectedPartIds.size === 0) return;
+      assignSecondarySelectionToGroup(secondarySelectedPartIds, activeBrushGroup);
+      secondarySelectedPartIds.clear();
+      closeGroupPopup();
+      updateSelectionUI();
+      return;
+    }
     if (selectedPartIds.size === 0) return;
     assignSelectionToGroup(activeBrushGroup);
   }
 
   function handleCategoryCardClick(catNum) {
+    if (toolMode === 'secbrush') {
+      if (secondarySelectedPartIds.size > 0) {
+        assignSecondarySelectionToGroup(secondarySelectedPartIds, catNum);
+        secondarySelectedPartIds.clear();
+        closeGroupPopup();
+        updateSelectionUI();
+      } else {
+        setActiveBrushGroup(catNum);
+      }
+      return;
+    }
     if (selectedPartIds.size > 0) {
       assignSelectionToGroup(catNum);
     } else {
@@ -217,12 +319,24 @@
   function clearSelection() {
     selectedPartIds.forEach(p => writePartSliceColor(p, 'base'));
     selectedPartIds.clear();
+    clearSecondarySelection();
     updateSelectionUI();
   }
 
   function assignSelectionToGroup(groupNum) {
     groupNum = parseInt(groupNum, 10);
-    if (isNaN(groupNum) || groupNum < 1 || selectedPartIds.size === 0) return;
+    if (isNaN(groupNum) || groupNum < 1) return;
+
+    if (toolMode === 'secbrush') {
+      if (secondarySelectedPartIds.size === 0) return;
+      assignSecondarySelectionToGroup(secondarySelectedPartIds, groupNum);
+      secondarySelectedPartIds.clear();
+      if (typeof closeGroupPopup === 'function') closeGroupPopup();
+      updateSelectionUI();
+      return;
+    }
+
+    if (selectedPartIds.size === 0) return;
 
     if (groupNum > 2) {
       userCreatedGroups.add(groupNum);
@@ -235,7 +349,7 @@
     });
 
     selectedPartIds.clear();
-    if (typeof popup !== 'undefined' && popup) popup.style.display = 'none';
+    if (typeof closeGroupPopup === 'function') closeGroupPopup();
     updateSelectionUI();
     updateLiveStats();
   }
@@ -266,9 +380,11 @@
 
   // Keyboard shortcuts
   window.addEventListener('keydown', (e) => {
-    if (document.activeElement && document.activeElement.tagName === 'INPUT') return;
+    if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT' || document.activeElement.tagName === 'TEXTAREA')) return;
     const settingsModal = document.getElementById('settings-modal');
     if (settingsModal && settingsModal.classList.contains('open')) return;
+    const tutorialModal = document.getElementById('tutorial-modal');
+    if (tutorialModal && tutorialModal.classList.contains('open')) return;
 
     if (e.key === 'Escape') {
       clearSelection();
@@ -279,17 +395,48 @@
     }
     if (e.key >= '1' && e.key <= '9') {
       const groupNum = parseInt(e.key, 10);
+      if (toolMode === 'secbrush' && secondarySelectedPartIds.size > 0) {
+        assignSecondarySelectionToGroup(secondarySelectedPartIds, groupNum);
+        secondarySelectedPartIds.clear();
+        closeGroupPopup();
+        updateSelectionUI();
+        return;
+      }
       if (selectedPartIds.size > 0) assignSelectionToGroup(groupNum);
       else setActiveBrushGroup(groupNum);
       return;
     }
-    if (typeof appSettings !== 'undefined' && appSettings.keys) {
+
+    if (toolMode === 'shape' && typeof ShapeSegmentor !== 'undefined') {
       const k = e.key.toLowerCase();
+      if (k === 'w') { ShapeSegmentor.setTransformMode('translate'); return; }
+      if (k === 'e') { ShapeSegmentor.setTransformMode('rotate'); return; }
+      if (k === 'r') { ShapeSegmentor.setTransformMode('scale'); return; }
+      if (e.key === 'Enter') { ShapeSegmentor.applyShapeSegmentation(); return; }
+    }
+
+    if (typeof appSettings !== 'undefined' && appSettings.keys) {
+      function keyMatches(evt, bind) {
+        if (!bind) return false;
+        const parts = bind.toLowerCase().split('+');
+        const mainKey = parts[parts.length - 1];
+        const needAlt = parts.includes('alt');
+        const needCtrl = parts.includes('ctrl');
+        const needShift = parts.includes('shift');
+        return (evt.key.toLowerCase() === mainKey) &&
+               (!!evt.altKey === needAlt) &&
+               (!!evt.ctrlKey === needCtrl) &&
+               (!!evt.shiftKey === needShift);
+      }
       const keys = appSettings.keys;
-      if (k === keys.brush) setToolMode('brush');
-      else if (k === keys.box) setToolMode('box');
-      else if (k === keys.radius) setToolMode('radius');
-      else if (k === keys.subsplit) setToolMode('subsplit');
+      if (keyMatches(e, keys.secbrush)) { setToolMode('secbrush'); e.preventDefault(); }
+      else if (keyMatches(e, keys.brush)) { setToolMode('brush'); e.preventDefault(); }
+      else if (keyMatches(e, keys.box)) { setToolMode('box'); e.preventDefault(); }
+      else if (keyMatches(e, keys.radius)) { setToolMode('radius'); e.preventDefault(); }
+      else if (keyMatches(e, keys.subsplit)) { setToolMode('subsplit'); e.preventDefault(); }
+      else if (keyMatches(e, keys.shape || 'v')) { setToolMode('shape'); e.preventDefault(); }
+    } else if (e.key.toLowerCase() === 'v') {
+      setToolMode('shape');
     }
   });
 
@@ -330,7 +477,7 @@
       return;
     }
 
-    if (e.shiftKey && e.button === 0) {
+    if (toolMode === 'brush' && e.shiftKey && e.button === 0) {
       controls.enabled = false;
       isPainting = true;
       const pId = getPartUnderPointer(e.clientX, e.clientY);
@@ -421,6 +568,56 @@
       return;
     }
 
+    if (toolMode === 'secbrush') {
+      const faceIdx = getFaceUnderPointer(e.clientX, e.clientY);
+      if (faceIdx !== -1 && typeof secondaryPartOfFace !== 'undefined' && secondaryPartOfFace) {
+        renderer.domElement.style.cursor = 'pointer';
+        const spId = secondaryPartOfFace[faceIdx];
+        if (spId !== hoveredSecondaryPartId) {
+          if (hoveredSecondaryPartId !== -1 && !secondarySelectedPartIds.has(hoveredSecondaryPartId)) {
+            if (secondaryPartFaces && secondaryPartFaces[hoveredSecondaryPartId]) {
+              writeFaceSliceColor(secondaryPartFaces[hoveredSecondaryPartId], -1, 'base');
+            }
+          }
+          hoveredSecondaryPartId = spId;
+          if (hoveredSecondaryPartId !== -1 && !secondarySelectedPartIds.has(hoveredSecondaryPartId)) {
+            if (secondaryPartFaces && secondaryPartFaces[hoveredSecondaryPartId]) {
+              writeFaceSliceColor(secondaryPartFaces[hoveredSecondaryPartId], -1, 'hover');
+            }
+          }
+        }
+        if (inspector) {
+          const count = (secondaryPartFaces && secondaryPartFaces[spId]) ? secondaryPartFaces[spId].length : 0;
+          inspector.style.display = 'block';
+          inspector.innerHTML = `<b>Secondary Segment #${spId + 1}</b> (${count.toLocaleString()} faces)<br>Click/Shift+Click to select &bull; Keys <b>1-9</b> assign color`;
+        }
+      } else {
+        renderer.domElement.style.cursor = 'default';
+        if (inspector) inspector.style.display = 'none';
+        if (hoveredSecondaryPartId !== -1) {
+          if (!secondarySelectedPartIds.has(hoveredSecondaryPartId) && secondaryPartFaces && secondaryPartFaces[hoveredSecondaryPartId]) {
+            writeFaceSliceColor(secondaryPartFaces[hoveredSecondaryPartId], -1, 'base');
+          }
+          hoveredSecondaryPartId = -1;
+        }
+      }
+      return;
+    }
+
+    if (toolMode === 'shape') {
+      if (typeof ShapeSegmentor !== 'undefined' && ShapeSegmentor.snapToClickActive) {
+        renderer.domElement.style.cursor = 'crosshair';
+      } else {
+        renderer.domElement.style.cursor = 'default';
+      }
+      if (inspector) inspector.style.display = 'none';
+      if (hoveredPartId !== -1) {
+        if (!selectedPartIds.has(hoveredPartId)) writePartSliceColor(hoveredPartId, 'base');
+        hoveredPartId = -1;
+      }
+      return;
+    }
+
     if (subSplitHoverFaces) clearSubSplitPreview();
 
     const pId = getPartUnderPointer(e.clientX, e.clientY);
@@ -455,6 +652,7 @@
     const ring = document.getElementById('radius-cursor-ring');
     if (ring) ring.style.display = 'none';
     clearSubSplitPreview();
+    clearSecondaryHoverPreview();
   });
 
   renderer.domElement.addEventListener('pointerup', (e) => {
@@ -503,6 +701,52 @@
     const duration = performance.now() - pointerDownTime;
     if (dist > 6 || duration > 500 || didPaintInDrag) return;
     if (!currentMesh || numFaces === 0) return;
+
+    if (toolMode === 'shape') {
+      if (typeof ShapeSegmentor !== 'undefined' && ShapeSegmentor.snapToClickActive) {
+        const rect = renderer.domElement.getBoundingClientRect();
+        mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+        mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+        raycaster.setFromCamera(mouse, camera);
+        const hits = raycaster.intersectObject(currentMesh);
+        if (hits.length > 0) {
+          ShapeSegmentor.snapToPoint(hits[0].point);
+        }
+      }
+      return;
+    }
+
+    if (toolMode === 'secbrush') {
+      const faceIdx = getFaceUnderPointer(e.clientX, e.clientY);
+      if (faceIdx !== -1 && typeof secondaryPartOfFace !== 'undefined' && secondaryPartOfFace) {
+        const spId = secondaryPartOfFace[faceIdx];
+        if (spId >= 0 && secondaryPartFaces && secondaryPartFaces[spId]) {
+          if (e.shiftKey) {
+            if (secondarySelectedPartIds.has(spId)) {
+              secondarySelectedPartIds.delete(spId);
+              writeFaceSliceColor(secondaryPartFaces[spId], -1, 'base');
+            } else {
+              secondarySelectedPartIds.add(spId);
+              writeFaceSliceColor(secondaryPartFaces[spId], -1, 'selected');
+            }
+            if (secondarySelectedPartIds.size > 0) openGroupPopup(e.clientX, e.clientY);
+            else closeGroupPopup();
+          } else {
+            clearSecondarySelection();
+            secondarySelectedPartIds.add(spId);
+            writeFaceSliceColor(secondaryPartFaces[spId], -1, 'selected');
+            openGroupPopup(e.clientX, e.clientY);
+          }
+        }
+      } else {
+        if (!e.shiftKey) {
+          clearSecondarySelection();
+          closeGroupPopup();
+        }
+      }
+      updateSelectionUI();
+      return;
+    }
 
     if (toolMode === 'subsplit') {
       const faceIdx = getFaceUnderPointer(e.clientX, e.clientY);
@@ -565,6 +809,9 @@
 
   return {
     selectedPartIds,
+    secondarySelectedPartIds,
+    clearSecondarySelection,
+    clearSecondaryHoverPreview,
     get activeBrushGroup() { return activeBrushGroup; },
     set activeBrushGroup(v) { activeBrushGroup = v; },
     get hoveredPartId() { return hoveredPartId; },

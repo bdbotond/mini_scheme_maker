@@ -210,7 +210,7 @@
         if (match) {
           const dEText = match.dE < 1.0 ? 'Exact' : `ΔE ${match.dE.toFixed(1)}`;
           const mfr = currentSelectedBrandFile.replace(/_/g,' ').replace('.json','');
-          paintMatchHtml = `<div class="pg-paint-match"><span class="pg-paint-swatch" style="background:${match.paint.hex}"></span>${escapeHtml(match.paint.name)} &bull; ${dEText} &bull; <span style="color:#64748b;font-size:9px">${escapeHtml(mfr)}</span></div>`;
+          paintMatchHtml = `<div class="pg-paint-match" style="cursor:pointer;" title="Click to apply ${escapeHtml(match.paint.name)} (${match.paint.hex}) to Group ${g}" onclick="event.stopPropagation(); setGroupColor(${g}, '${match.paint.hex}');"><span class="pg-paint-swatch" style="background:${match.paint.hex}"></span>${escapeHtml(match.paint.name)} &bull; ${dEText} &bull; <span style="color:#64748b;font-size:9px">${escapeHtml(mfr)}</span></div>`;
         }
       }
 
@@ -219,7 +219,7 @@
         : '';
 
       html += `
-        <div class="pg-row ${isBrush ? 'active-brush' : ''}" onclick="handleCategoryCardClick(${g})">
+        <div class="pg-row ${isBrush ? 'active-brush' : ''}" data-group="${g}" onclick="handleCategoryCardClick(${g})">
           <input type="color" id="color-picker-${g}" class="group-color-input" value="${colHex}" title="Pick color"
             style="width:18px;height:18px;flex-shrink:0"
             onclick="event.stopPropagation();" oninput="setGroupColor(${g}, this.value)">
@@ -242,6 +242,59 @@
     }
   }
 
+  // Drag-select: hold mouse and slide across group rows to switch the active brush.
+  // Attached once on the persistent container via a guard flag — survives innerHTML re-renders.
+  let _groupDragActive = false;
+
+  function setupGroupDragSelect() {
+    const container = document.getElementById('paint-groups-list');
+    if (!container || container._dragSelectBound) return;
+    container._dragSelectBound = true;
+
+    container.addEventListener('mousedown', (e) => {
+      const row = e.target.closest('.pg-row');
+      if (!row) return;
+      // Don't intercept color picker / name input / delete button
+      if (e.target.closest('input') || e.target.closest('button')) return;
+      _groupDragActive = true;
+      const g = parseInt(row.dataset.group, 10);
+      if (!isNaN(g)) handleCategoryCardClick(g);
+    });
+
+    // mouseover bubbles from child elements, so catches entering a new row mid-drag
+    container.addEventListener('mouseover', (e) => {
+      if (!_groupDragActive) return;
+      const row = e.target.closest('.pg-row');
+      if (!row || e.target.closest('input') || e.target.closest('button')) return;
+      const g = parseInt(row.dataset.group, 10);
+      const current = typeof activeBrushGroup !== 'undefined' ? activeBrushGroup : -1;
+      if (!isNaN(g) && g !== current) handleCategoryCardClick(g);
+    });
+
+    document.addEventListener('mouseup', () => { _groupDragActive = false; });
+  }
+
+  function applyMatchedPaintsToAllGroups() {
+    const paints = loadedPaintBrands.get(currentSelectedBrandFile) || [];
+    if (!paints || paints.length === 0) {
+      if (typeof showToast === 'function') showToast('No paint brand loaded yet.', 'warning');
+      return;
+    }
+    const allGroups = [1, 2, ...Array.from(userCreatedGroups).filter(g => g > 2)];
+    let count = 0;
+    for (const g of allGroups) {
+      const colHex = getGroupColorHex(g);
+      const match = findClosestPaint(colHex, paints);
+      if (match && match.paint && match.paint.hex) {
+        setGroupColor(g, match.paint.hex);
+        count++;
+      }
+    }
+    if (count > 0 && typeof showToast === 'function') {
+      showToast(`Applied ${count} matched paint colors to model`, 'success');
+    }
+  }
+
   return {
     loadedPaintBrands,
     get currentSelectedBrandFile() { return currentSelectedBrandFile; },
@@ -255,6 +308,8 @@
     handlePaintBrandChange,
     updatePaintMatchForGroup,
     updateAllPaintMatches,
-    renderPaintGroupsList
+    renderPaintGroupsList,
+    setupGroupDragSelect,
+    applyMatchedPaintsToAllGroups
   };
 });

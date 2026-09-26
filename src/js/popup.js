@@ -21,17 +21,36 @@
   const popupPromptText = document.getElementById('popup-prompt-text');
 
   function openGroupPopup(clientX, clientY) {
-    if (!popup || selectedPartIds.size === 0) return;
+    const isSec = (typeof toolMode !== 'undefined' && toolMode === 'secbrush');
+    const selCount = isSec
+      ? (typeof secondarySelectedPartIds !== 'undefined' ? secondarySelectedPartIds.size : 0)
+      : selectedPartIds.size;
+    if (!popup || selCount === 0) return;
 
     let totalSelectedFaces = 0;
-    selectedPartIds.forEach(pId => { if (partFaces[pId]) totalSelectedFaces += partFaces[pId].length; });
+    if (isSec) {
+      secondarySelectedPartIds.forEach(spId => {
+        if (typeof secondaryPartFaces !== 'undefined' && secondaryPartFaces && secondaryPartFaces[spId]) {
+          totalSelectedFaces += secondaryPartFaces[spId].length;
+        }
+      });
+    } else {
+      selectedPartIds.forEach(pId => { if (partFaces[pId]) totalSelectedFaces += partFaces[pId].length; });
+    }
 
-    if (selectedPartIds.size === 1) {
-      const pId = selectedPartIds.values().next().value;
-      if (popupPartBadge) popupPartBadge.textContent = `Part #${pId + 1}`;
-      if (popupFaceCount) popupFaceCount.textContent = `${totalSelectedFaces.toLocaleString()} faces`;
-      if (popupPromptText) popupPromptText.textContent = `Reassign Part #${pId + 1} to:`;
-      const currGroup = partGroup[pId];
+    if (selCount === 1) {
+      if (isSec) {
+        const spId = secondarySelectedPartIds.values().next().value;
+        if (popupPartBadge) popupPartBadge.textContent = `Secondary #${spId + 1}`;
+        if (popupFaceCount) popupFaceCount.textContent = `${totalSelectedFaces.toLocaleString()} faces`;
+        if (popupPromptText) popupPromptText.textContent = `Assign Secondary #${spId + 1} to:`;
+      } else {
+        const pId = selectedPartIds.values().next().value;
+        if (popupPartBadge) popupPartBadge.textContent = `Part #${pId + 1}`;
+        if (popupFaceCount) popupFaceCount.textContent = `${totalSelectedFaces.toLocaleString()} faces`;
+        if (popupPromptText) popupPromptText.textContent = `Reassign Part #${pId + 1} to:`;
+      }
+      const currGroup = isSec ? 1 : partGroup[selectedPartIds.values().next().value];
       [1, 2].forEach(g => {
         const btn = document.getElementById(`choice-g${g}`);
         if (btn) btn.classList.toggle('active', currGroup === g);
@@ -44,9 +63,10 @@
       });
       if (popupInput) popupInput.value = currGroup > 2 ? currGroup : getNextCustomGroupNumber();
     } else {
-      if (popupPartBadge) popupPartBadge.textContent = `${selectedPartIds.size} Parts Selected`;
+      const label = isSec ? 'Secondary Segments' : 'Parts';
+      if (popupPartBadge) popupPartBadge.textContent = `${selCount} ${label} Selected`;
       if (popupFaceCount) popupFaceCount.textContent = `${totalSelectedFaces.toLocaleString()} faces`;
-      if (popupPromptText) popupPromptText.textContent = `Reassign ${selectedPartIds.size} selected parts to:`;
+      if (popupPromptText) popupPromptText.textContent = `Assign ${selCount} selected ${label.toLowerCase()} to:`;
       [1, 2].forEach(g => {
         const btn = document.getElementById(`choice-g${g}`);
         if (btn) btn.classList.remove('active');

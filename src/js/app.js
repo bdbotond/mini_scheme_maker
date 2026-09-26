@@ -66,6 +66,44 @@
     ess.addEventListener('change', runSegmentation);
   }
 
+  // ── Secondary Brush Sliders ──────────────────────────────────────────────
+  const shs = document.getElementById('sec-hardness-slider');
+  if (shs) {
+    shs.addEventListener('input', (e) => {
+      const shv = document.getElementById('sec-hardness-val');
+      if (shv) shv.textContent = e.target.value + '°';
+    });
+    shs.addEventListener('change', runSecondarySegmentation);
+  }
+
+  const sas2 = document.getElementById('sec-area-slider');
+  if (sas2) {
+    sas2.addEventListener('input', (e) => {
+      const sav = document.getElementById('sec-area-val');
+      if (sav) sav.textContent = parseFloat(e.target.value).toFixed(1) + '%';
+    });
+    sas2.addEventListener('change', runSecondarySegmentation);
+  }
+
+  const sels = document.getElementById('sec-edge-len-slider');
+  if (sels) {
+    sels.addEventListener('input', (e) => {
+      const selv = document.getElementById('sec-edge-len-val');
+      if (selv) selv.textContent = e.target.value + ' edges';
+    });
+    sels.addEventListener('change', runSecondarySegmentation);
+  }
+
+  const sess = document.getElementById('sec-edge-straight-slider');
+  if (sess) {
+    sess.addEventListener('input', (e) => {
+      const val = parseFloat(e.target.value);
+      const sesv = document.getElementById('sec-edge-straight-val');
+      if (sesv) sesv.textContent = val === 0 ? '0.0 (Off)' : val.toFixed(2);
+    });
+    sess.addEventListener('change', runSecondarySegmentation);
+  }
+
   // ── Slider: Sub-Split Angle (live preview) ────────────────────────────────
   const sas = document.getElementById('sub-angle-slider');
   if (sas) {
@@ -93,5 +131,15 @@
   updateLiveStats();
   initPaintBrands();
   renderPaintGroupsList();
+  setupGroupDragSelect();
+  if (typeof ShapeSegmentor !== 'undefined') {
+    ShapeSegmentor.initShapeSegmentor(scene, camera, renderer, controls);
+  }
+  if (typeof loadDefaultProject === 'function') {
+    loadDefaultProject();
+  }
+  if (typeof initTutorial === 'function') {
+    initTutorial();
+  }
 
 })();
